@@ -1,0 +1,40 @@
+@use "../scss/variables/breakpoints" as b;
+@use "sass:math";
+
+$columns: 12;
+$columns-base-width: math.div(100%, $columns);
+
+* {
+  // border: 2px solid black;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  min-height: 1px;
+  width: $columns-base-width;
+  padding: 12px;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: $columns-base-width * $i;
+  }
+}
+
+@media (max-width: b.$tabletBreakPoint) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
