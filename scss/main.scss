@@ -17,12 +17,12 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 260%;
+  background-size: 400%;
 }
 
-@media (min-width: b.$smallMobilBreakPoint) {
+@media (min-width: b.$largeMobilBreakPoint) {
   body {
-    background-size: 310%;
+    background-size: 260%;
   }
 }
 
@@ -36,32 +36,4 @@ body {
   body {
     background-size: 100%;
   }
-}
-
-h1 {
-  color: c.$SmallTextColor;
-  font-family: f.$basicFont;
-  letter-spacing: 0.1em;
-  font-size: 22px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 10px 0;
-}
-
-p {
-  color: c.$SmallTextColor;
-  font-family: f.$basicFont;
-  letter-spacing: 0.1em;
-  font-size: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 10px;
-}
-
-span {
-  color: c.$SmallTextColor;
-  font-family: f.$basicFont;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  font-size: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 10px;
 }
