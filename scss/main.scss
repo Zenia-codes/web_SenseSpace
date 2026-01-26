@@ -16,18 +16,37 @@ body {
   background-size: cover;
   background-position: center;
 }
-// body {
-//   height: 100vh;
-// }
 
-// @media (min-width: b.$tabletBreakPoint) {
-//   body {
-//     // background-image: url("../assets/pictures/background_tablet.png");
-//   }
-// }
+//nastavení viněty na obrazovkách větších než 1600px
+@media (min-width: b.$largeDesktopBreakPoint) {
+  body {
+    position: relative;
+  }
 
-// @media (min-width: b.$desktopBreakPoint) {
-//   body {
-//     background-image: url("../assets/pictures/background.jpg");
-//   }
-// }
+  body::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.35) 100%
+    );
+  }
+
+  // úprava layoutu pro velké displeje
+  .navigation_container {
+    padding: 0 90px 0 90px;
+  }
+
+  .hero_pictureTextGroup {
+    margin-top: 80px;
+  }
+
+  .header {
+    height: 150px;
+  }
+}
