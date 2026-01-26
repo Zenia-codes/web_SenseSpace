@@ -9,31 +9,25 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  margin: 0;
   height: 100vh;
-  background-image: url("../assets/pictures/background.jpg");
-  background-size: cover;
-  background-position: center center;
+  background-image: url("../assets/pictures/background.png");
   background-repeat: no-repeat;
-  background-size: 400%;
+  background-size: cover;
+  background-position: center;
 }
+// body {
+//   height: 100vh;
+// }
 
-@media (min-width: b.$largeMobilBreakPoint) {
-  body {
-    background-size: 260%;
-  }
-}
+// @media (min-width: b.$tabletBreakPoint) {
+//   body {
+//     // background-image: url("../assets/pictures/background_tablet.png");
+//   }
+// }
 
-@media (min-width: b.$tabletBreakPoint) {
-  body {
-    background-size: 150%;
-  }
-}
-
-@media (min-width: b.$desktopBreakPoint) {
-  body {
-    background-size: 100%;
-  }
-}
+// @media (min-width: b.$desktopBreakPoint) {
+//   body {
+//     background-image: url("../assets/pictures/background.jpg");
+//   }
+// }
