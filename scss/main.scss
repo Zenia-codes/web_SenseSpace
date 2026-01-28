@@ -1,8 +1,8 @@
-@use "reset.css";
+@use "./_reset.css";
 @use "../scss/variables/colors" as c;
 @use "../scss/variables/fonts" as f;
 @use "../scss/variables/breakpoints" as b;
-@use "grid" as g;
+@use "../scss/grid" as g;
 @use "../scss/sections/navigation" as n;
 @use "../scss/sections/hero" as h;
 
@@ -33,7 +33,6 @@ body {
 }
 
 @media (min-width: b.$largeDesktopBreakPoint) {
-  // úprava layoutu pro velké displeje
   .navigation_container {
     padding: 0 90px 0 90px;
   }

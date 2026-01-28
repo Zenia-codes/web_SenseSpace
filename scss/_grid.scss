@@ -5,14 +5,14 @@ $columns: 12;
 $columns-base-width: math.div(100%, $columns);
 
 * {
-  // border: 2px solid black;
+  // border: 5px solid rgb(106, 255, 6);
 }
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
   width: 100%;
   max-width: 1024px;
+  padding-inline: 15px;
+  margin-inline: auto;
 }
 
 .row {
@@ -33,7 +33,7 @@ $columns-base-width: math.div(100%, $columns);
   }
 }
 
-@media (max-width: b.$tabletBreakPoint) {
+@media (max-width: b.$desktopBreakPoint) {
   [class*="col-"] {
     width: 100%;
   }
