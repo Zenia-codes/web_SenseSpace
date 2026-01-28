@@ -81,8 +81,9 @@ input[type="search"] {
     align-items: center;
     flex-direction: column;
     li {
-      letter-spacing: 0.1em;
+      // letter-spacing: 0.1em;
       font-family: f.$basicFont;
+      letter-spacing: 0.1em;
       font-weight: 500;
       font-style: normal;
       list-style: none;
