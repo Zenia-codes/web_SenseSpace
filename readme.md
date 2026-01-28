@@ -42,5 +42,6 @@ jiné směřují k finální podobě osobního webu.
 
 ## Autor
 
-Zdeňka Beťáková
-grafika / tisk / front-end
+# Zdeňka Beťáková
+
+- grafika / tisk / front-end
