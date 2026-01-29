@@ -32,6 +32,12 @@ body {
   }
 }
 
+@media (min-width: b.$desktopBreakPoint) {
+  body {
+    background-image: url("../assets/pictures/background.jpg");
+  }
+}
+
 @media (min-width: b.$largeDesktopBreakPoint) {
   .navigation_container {
     padding: 0 90px 0 90px;
