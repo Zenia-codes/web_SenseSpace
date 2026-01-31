@@ -118,16 +118,6 @@ span {
 }
 
 @media (min-width: b.$tabletBreakPoint) {
-  .hero_pictureTextGroup {
-    .text {
-      .picture {
-        margin-top: 80px;
-      }
-    }
-  }
-}
-
-@media (min-width: b.$desktopBreakPoint) {
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;

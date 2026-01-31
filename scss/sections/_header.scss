@@ -105,13 +105,6 @@ input[type="search"] {
   }
 }
 
-@media (min-width: b.$largeMobilBreakPoint) {
-  .menu_button {
-    position: absolute;
-    right: 20px;
-  }
-}
-
 @media (min-width: b.$tabletBreakPoint) {
   .navigation_container {
     display: flex;
