@@ -28,34 +28,35 @@
     <link href="scss/main.scss" rel="stylesheet" />
   </head>
   <body>
-    <section class="header">
-      <div class="navigation_container container">
-        <div class="logo">
-          <a href="#">
-            <img
-              src="./assets/pictures/logo.svg"
-              alt="Smysluplno - domovská stránka"
-            />
-          </a>
+    <div class="layout">
+      <section class="header">
+        <div class="navigation_container container">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="./assets/pictures/logo.svg"
+                alt="Smysluplno - domovská stránka"
+              />
+            </a>
+          </div>
+          <input
+            type="checkbox"
+            id="menu_checkbox"
+            class="menu_button_checkbox"
+          />
+          <label for="menu_checkbox" class="menu_button">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </label>
+          <nav class="navigation_menu">
+            <ul class="navigation_items">
+              <li><a href="#projekt">Projekt</a></li>
+              <li><a href="#o-mne">O mně</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
         </div>
-        <input
-          type="checkbox"
-          id="menu_checkbox"
-          class="menu_button_checkbox"
-        />
-        <label for="menu_checkbox" class="menu_button">
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </label>
-        <nav class="navigation_menu">
-          <ul class="navigation_items">
-            <li><a href="#projekt">Projekt</a></li>
-            <li><a href="#o-mne">O mně</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- <form role="search">
+        <!-- <form role="search">
           <label for="search" class="visually-hidden"></label>
           <div class="search-wrapper">
             <input id="search" type="search" placeholder="Hledat…" />
@@ -63,7 +64,7 @@
           </div>
         </form> -->
 
-      <!-- <nav class="socials" aria-label="Sociální sítě">
+        <!-- <nav class="socials" aria-label="Sociální sítě">
           <ul class="socials_list">
             <li>
               <a href="https://facebook.com" aria-label="Facebook">
@@ -96,16 +97,17 @@
           </ul>
         </nav> -->
 
-      <!-- input je uvnitř labelu a nav je jeho sourozenec, tak jde použít
+        <!-- input je uvnitř labelu a nav je jeho sourozenec, tak jde použít
  .menu_button_checkbox:checked ~ .navigation_menu {}-->
-    </section>
+      </section>
 
-    <section class="hero">
-      <div class="hero_container container">
-        <div class="hero_pictureTextGroup">
+      <section class="hero container">
+        <div class="hero_motiv">
           <div class="picture">
             <img src="./assets/pictures/profilovka.svg" alt="profilová fotka" />
           </div>
+        </div>
+        <div class="hero_TextButton">
           <div class="text">
             <h1>ZDEŇKA BEŤÁKOVÁ</h1>
             <p>UX/UI DESIGN A FRONT-END</p>
@@ -120,7 +122,7 @@
             /></a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
