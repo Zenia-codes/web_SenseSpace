@@ -59,22 +59,22 @@ span {
 .picture {
   position: relative;
   display: inline-block;
-  width: auto;
+  width: 100%;
   &::before {
     content: "";
     position: absolute;
-    inset: -50px;
-    background: url("/assets/pictures/light.svg") center / contain no-repeat;
-    opacity: 0.6;
+    inset: -10px;
+    background: url("../assets/pictures/light.png") center / contain no-repeat;
+    opacity: 0.5;
     z-index: -2;
   }
 
   &::after {
     content: "";
     position: absolute;
-    inset: 50px 0 0 -20px;
-    background: url("/assets/pictures/mlha.svg") center / contain no-repeat;
-    opacity: 0.5;
+    inset: 0px;
+    background: url("../assets/pictures/mlha.png") center / contain no-repeat;
+    opacity: 0.7;
     z-index: -1;
   }
 
@@ -82,17 +82,16 @@ span {
     width: 100%;
     position: relative;
     z-index: 0;
-    filter: drop-shadow(-1px 1px 2px c.$DarkShadow);
+    filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
   }
 
   .planet {
     position: absolute;
-    width: 190%;
-    padding-top: 55%;
-    top: 15%;
-    left: -47%;
-    background: url("/assets/pictures/planet.svg") center / contain no-repeat;
-    z-index: -3; /* pod světlem a mlhou */
+    inset: 0px;
+    background: url("/assets/pictures/planet.png") center / contain no-repeat;
+    z-index: -3;
+    filter: drop-shadow(-10px -5px 50px rgb(15, 27, 36, 0.5))
+      drop-shadow(-10px 0px 110px rgb(15, 27, 36, 0.2));
   }
 }
 

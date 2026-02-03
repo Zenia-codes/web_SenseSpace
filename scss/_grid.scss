@@ -3,10 +3,10 @@
 .container {
   width: min(100% - 30px, 1200px);
   margin-inline: auto;
-  border: 2px solid rgb(106, 255, 6);
+  // border: 2px solid rgb(106, 255, 6);
 }
 
 .layout {
   display: grid;
-  gap: 16px;
+  gap: 32px;
 }
