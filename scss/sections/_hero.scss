@@ -1,17 +1,21 @@
 @use "../variables/colors" as c;
 @use "../variables/fonts" as f;
 @use "../variables/breakpoints" as b;
-@use "../grid";
 
-.hero_container {
-  display: grid;
-  grid-template-columns: 1fr;
+.hero {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero_TextButton {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   .text {
     display: flex;
     flex-direction: column;
@@ -31,7 +35,7 @@ h1 {
   font-family: f.$basicFont;
   font-weight: 500;
   letter-spacing: 0.07em;
-  font-size: 22px;
+  font-size: clamp(22px, 2vw, 27px);
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
   margin: 0 0 10px 0;
 }
@@ -63,21 +67,23 @@ p {
 }
 
 .hero_motiv {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: clamp(180px, 19vw, 260px);
+  margin: 0 auto;
 }
 
 .picture {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 100%;
+  transform: translateX(-10px);
   &::before {
     content: "";
     position: absolute;
-    inset: -10px;
+    inset: -5px;
     background: url("../assets/pictures/light.png") center / contain no-repeat;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -2;
   }
 
@@ -91,7 +97,8 @@ p {
   }
 
   img {
-    width: 95%;
+    width: 100%;
+    height: auto;
     position: relative;
     z-index: 0;
     filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
@@ -113,13 +120,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px 0;
+  margin: 10px 0;
   padding: 14px 22px 12px 24px;
   border: none;
   background: none;
   font-family: f.$basicFont;
   color: white;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   font-weight: 500;
   text-decoration: none;
   text-shadow: -2px 1px 2px c.$TextShadow;
@@ -138,17 +145,23 @@ p {
 }
 
 @media (min-width: b.$tabletBreakPoint) {
-  .hero {
+  .hero_content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 900px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    align-items: center;
   }
 
-  .hero_pictureTextGroup {
+  .hero_TextButton {
     .text {
-      .picture {
-        margin-top: 100px;
-      }
+      align-items: start;
     }
+  }
+
+  p {
+    padding-left: 10px;
+  }
+
+  .design_a_kod {
+    transform: translateX(-20px);
   }
 }

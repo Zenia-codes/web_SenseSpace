@@ -2,7 +2,6 @@
 @use "../scss/variables/colors" as c;
 @use "../scss/variables/fonts" as f;
 @use "../scss/variables/breakpoints" as b;
-@use "../scss/grid" as g;
 @use "../scss/sections/header" as n;
 @use "../scss/sections/hero" as h;
 
@@ -11,15 +10,14 @@
 }
 body {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../assets/pictures/background_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   &::after {
     content: "";
-    position: absolute;
-    height: 100vh;
+    position: fixed;
     inset: 0;
     pointer-events: none;
     background: linear-gradient(
@@ -32,22 +30,23 @@ body {
   }
 }
 
-@media (min-width: b.$desktopBreakPoint) {
-  body {
-    background-image: url("../assets/pictures/background.png");
+.layout {
+  padding-inline: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+@media (min-width: b.$tabletBreakPoint) {
+  .layout {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr;
+    padding-inline: 20px;
   }
 }
 
-@media (min-width: b.$largeDesktopBreakPoint) {
-  .navigation_container {
-    padding: 0 90px 0 90px;
-  }
-
-  .hero_pictureTextGroup {
-    margin-top: 80px;
-  }
-
-  .header {
-    height: 150px;
+@media (min-width: b.$desktopBreakPoint) {
+  body {
+    background-image: url("../assets/pictures/background.png");
   }
 }

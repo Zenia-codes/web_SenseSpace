@@ -1,7 +1,6 @@
 @use "../variables/colors" as c;
 @use "../variables/fonts" as f;
 @use "../variables/breakpoints" as b;
-@use "../grid" as g;
 
 .header {
   position: relative;
@@ -21,7 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
 }
 
 .logo {
@@ -40,25 +38,25 @@
   padding: 5px;
 }
 
-.socials_list {
-  display: flex;
-}
+// .socials_list {
+//   display: flex;
+// }
 
-.search-wrapper {
-  position: relative;
+// .search-wrapper {
+//   position: relative;
 
-  i {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-  }
-}
+//   i {
+//     position: absolute;
+//     right: 12px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     pointer-events: none;
+//   }
+// }
 
-input[type="search"] {
-  padding-right: 2.5rem;
-}
+// input[type="search"] {
+//   padding-right: 2.5rem;
+// }
 
 .menu_button_checkbox {
   position: absolute;
