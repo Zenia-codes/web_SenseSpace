@@ -1,6 +1,7 @@
 @use "../variables/colors" as c;
 @use "../variables/fonts" as f;
 @use "../variables/breakpoints" as b;
+@use "../variables/hero_scale" as s;
 
 .hero {
   min-height: calc(100vh - 90px);
@@ -35,7 +36,7 @@ h1 {
   font-family: f.$basicFont;
   font-weight: 500;
   letter-spacing: 0.07em;
-  font-size: clamp(22px, 2vw, 27px);
+  font-size: 22px;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
   margin: 0 0 10px 0;
 }
@@ -69,7 +70,7 @@ p {
 .hero_motiv {
   position: relative;
   display: flex;
-  width: clamp(180px, 19vw, 260px);
+  width: 230px;
   margin: 0 auto;
 }
 
@@ -120,11 +121,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
-  padding: 14px 22px 12px 24px;
+  padding: 18px 24px 18px 32px;
   border: none;
   background: none;
   font-family: f.$basicFont;
+  font-size: 15px;
   color: white;
   letter-spacing: 0.1em;
   font-weight: 500;
@@ -147,7 +148,7 @@ p {
 @media (min-width: b.$tabletBreakPoint) {
   .hero_content {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
     align-items: center;
   }
 
@@ -157,11 +158,26 @@ p {
     }
   }
 
+  h1 {
+    font-size: s.$HeroScaleName;
+  }
+
   p {
     padding-left: 10px;
+    font-size: s.$HeroScaleDesign;
   }
 
   .design_a_kod {
-    transform: translateX(-20px);
+    transform: translateX(-18px);
+    font-size: s.$HeroScaleKod;
+  }
+
+  .hero_motiv {
+    width: s.$HeroMotiv;
+    transform: translateX(50px);
+  }
+
+  .button {
+    margin: 10px 0;
   }
 }

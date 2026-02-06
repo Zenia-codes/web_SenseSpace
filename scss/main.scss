@@ -4,6 +4,7 @@
 @use "../scss/variables/breakpoints" as b;
 @use "../scss/sections/header" as n;
 @use "../scss/sections/hero" as h;
+@use "../scss/variables/hero_scale" as s;
 
 * {
   box-sizing: border-box;
