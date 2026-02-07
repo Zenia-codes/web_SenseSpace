@@ -4,7 +4,7 @@
 @use "../variables/hero_scale" as s;
 
 .hero {
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,9 +82,9 @@ h1 {
   &::before {
     content: "";
     position: absolute;
-    inset: -5px;
+    inset: 0px;
     background: url("../assets/pictures/light.png") center / contain no-repeat;
-    opacity: 0.3;
+    opacity: 0.7;
     z-index: -2;
   }
 
@@ -143,6 +143,7 @@ h1 {
     inset: 0;
     background: url("/assets/pictures/main_button.png") center / 100% no-repeat;
     z-index: -1;
+    filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
   }
 }
 
