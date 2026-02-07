@@ -121,7 +121,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 18px 24px 18px 32px;
+  margin: 18px 0;
+  padding: 7px 0;
   border: none;
   background: none;
   font-family: f.$basicFont;
@@ -178,7 +179,7 @@ h1 {
   }
 
   .button {
-    margin: 10px 0;
+    margin-top: 22px;
     width: s.$HeroButton;
   }
 }
