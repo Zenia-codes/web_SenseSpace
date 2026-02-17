@@ -1,6 +1,7 @@
 @use "../variables/colors" as c;
 @use "../variables/fonts" as f;
 @use "../variables/breakpoints" as b;
+@use "../variables/mixins" as m;
 
 .header {
   position: relative;
@@ -8,7 +9,7 @@
   z-index: 10;
   &:has(.menu_button_checkbox:checked) {
     .navigation_menu {
-      transform: translateY(0);
+      transform: translateX(0%) translateY(0);
       opacity: 1;
       pointer-events: auto;
     }
@@ -43,38 +44,75 @@
 
 .navigation_menu {
   position: absolute;
-  top: 80px;
+  top: 100%;
+  margin-top: 10px;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: c.$SmallTextColor;
   border-radius: 5px;
-  transform: translateY(-10px);
+  transform: translateX(0%) translateY(-10px);
   opacity: 0;
   pointer-events: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
   will-change: transform, opacity;
   backface-visibility: hidden;
+
   .navigation_items {
+    position: relative;
+    text-decoration: none;
+    color: c.$DecorationColor;
     display: flex;
     align-items: center;
     flex-direction: column;
+
     li {
       font-family: f.$basicFont;
       letter-spacing: 0.1em;
       font-weight: 400;
-      font-style: normal;
+      font-style: italic;
       list-style: none;
       text-transform: uppercase;
       padding: 3px 10px;
       margin: 10px 70px 20px 70px;
-      a {
+
+      .dotted-link {
+        position: relative;
+        display: inline-block;
         text-decoration: none;
         color: c.$DecorationColor;
-        &:hover {
-          text-decoration: underline;
-          text-decoration-color: c.$DecorationColor;
-          text-underline-offset: 6px;
+        transition: transform 0.15s ease;
+
+        &:active {
+          transform: scale(0.95);
         }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: -5px;
+
+          width: 0;
+          height: 2px;
+          border-bottom: 2px dotted c.$DecorationColor;
+
+          transform: translateX(-50%);
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+
+      // odstraní tečkovaný bílý rámeček -a:focus- při kliknutí
+      .dotted-link:focus:not(:focus-visible) {
+        outline: none;
+      }
+
+      .dotted-link:focus-visible {
+        outline: 2px dotted c.$DecorationColor;
+        outline-offset: 4px;
       }
     }
   }
@@ -102,7 +140,7 @@
         margin: 0;
         padding: 0 20px;
         margin-bottom: 8px;
-        a {
+        .dotted-link {
           color: white;
         }
       }
