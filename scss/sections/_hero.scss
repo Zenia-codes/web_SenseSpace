@@ -82,10 +82,12 @@ h1 {
   &::before {
     content: "";
     position: absolute;
-    inset: 0px;
+    inset: -30px;
     background: url("../assets/pictures/light.png") center / contain no-repeat;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: -2;
+    animation: lightSway 5s ease-in-out infinite;
+    will-change: transform;
   }
 
   &::after {
@@ -95,6 +97,9 @@ h1 {
     background: url("../assets/pictures/mlha.png") center / contain no-repeat;
     opacity: 0.7;
     z-index: -1;
+    transform-origin: center;
+    animation: fogPulse 5s ease-in-out infinite;
+    will-change: transform;
   }
 
   img {
@@ -126,16 +131,18 @@ h1 {
   border: none;
   background: none;
   font-family: f.$basicFont;
+  font-style: italic;
   font-size: 15px;
   color: white;
-  letter-spacing: 0.15em;
-  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-weight: 600;
   text-decoration: none;
   text-shadow: -2px 1px 2px c.$TextShadow;
 
   .rocket {
     width: 36px;
     padding: 2px 5px;
+    filter: drop-shadow(-1px 0px 0px c.$DarkShadow);
   }
   &::before {
     content: "";
@@ -144,6 +151,30 @@ h1 {
     background: url("/assets/pictures/main_button.png") center / 100% no-repeat;
     z-index: -1;
     filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
+  }
+}
+
+@keyframes fogPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lightSway {
+  0% {
+    transform: translateY(20px, -40px);
+  }
+  50% {
+    transform: translateY(calc(20px - 2%), calc(-40px + 1%));
+  }
+  100% {
+    transform: translateY(20px, -40px);
   }
 }
 
@@ -167,6 +198,7 @@ h1 {
   .design_frontend {
     padding-left: 10px;
     font-size: s.$HeroScaleDesign;
+    font-weight: 500;
   }
 
   .design_a_kod {
