@@ -1,0 +1,11 @@
+@use "../variables/colors" as c;
+@use "../variables/fonts" as f;
+
+@mixin heroText($fontSize, $fontColor) {
+  font-family: f.$basicFont;
+  font-size: $fontSize;
+  font-style: italic;
+  color: $fontColor;
+  text-decoration: none;
+  text-shadow: c.$textLight;
+}

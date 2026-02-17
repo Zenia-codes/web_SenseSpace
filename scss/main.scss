@@ -46,7 +46,7 @@ body {
   }
 }
 
-@media (min-width: b.$desktopBreakPoint) {
+@media (min-width: b.$tabletBreakPoint) {
   body {
     background-image: url("../assets/pictures/background.png");
   }

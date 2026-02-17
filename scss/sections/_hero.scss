@@ -2,6 +2,7 @@
 @use "../variables/fonts" as f;
 @use "../variables/breakpoints" as b;
 @use "../variables/hero_scale" as s;
+@use "../variables/mixins" as m;
 
 .hero {
   min-height: calc(100vh - 70px);
@@ -32,39 +33,23 @@
 }
 
 h1 {
-  color: c.$SmallTextColor;
-  font-family: f.$basicFont;
+  @include m.heroText(22px, c.$SmallTextColor);
   font-weight: 500;
   letter-spacing: 0.07em;
-  font-size: 22px;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
   margin: 0 0 10px 0;
 }
 
 .design_frontend {
-  color: c.$SmallTextColor;
-  font-family: f.$basicFont;
+  @include m.heroText(16px, c.$SmallTextColor);
+  font-weight: 300;
   letter-spacing: 0.05em;
-  font-size: 16px;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .design_a_kod {
-  color: c.$SmallTextColor;
-  font-family: f.$basicFont;
+  @include m.heroText(16px, #494949);
   font-weight: 600;
-  letter-spacing: 0.13em;
-  font-size: 14px;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-  padding: 10px 30px;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(153, 153, 153, 0.3) 20%,
-    rgba(153, 153, 153, 0.3) 80%,
-    transparent 100%
-  );
+  letter-spacing: 0.09em;
 }
 
 .hero_motiv {
@@ -130,14 +115,9 @@ h1 {
   padding: 7px 0px 7px 7px;
   border: none;
   background: none;
-  font-family: f.$basicFont;
-  font-style: italic;
-  font-size: 15px;
-  color: white;
+  @include m.heroText(15px, c.$SmallTextColor);
   letter-spacing: 0.1em;
   font-weight: 600;
-  text-decoration: none;
-  text-shadow: -2px 1px 2px c.$TextShadow;
 
   .rocket {
     width: 36px;
@@ -188,6 +168,7 @@ h1 {
   .hero_TextButton {
     .text {
       align-items: start;
+      max-width: 220px;
     }
   }
 
@@ -196,14 +177,14 @@ h1 {
   }
 
   .design_frontend {
-    padding-left: 10px;
+    transform: translateX(5px);
     font-size: s.$HeroScaleDesign;
-    font-weight: 500;
   }
 
   .design_a_kod {
-    transform: translateX(-18px);
+    transform: translateX(22px);
     font-size: s.$HeroScaleKod;
+    letter-spacing: 0.02em;
   }
 
   .hero_motiv {
