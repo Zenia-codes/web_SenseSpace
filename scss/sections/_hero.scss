@@ -60,18 +60,21 @@ h1 {
 }
 
 .picture {
+  z-index: 10;
   position: relative;
   display: block;
   width: 100%;
-  transform: translateX(-10px);
+
+  transform: translate(10px, 20px);
   &::before {
     content: "";
     position: absolute;
-    inset: -30px;
-    background: url("../assets/pictures/light.png") center / contain no-repeat;
-    opacity: 0.6;
-    z-index: -2;
-    animation: lightSway 5s ease-in-out infinite;
+    inset: 0px;
+    background: url("../assets/pictures/wireframe.png") center / contain
+      no-repeat;
+    opacity: 0.9;
+    z-index: 2;
+    animation: lightPulse 3s ease-in-out infinite;
     will-change: transform;
   }
 
@@ -79,11 +82,12 @@ h1 {
     content: "";
     position: absolute;
     inset: 0px;
-    background: url("../assets/pictures/mlha.png") center / contain no-repeat;
+    background: url("../assets/pictures/prstenec.png") center / contain
+      no-repeat;
     opacity: 0.7;
-    z-index: -1;
+    z-index: -2;
     transform-origin: center;
-    animation: fogPulse 5s ease-in-out infinite;
+    animation: gentleFloat 10s ease-in-out infinite;
     will-change: transform;
   }
 
@@ -95,13 +99,21 @@ h1 {
     filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
   }
 
-  .planet {
+  .mlha {
+    position: absolute;
+    inset: -20px;
+    background: url("/assets/pictures/mlha.png") center / contain no-repeat;
+    z-index: 1;
+    animation: lightSway 7s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .filtr {
     position: absolute;
     inset: 0px;
-    background: url("/assets/pictures/planeta.png") center / contain no-repeat;
-    z-index: -3;
-    filter: drop-shadow(-10px -5px 50px rgb(15, 27, 36, 0.5))
-      drop-shadow(-10px 0px 110px rgb(15, 27, 36, 0.2));
+    background: url("/assets/pictures/filtr.png") center / contain no-repeat;
+    z-index: 100;
+    opacity: 0.4;
   }
 }
 
@@ -134,27 +146,46 @@ h1 {
   }
 }
 
-@keyframes fogPulse {
+@keyframes lightPulse {
   0% {
-    transform: scale(1);
+    opacity: 0.4;
+    filter: brightness(0.8);
   }
+
   50% {
-    transform: scale(1.05);
+    opacity: 1;
+    filter: brightness(1.3);
   }
+
   100% {
-    transform: scale(1);
+    opacity: 0.4;
+    filter: brightness(0.8);
   }
 }
 
 @keyframes lightSway {
   0% {
-    transform: translateY(20px, -40px);
+    transform: translate(0, -20px);
   }
   50% {
-    transform: translateY(calc(20px - 2%), calc(-40px + 1%));
+    transform: translate(calc(0px + 2%), calc(-20px + 1%));
   }
   100% {
-    transform: translateY(20px, -40px);
+    transform: translate(0, -20px);
+  }
+}
+
+@keyframes gentleFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -182,7 +213,7 @@ h1 {
   }
 
   .design_a_kod {
-    transform: translateX(21px);
+    transform: translateX(15px);
     font-size: s.$HeroScaleKod;
     letter-spacing: 0.02em;
   }
@@ -196,5 +227,11 @@ h1 {
     margin-top: 22px;
     width: s.$HeroButton;
     font-size: 16px;
+  }
+}
+
+@media (min-width: b.$desktopBreakPoint) {
+  .design_a_kod {
+    transform: translateX(20px);
   }
 }
