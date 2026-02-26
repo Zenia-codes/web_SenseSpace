@@ -13,7 +13,7 @@ body {
   position: relative;
   min-height: 100vh;
   background-image: url("../assets/pictures/background_mobile.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   &::after {
@@ -32,7 +32,7 @@ body {
 }
 
 .layout {
-  // padding-inline: 20px;
+  padding-inline: 20px;
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -46,6 +46,5 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr;
-    padding-inline: 20px;
   }
 }

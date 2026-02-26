@@ -47,28 +47,39 @@ h1 {
 }
 
 .design_a_kod {
-  @include m.heroText(16px, #494949);
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-shadow: 0 0 4px #dbdbdbdb;
+  @include m.heroText(16px, #efdfa0);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 7px #656464db;
+  opacity: 0.9;
+  background: linear-gradient(90deg, #facbad, #efbff8, #f7ce9d);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientMove 7s cubic-bezier(0.4, 0, 1, 1) infinite;
 }
 
 .hero_motiv {
-  position: relative;
-  display: flex;
-  max-width: 280px;
+  // display: flex;
+  max-height: 245px;
+  width: auto;
   margin: 0 auto;
 }
 
 .picture {
-  z-index: 0;
   position: relative;
+  isolation: isolate; // vlastní stacking context
   display: block;
   width: 100%;
+  aspect-ratio: 1/1;
+  min-height: 300px;
+  background-color: red;
+  filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
+  background: url("/assets/pictures/profilovka.png") left center / contain
+    no-repeat;
 
-  transform: translate(10px, 20px);
-  &::before {
-    content: "";
+  .wireframe {
     position: absolute;
     inset: 0px;
     background: url("../assets/pictures/wireframe.png") center / contain
@@ -79,8 +90,7 @@ h1 {
     will-change: transform;
   }
 
-  &::after {
-    content: "";
+  .prstenec {
     position: absolute;
     inset: 0px;
     background: url("../assets/pictures/prstenec.png") center / contain
@@ -88,24 +98,16 @@ h1 {
     opacity: 0.8;
     z-index: 2;
     transform-origin: center;
-    animation: gentleFloat 10s ease-in-out infinite;
+    animation: gentleFloat 8s ease-in-out infinite;
     will-change: transform;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 0;
-    filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
   }
 
   .mlha {
     position: absolute;
-    inset: -35px;
+    inset: -5px;
     background: url("/assets/pictures/mlha.png") center / contain no-repeat;
     z-index: 3;
-    opacity: 1;
+    opacity: 0.8;
     animation: lightSway 9s ease-in-out infinite;
     will-change: transform;
   }
@@ -125,19 +127,22 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 18px;
-  padding: 7px 0px 7px 7px;
+  margin-top: 24px;
   border: none;
   background: none;
   @include m.heroText(15px, c.$SmallTextColor);
   letter-spacing: 0.1em;
   font-weight: 600;
+  //  color: #aaa; /* výchozí barva */
+  // animation: glow 4s ease-in-out infinite;
+  // will-change: color, text-shadow;
 
   .rocket {
     width: 36px;
     padding: 2px 5px;
     filter: drop-shadow(-1px 0px 0px c.$DarkShadow);
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -148,32 +153,51 @@ h1 {
   }
 }
 
-@keyframes lightPulse {
+// @keyframes glow {
+//   0% {
+//     color: #e6e5e5;
+//     text-shadow: 0 0 0px #00d4ff;
+//   }
+//   50% {
+//     color: #fff;
+//     text-shadow: 0 0 12px #00d4ff;
+//   }
+//   100% {
+//     color: #e6e5e5;
+//     text-shadow: 0 0 0px #00d4ff;
+//   }
+// }
+
+@keyframes gradientMove {
   0% {
-    opacity: 0.4;
-    filter: brightness(0.8);
+    background-position: 0% 0;
   }
-
-  50% {
-    opacity: 1;
-    filter: brightness(1.3);
-  }
-
   100% {
-    opacity: 0.4;
-    filter: brightness(0.8);
+    background-position: 200% 0;
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    color: #f9f0cf;
+  }
+  50% {
+    color: #efdfa0;
+  }
+  100% {
+    color: #f9f0cf;
   }
 }
 
 @keyframes lightSway {
   0% {
-    transform: translate(0, -20px);
+    transform: translate(0, -40px);
   }
   50% {
-    transform: translate(calc(0px + 2%), calc(-20px + 1%));
+    transform: translate(calc(0px + 2%), calc(-40px + 10px));
   }
   100% {
-    transform: translate(0, -20px);
+    transform: translate(0, -40px);
   }
 }
 
@@ -194,7 +218,7 @@ h1 {
 @media (min-width: b.$tabletBreakPoint) {
   .hero_content {
     display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 0.8fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr);
     align-items: center;
   }
 
@@ -210,34 +234,25 @@ h1 {
   }
 
   .design_frontend {
-    transform: translateX(5px);
     font-size: s.$HeroScaleDesign;
+    margin-inline-start: 10px;
   }
 
   .design_a_kod {
-    transform: translateX(15px);
     font-size: s.$HeroScaleKod;
     letter-spacing: 0.02em;
+    margin-inline-start: 22px;
   }
 
   .hero_motiv {
-    max-width: 360px;
-    transform: translateX(50px);
+    width: s.$HeroMotiv;
+    justify-self: end;
+    max-height: 340px;
   }
 
   .button {
     margin-top: 22px;
     width: s.$HeroButton;
     font-size: 16px;
-  }
-}
-
-@media (min-width: b.$desktopBreakPoint) {
-  .design_a_kod {
-    transform: translateX(20px);
-  }
-
-  .hero_motiv {
-    width: s.$HeroMotiv;
   }
 }
