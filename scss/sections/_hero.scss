@@ -7,8 +7,9 @@
 .hero {
   min-height: calc(100dvh - 70px);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 6vh;
 }
 
 .hero_content {
@@ -17,7 +18,7 @@
   align-items: center;
 }
 
-.hero_TextButton {
+.hero_Text {
   .text {
     display: flex;
     flex-direction: column;
@@ -61,33 +62,42 @@ h1 {
 }
 
 .hero_motiv {
-  // display: flex;
-  max-height: 245px;
-  width: auto;
-  margin: 0 auto;
-}
-
-.picture {
   position: relative;
-  isolation: isolate; // vlastní stacking context
-  display: block;
-  width: 100%;
-  aspect-ratio: 1/1;
-  min-height: 300px;
-  background-color: red;
-  filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
-  background: url("/assets/pictures/profilovka.png") left center / contain
-    no-repeat;
+  isolation: isolate;
+  height: 225px;
+  aspect-ratio: 1 / 1;
 
-  .wireframe {
+  .person {
     position: absolute;
-    inset: 0px;
-    background: url("../assets/pictures/wireframe.png") center / contain
-      no-repeat;
-    opacity: 0.9;
     z-index: 1;
-    animation: lightPulse 3s ease-in-out infinite;
-    will-change: transform;
+    inset: 0px;
+    .person_wrapper {
+      position: absolute;
+      inset: 0px;
+      pointer-events: none;
+      filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
+      background: url("/assets/pictures/profilovka.png") left center / contain
+        no-repeat;
+      transform: scale(1.2);
+      .wireframe {
+        position: absolute;
+        inset: 0px;
+        background: url("../assets/pictures/wireframe.png") center / contain
+          no-repeat;
+        opacity: 0.9;
+        z-index: 2;
+        animation: wireGlow 3s ease-in-out infinite;
+        will-change: transform;
+      }
+
+      .filtr {
+        position: absolute;
+        inset: 0px;
+        background: url("/assets/pictures/filtr.png") center / contain no-repeat;
+        z-index: 3;
+        opacity: 0.6;
+      }
+    }
   }
 
   .prstenec {
@@ -95,45 +105,37 @@ h1 {
     inset: 0px;
     background: url("../assets/pictures/prstenec.png") center / contain
       no-repeat;
-    opacity: 0.8;
-    z-index: 2;
-    transform-origin: center;
+    opacity: 1;
+    z-index: 4;
     animation: gentleFloat 8s ease-in-out infinite;
     will-change: transform;
   }
 
   .mlha {
     position: absolute;
-    inset: -5px;
+    inset: -30px;
     background: url("/assets/pictures/mlha.png") center / contain no-repeat;
-    z-index: 3;
-    opacity: 0.8;
-    animation: lightSway 9s ease-in-out infinite;
+    z-index: 5;
+    opacity: 1;
+    animation: lightSway 15s ease-in-out infinite;
     will-change: transform;
-  }
-
-  .filtr {
-    position: absolute;
-    inset: 0px;
-    background: url("/assets/pictures/filtr.png") center / contain no-repeat;
-    z-index: 4;
-    opacity: 0.6;
   }
 }
 
 .button {
   position: relative;
   width: 180px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 24px;
-  border: none;
+  border: 1px solid transparent;
   background: none;
   @include m.heroText(15px, c.$SmallTextColor);
   letter-spacing: 0.1em;
   font-weight: 600;
-  //  color: #aaa; /* výchozí barva */
+  // color: #aaa; /* výchozí barva */
   // animation: glow 4s ease-in-out infinite;
   // will-change: color, text-shadow;
 
@@ -153,6 +155,23 @@ h1 {
   }
 }
 
+@keyframes wireGlow {
+  0% {
+    opacity: 0.4;
+    filter: brightness(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.4);
+  }
+
+  100% {
+    opacity: 0.4;
+    filter: brightness(0.8);
+  }
+}
+
 // @keyframes glow {
 //   0% {
 //     color: #e6e5e5;
@@ -168,64 +187,88 @@ h1 {
 //   }
 // }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
+// @keyframes lightPulse {
+//   0% {
+//     transform: scale(1);
+//     opacity: 0.4;
+//     filter: brightness(0.8);
+//   }
 
-@keyframes colorShift {
-  0% {
-    color: #f9f0cf;
-  }
-  50% {
-    color: #efdfa0;
-  }
-  100% {
-    color: #f9f0cf;
-  }
-}
+//   50% {
+//     transform: scale(1.05);
+//     opacity: 1;
+//     filter: brightness(1.3);
+//   }
+
+//   100% {
+//     transform: scale(1);
+//     opacity: 0.4;
+//     filter: brightness(0.8);
+//   }
+// }
+
+// @keyframes gradientMove {
+//   0% {
+//     background-position: 0% 0;
+//   }
+//   100% {
+//     background-position: 200% 0;
+//   }
+// }
+
+// @keyframes colorShift {
+//   0% {
+//     color: #f9f0cf;
+//   }
+//   50% {
+//     color: #efdfa0;
+//   }
+//   100% {
+//     color: #f9f0cf;
+//   }
+// }
 
 @keyframes lightSway {
   0% {
-    transform: translate(0, -40px);
+    transform: translate(0, -10px);
   }
   50% {
-    transform: translate(calc(0px + 2%), calc(-40px + 10px));
+    transform: translate(calc(2%));
   }
   100% {
-    transform: translate(0, -40px);
+    transform: translate(0, -10px);
   }
 }
 
 @keyframes gentleFloat {
   0% {
-    transform: translateY(0);
+    transform: translateY(30px);
   }
 
   50% {
-    transform: translateY(-6px);
+    transform: translateY(40px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(30px);
   }
 }
 
 @media (min-width: b.$tabletBreakPoint) {
+  .hero {
+    padding-top: 10vh;
+  }
+
   .hero_content {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr);
-    align-items: center;
   }
 
-  .hero_TextButton {
+  .hero_Text {
     .text {
       align-items: start;
       max-width: 220px;
+      transform: translateX(-50px);
     }
   }
 
