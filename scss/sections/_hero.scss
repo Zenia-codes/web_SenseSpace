@@ -48,17 +48,20 @@ h1 {
 }
 
 .design_a_kod {
-  @include m.heroText(16px, #efdfa0);
-  font-weight: 500;
+  @include m.heroText(16px, #fbe183);
+  font-weight: 300;
   letter-spacing: 0.08em;
   text-shadow: 0 0 7px #656464db;
   opacity: 0.9;
-  background: linear-gradient(90deg, #facbad, #efbff8, #f7ce9d);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: gradientMove 7s cubic-bezier(0.4, 0, 1, 1) infinite;
+  text-shadow: c.$textLight;
+  // background-size: 200% 100%;
+  // background: linear-gradient(90deg, #facbad, #efbff8, #f7ce9d);
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // color: transparent;
+  // animation: gradientMove 7s cubic-bezier(0.4, 0, 1, 1) infinite;
+  // animation: glow 3s ease-in-out infinite;
+  // will-change: color, text-shadow;
 }
 
 .hero_motiv {
@@ -69,9 +72,7 @@ h1 {
 
   .person {
     position: absolute;
-    // z-index: 1;
     inset: 0px;
-    // transform: scale(1.2);
     .person_wrapper {
       position: absolute;
       inset: 0px;
@@ -79,14 +80,15 @@ h1 {
       filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
       background: url("/assets/pictures/planet.png") left center / contain
         no-repeat;
+      opacity: 0.9;
       z-index: 1;
 
       .wireframe {
         position: absolute;
-        inset: -0px;
+        inset: 0px;
         background: url("/assets/pictures/wireframe.png") center / contain
           no-repeat;
-        opacity: 0.9;
+        opacity: 1;
         animation: wireGlow 3s ease-in-out infinite;
         will-change: transform;
         z-index: 2;
@@ -118,17 +120,14 @@ h1 {
   inset: 0 -25px 0 0;
   background: url("../assets/pictures/prstenec.png") center / contain no-repeat;
   opacity: 1;
-  animation: gentleFloat 8s ease-in-out infinite;
-  will-change: transform;
 }
 
 .mlha {
   position: absolute;
   inset: -20px;
   background: url("/assets/pictures/mlha.png") center / contain no-repeat;
-  // z-index: 4;
-  opacity: 0.7;
-  animation: lightSway 15s ease-in-out infinite;
+  opacity: 0.8;
+  animation: lightSway 7s ease-in-out infinite;
   will-change: transform;
 }
 
@@ -139,15 +138,14 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 24px;
+  margin-top: 20px;
   border: 1px solid transparent;
   background: none;
   @include m.heroText(15px, c.$SmallTextColor);
   letter-spacing: 0.1em;
   font-weight: 600;
-  // color: #aaa; /* výchozí barva */
-  // animation: glow 4s ease-in-out infinite;
-  // will-change: color, text-shadow;
+  animation: gentleFloat 4s ease-in-out infinite;
+  will-change: transform;
 
   .rocket {
     width: 36px;
@@ -168,105 +166,64 @@ h1 {
 @keyframes wireGlow {
   0% {
     opacity: 0.4;
-    filter: brightness(0.8);
+    filter: brightness(1) drop-shadow(0 0 5px #fff);
   }
 
   50% {
     opacity: 1;
-    filter: brightness(1.4);
+    filter: brightness(1.6) drop-shadow(0 0 20px #fff);
   }
 
   100% {
     opacity: 0.4;
-    filter: brightness(0.8);
+    filter: brightness(1) drop-shadow(0 0 5px #fff);
   }
 }
 
 // @keyframes glow {
 //   0% {
 //     color: #e6e5e5;
-//     text-shadow: 0 0 0px #00d4ff;
+//     text-shadow: 0 0 0px #fdfdd3;
 //   }
 //   50% {
 //     color: #fff;
-//     text-shadow: 0 0 12px #00d4ff;
+//     text-shadow: 0 0 6px #fdfdd3;
 //   }
 //   100% {
 //     color: #e6e5e5;
-//     text-shadow: 0 0 0px #00d4ff;
-//   }
-// }
-
-// @keyframes lightPulse {
-//   0% {
-//     transform: scale(1);
-//     opacity: 0.4;
-//     filter: brightness(0.8);
-//   }
-
-//   50% {
-//     transform: scale(1.05);
-//     opacity: 1;
-//     filter: brightness(1.3);
-//   }
-
-//   100% {
-//     transform: scale(1);
-//     opacity: 0.4;
-//     filter: brightness(0.8);
-//   }
-// }
-
-// @keyframes gradientMove {
-//   0% {
-//     background-position: 0% 0;
-//   }
-//   100% {
-//     background-position: 200% 0;
-//   }
-// }
-
-// @keyframes colorShift {
-//   0% {
-//     color: #f9f0cf;
-//   }
-//   50% {
-//     color: #efdfa0;
-//   }
-//   100% {
-//     color: #f9f0cf;
+//     text-shadow: 0 0 0px #fdfdd3;
 //   }
 // }
 
 @keyframes lightSway {
   0% {
-    transform: translate(0, -10px);
+    transform: translate(0, -8px);
   }
   50% {
     transform: translate(calc(2%));
   }
   100% {
-    transform: translate(0, -10px);
+    transform: translate(0, -8px);
   }
 }
 
-// @keyframes gentleFloat {
-//   0% {
-//     transform: translateX(0px);
-//   }
+@keyframes gentleFloat {
+  0% {
+    transform: translateY(0px);
+  }
 
-//   50% {
-//     transform: translateX(20px);
-//   }
+  50% {
+    transform: translateY(5px);
+  }
 
-//   100% {
-//     transform: translateX(0px);
-//   }
-// }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 @media (min-width: b.$tabletBreakPoint) {
   .hero {
-    padding-top: 15vh;
+    padding-top: 10vh;
   }
 
   .hero_content {
@@ -278,29 +235,26 @@ h1 {
     .text {
       align-items: start;
       max-width: 220px;
-      // transform: translateX(-50px);
     }
   }
 
   h1 {
     font-size: s.$HeroScaleName;
+    transform: translateX(-10px);
   }
 
   .design_frontend {
     font-size: s.$HeroScaleDesign;
-    // margin-inline-start: 10px;
   }
 
   .design_a_kod {
     font-size: s.$HeroScaleKod;
     letter-spacing: 0.02em;
-    // margin-inline-start: 22px;
+    transform: translateX(13px);
   }
 
   .hero_motiv {
     width: s.$HeroMotiv;
-    // justify-self: end;
-    // max-height: 340px;
 
     .person_wrapper {
       transform: scale(none);
