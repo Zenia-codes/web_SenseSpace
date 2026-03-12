@@ -1,0 +1,10 @@
+@use "../variables/colors" as c;
+@use "../variables/fonts" as f;
+@use "../variables/breakpoints" as b;
+@use "../variables/hero_scale" as s;
+@use "../variables/mixins" as m;
+
+p {
+  @include m.heroText(22px, c.$SmallTextColor);
+  letter-spacing: 0.07em;
+}

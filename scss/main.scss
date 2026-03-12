@@ -5,6 +5,10 @@
 @use "../scss/sections/header" as n;
 @use "../scss/sections/hero" as h;
 @use "../scss/variables/hero_scale" as s;
+@use "../scss/sections/aboutMe" as a;
+@use "../scss/sections/project" as p;
+@use "../scss/sections/portfolio" as o;
+@use "../scss/sections/contacts" as k;
 
 * {
   box-sizing: border-box;
