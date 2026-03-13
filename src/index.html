@@ -54,9 +54,21 @@
                   >About me</a
                 >
               </li>
-              <li><a href="#project" class="dotted-link">Project</a></li>
-              <li><a href="#portfolio" class="dotted-link">Portfolio</a></li>
-              <li><a href="#contact" class="dotted-link">contact</a></li>
+              <li>
+                <a href="#project" id="projectBtn" class="dotted-link"
+                  >Project</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" id="portfolioBtn" class="dotted-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#contact" id="contactBtn" class="dotted-link"
+                  >contact</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
@@ -136,20 +148,12 @@
 
       <section class="portfolio" id="portfolio">
         <div class="text_portfolio">
-          <h1>Malý průlet grafickou tvorbou</h1>
+          <p>Malý průlet grafickou tvorbou</p>
         </div>
       </section>
 
       <section class="contacts" id="contacts">
         <div class="icon_contacts">
-          <form role="search">
-            <label for="search" class="visually-hidden"></label>
-            <div class="search-wrapper">
-              <input id="search" type="search" placeholder="Hledat…" />
-              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-            </div>
-          </form>
-
           <nav class="socials" aria-label="Sociální sítě">
             <ul class="socials_list">
               <li>
@@ -186,5 +190,8 @@
       </section>
     </div>
     <script type="module" src="./components/about/about.js"></script>
+    <script type="module" src="./components/project/project.js"></script>
+    <script type="module" src="./components/portfolio/portfolio.js"></script>
+    <script type="module" src="./components/contacts/contacts.js"></script>
   </body>
 </html>
