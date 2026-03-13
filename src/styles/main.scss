@@ -1,22 +1,23 @@
-@use "./_reset.css";
-@use "../scss/variables/colors" as c;
-@use "../scss/variables/fonts" as f;
-@use "../scss/variables/breakpoints" as b;
-@use "../scss/sections/header" as n;
-@use "../scss/sections/hero" as h;
-@use "../scss/variables/hero_scale" as s;
-@use "../scss/sections/aboutMe" as a;
-@use "../scss/sections/project" as p;
-@use "../scss/sections/portfolio" as o;
-@use "../scss/sections/contacts" as k;
+@use "./base/_reset.css";
+@use "./variables/colors" as c;
+@use "./variables/fonts" as f;
+@use "./variables/breakpoints" as b;
+@use "./variables/hero_scale" as s;
+@use "../components/header/header" as n;
+@use "../components/hero/hero" as h;
+@use "../components/about/aboutMe" as a;
+@use "../components/project/project" as p;
+@use "../components/portfolio/portfolio" as o;
+@use "../components/contacts/contacts" as k;
 
 * {
   box-sizing: border-box;
 }
+
 body {
   position: relative;
   min-height: 100vh;
-  background-image: url("../assets/pictures/background_mobile.png");
+  background-image: url("../assets/images/background_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,7 +44,7 @@ body {
 
 @media (min-width: b.$tabletBreakPoint) {
   body {
-    background-image: url("../assets/pictures/background.png");
+    background-image: url("../assets/images/background.png");
   }
 
   .layout {

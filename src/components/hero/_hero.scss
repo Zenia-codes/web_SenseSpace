@@ -1,8 +1,8 @@
-@use "../variables/colors" as c;
-@use "../variables/fonts" as f;
-@use "../variables/breakpoints" as b;
-@use "../variables/hero_scale" as s;
-@use "../variables/mixins" as m;
+@use "../../styles/variables/colors" as c;
+@use "../../styles/variables/fonts" as f;
+@use "../../styles/variables/breakpoints" as b;
+@use "../../styles/variables/hero_scale" as s;
+@use "../../styles/variables/mixins" as m;
 
 .hero {
   min-height: calc(100dvh - 70px);
@@ -61,7 +61,7 @@ h1 {
   font-weight: 500;
   letter-spacing: 0.1em;
   background: linear-gradient(90deg, #fbe183, #fc5dcc, #daebf2);
-  background-clip: border-box; /* nebo padding-box, content-box */
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -80,14 +80,14 @@ h1 {
       inset: 0px;
       pointer-events: none;
       filter: drop-shadow(-10px 0px 10px c.$DarkShadow);
-      background: url("/assets/pictures/planet.png") left center / contain
+      background: url("/src/assets/images/planet.png") left center / contain
         no-repeat;
       z-index: 1;
 
       .wireframe {
         position: absolute;
         inset: 0px;
-        background: url("/assets/pictures/wireframe.png") center / contain
+        background: url("/src/assets/images/wireframe.png") center / contain
           no-repeat;
         opacity: 1;
         animation: wireGlow 3s ease-in-out infinite;
@@ -98,8 +98,8 @@ h1 {
       .profilovka {
         position: absolute;
         inset: 0px;
-        background: url("/assets/pictures/profilovka.png") left center / contain
-          no-repeat;
+        background: url("/src/assets/images/profilovka.png") left center /
+          contain no-repeat;
         opacity: 1;
         z-index: 3;
       }
@@ -107,7 +107,8 @@ h1 {
       .filtr {
         position: absolute;
         inset: 0px;
-        background: url("/assets/pictures/filtr.png") center / contain no-repeat;
+        background: url("/src/assets/images/filtr.png") center / contain
+          no-repeat;
         z-index: 4;
         opacity: 0.6;
       }
@@ -119,14 +120,14 @@ h1 {
   position: absolute;
   transform: scale(1.1);
   inset: 0 -25px 0 0;
-  background: url("../assets/pictures/prstenec.png") center / contain no-repeat;
+  background: url("/src/assets/images/prstenec.png") center / contain no-repeat;
   opacity: 0.8;
 }
 
 .mlha {
   position: absolute;
   inset: -20px;
-  background: url("/assets/pictures/mlha.png") center / contain no-repeat;
+  background: url("/src/assets/images/mlha.png") center / contain no-repeat;
   opacity: 0.8;
   animation: lightSway 7s ease-in-out infinite;
   will-change: transform;
@@ -158,7 +159,7 @@ h1 {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("/assets/pictures/main_button.png") center / 100% no-repeat;
+    background: url("/src/assets/icons/main_button.png") center / 100% no-repeat;
     z-index: -1;
     filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
   }

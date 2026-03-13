@@ -25,7 +25,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="scss/main.scss" rel="stylesheet" />
+    <link href="./styles/main.scss" rel="stylesheet" />
   </head>
   <body>
     <div class="layout">
@@ -34,7 +34,7 @@
           <div class="logo">
             <a href="#">
               <img
-                src="./assets/pictures/logo.svg"
+                src="/src/assets/icons/logo.svg"
                 alt="Smysluplno - domovská stránka"
               />
             </a>
@@ -49,7 +49,11 @@
           </label>
           <nav class="navigation_menu">
             <ul class="navigation_items">
-              <li><a href="#aboutme" class="dotted-link">About me</a></li>
+              <li>
+                <a href="#aboutme" id="aboutBtn" class="dotted-link"
+                  >About me</a
+                >
+              </li>
               <li><a href="#project" class="dotted-link">Project</a></li>
               <li><a href="#portfolio" class="dotted-link">Portfolio</a></li>
               <li><a href="#contact" class="dotted-link">contact</a></li>
@@ -84,7 +88,7 @@
               <a class="button" href="#"
                 >DISCOVER<img
                   class="rocket"
-                  src="./assets/pictures/rocket.svg"
+                  src="/src/assets/svg/rocket.svg"
                   alt="ikona odpálené rakety"
               /></a>
             </div>
@@ -92,8 +96,8 @@
         </div>
       </section>
 
-      <section class="about_me" id="aboutme">
-        <div class="text_about_me">
+      <section class="about" id="about">
+        <div class="about_content">
           <p>
             Moje profese: Léta se zabývám grafikou a současně jako tiskařka mám
             blízko k papíru, struktuře a detailu, ale čím dál víc mě vtahuje i
@@ -181,5 +185,6 @@
         </div>
       </section>
     </div>
+    <script type="module" src="./components/about/about.js"></script>
   </body>
 </html>
