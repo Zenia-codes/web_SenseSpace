@@ -30,7 +30,7 @@
   <body>
     <div class="layout">
       <section class="header">
-        <div class="navigation_container">
+        <div class="navigation_container container">
           <div class="logo">
             <a href="#">
               <img
@@ -50,9 +50,7 @@
           <nav class="navigation_menu">
             <ul class="navigation_items">
               <li>
-                <a href="#aboutme" id="aboutBtn" class="dotted-link"
-                  >About me</a
-                >
+                <a href="#about" id="aboutBtn" class="dotted-link">About me</a>
               </li>
               <li>
                 <a href="#project" id="projectBtn" class="dotted-link"
@@ -75,7 +73,7 @@
       </section>
 
       <section class="hero">
-        <div class="hero_content">
+        <div class="hero_content container">
           <div class="hero_motiv">
             <div class="person">
               <div class="person_wrapper">
@@ -91,7 +89,7 @@
             <div class="text">
               <h1>ZDEŇKA BEŤÁKOVÁ</h1>
               <p class="design_frontend">
-                UX/UI Designer <span class="dot">•</span> Front-end Development
+                UX/UI Designer <span class="dot">•</span> Front-end
                 <span class="break">Digital Graphics Background</span>
               </p>
             </div>
@@ -109,23 +107,33 @@
       </section>
 
       <section class="about" id="about">
-        <div class="about_content">
-          <p>
-            Moje profese: Léta se zabývám grafikou a současně jako tiskařka mám
-            blízko k papíru, struktuře a detailu, ale čím dál víc mě vtahuje i
-            svět front-endu. Zjišťuji, že kód a design spolu mluví stejným
-            jazykem - jen každý jiným písmem. Jaká jsem? Jsem zvídavá a když mě
-            něco zajímá, potřebuji tomu přijít na kloub – ať už jde o nové
-            technologie, webový vývoj, AI nebo další odvětví. Neméně důležitá je
-            pro mě rovnováha: zdraví, ohleduplnost k přírodě a jednoduchost,
-            která dává prostoru tzv. dýchat. Můj styl? Miluji japonský
-            minimalismus, protože nic nepřidává navíc a všechno má své místo.
-            Často tak přemýšlím i nad svou tvorbou. Miluju příběhy. Jednoduché,
-            ale silné. Ráda se do nich začtu v knize, kouknu nebo jen poslechnu
-            audio. Do sluchátek si asi nejčastěji pustím symfonický metal. Když
-            tvořím, ať už je to cokoli, dělám to naplno – pro sebe, své děti,
-            blízké přátele i pro lidi, kteří mi svěří svůj nápad.
-          </p>
+        <div class="about_content container">
+          <div class="about_motiv"></div>
+          <div class="about_text">
+            <p>
+              Léta se zabývám grafikou a současně jako tiskařka mám blízko k
+              papíru, struktuře materiálu a detailu, protože mým denním chlebem
+              je zkoumat barenost a kvalitu výrobku. Poslední dobou mě však více
+              vtahuje svět front-endu, kde si momentálně upevňuji své znalosti v
+              HTML, CSS a Javascriptu. Nejčastěji píšu svůj kód ve Visual Studio
+              Code, design navrhuji ve Figmě (využívám i Illustrátor a
+              Photoshop). Zjišťuji, že kód a design spolu mluví stejným jazykem
+              - jen každý jiným písmem.
+              <br />
+              Jsem zvídavá, důsledná, kamarádská (týmová) duše. Ráda se učím
+              nové věci. Často potřebuji něčemu přijít na kloub – ať už jde o
+              nové technologie, webový vývoj, AI. Neméně důležitá je pro mě
+              rovnováha: zdravý životní styl, duševní pohoda a ohleduplnost k
+              přírodě. Mám ráda jednoduchost, která dává prostoru tzv. dýchat.
+              Není tedy divu, že jsem si oblíbila japonský minimalismus, protože
+              nic nepřidává navíc a všechno má své místo. Často tak přemýšlím i
+              nad svou tvorbou.
+              <br />
+              Když tvořím, nejčastěji si u toho pustím symfonický metal. Ať už
+              je to cokoli, dělám to naplno (pro sebe, své děti, přátele,
+              klienty) zkrátka pro všechny, kteří mi svěří svůj nápad.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -193,5 +201,6 @@
     <script type="module" src="./components/project/project.js"></script>
     <script type="module" src="./components/portfolio/portfolio.js"></script>
     <script type="module" src="./components/contacts/contacts.js"></script>
+    <script type="module" src="./components/header/header.js"></script>
   </body>
 </html>

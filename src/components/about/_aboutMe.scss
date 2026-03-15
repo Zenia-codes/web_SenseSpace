@@ -10,17 +10,26 @@ p {
 }
 
 .about {
-  position: fixed;
-  inset: 0;
-  // background: #111;
+  position: relative;
   color: white;
-
-  opacity: 0;
-  pointer-events: none;
   transition: opacity 0.4s ease;
+  margin: 50px 0;
+  overflow: hidden;
 }
 
-.about.show {
-  opacity: 1;
-  pointer-events: auto;
+.about_text {
+  overflow-wrap: break-word;
+}
+
+@media (min-width: b.$tabletBreakPoint) {
+  .about_content {
+    display: grid;
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 0.7fr);
+    gap: 40px;
+    width: 100%;
+    .about_text {
+      padding: 20px;
+      min-width: 0;
+    }
+  }
 }

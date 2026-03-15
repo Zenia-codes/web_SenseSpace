@@ -14,6 +14,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 70px; // výška headeru //
+}
+
+section {
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
 body {
   position: relative;
   min-height: 100vh;
@@ -42,14 +52,19 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 @media (min-width: b.$tabletBreakPoint) {
   body {
     background-image: url("../assets/images/background.png");
   }
 
-  .layout {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr;
-  }
+  // .layout {
+  //   display: grid;
+  //   min-height: 100vh;
+  //   grid-template-rows: auto 1fr;
+  // }
 }
