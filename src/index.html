@@ -28,50 +28,45 @@
     <link href="./styles/main.scss" rel="stylesheet" />
   </head>
   <body>
-    <div class="layout">
-      <section class="header">
-        <div class="navigation_container container">
-          <div class="logo">
-            <a href="#">
-              <img
-                src="/src/assets/icons/logo.svg"
-                alt="Smysluplno - domovská stránka"
-              />
-            </a>
-          </div>
-          <input
-            type="checkbox"
-            id="menu_checkbox"
-            class="menu_button_checkbox"
-          />
-          <label for="menu_checkbox" class="menu_button">
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-          </label>
-          <nav class="navigation_menu">
-            <ul class="navigation_items">
-              <li>
-                <a href="#about" id="aboutBtn" class="dotted-link">About me</a>
-              </li>
-              <li>
-                <a href="#project" id="projectBtn" class="dotted-link"
-                  >Project</a
-                >
-              </li>
-              <li>
-                <a href="#portfolio" id="portfolioBtn" class="dotted-link"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a href="#contact" id="contactBtn" class="dotted-link"
-                  >contact</a
-                >
-              </li>
-            </ul>
-          </nav>
+    <header class="header">
+      <div class="navigation_container container">
+        <div class="logo">
+          <a href="#">
+            <img
+              src="/src/assets/icons/logo.svg"
+              alt="Smysluplno - domovská stránka"
+            />
+          </a>
         </div>
-      </section>
-
+        <input
+          type="checkbox"
+          id="menu_checkbox"
+          class="menu_button_checkbox"
+        />
+        <label for="menu_checkbox" class="menu_button">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </label>
+        <nav class="navigation_menu">
+          <ul class="navigation_items">
+            <li>
+              <a href="#about" id="aboutBtn" class="dotted-link">About me</a>
+            </li>
+            <li>
+              <a href="#project" id="projectBtn" class="dotted-link">Project</a>
+            </li>
+            <li>
+              <a href="#portfolio" id="portfolioBtn" class="dotted-link"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" id="contactBtn" class="dotted-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="layout">
       <section class="hero">
         <div class="hero_content container">
           <div class="hero_motiv">
@@ -110,7 +105,7 @@
         <div class="about_content container">
           <div class="about_motiv"></div>
           <div class="about_text">
-            <p>
+            <p class="paragraph_text">
               Léta se zabývám grafikou a současně jako tiskařka mám blízko k
               papíru, struktuře materiálu a detailu, protože mým denním chlebem
               je zkoumat barenost a kvalitu výrobku. Poslední dobou mě však více
@@ -138,19 +133,21 @@
       </section>
 
       <section class="project" id="project">
-        <div class="text_project">
-          <p>
-            Proč Smysluplno? VESMÍR mě inspiruje od malička - svou rozlehlostí,
-            tajemnem, barvami. Je to prostor nekonečných možností, ve kterém se
-            prolíná svoboda s pevnými zákonitostmi — nekonečno, které ukrývá
-            hluboký smysl. Právě z této inspirace vznikl můj první projekt:
-            Smysluplno – nekonečno s významem. Tady tvořím, experimentuji a
-            sdílím myšlenky, projekty a malé objevy, které pro mě něco
-            znamenají. Ráda tady nabídnu praktické nápady i vizuální řešení,
-            která v sobě nesou záměr a hodnotu. Tato stránka je živý projekt.
-            Postupně ji rozšiřuji a upravuji podle toho, co se učím a co mi dává
-            smysl. Budu nesmírně ráda za zpětnou vazbu.
-          </p>
+        <div class="project_content container">
+          <div class="text_project">
+            <p class="paragraph_text">
+              Proč Smysluplno? VESMÍR mě inspiruje od malička - svou
+              rozlehlostí, tajemnem, barvami. Je to prostor nekonečných
+              možností, ve kterém se prolíná svoboda s pevnými zákonitostmi —
+              nekonečno, které ukrývá hluboký smysl. Právě z této inspirace
+              vznikl můj první projekt: Smysluplno – nekonečno s významem. Tady
+              tvořím, experimentuji a sdílím myšlenky, projekty a malé objevy,
+              které pro mě něco znamenají. Ráda tady nabídnu praktické nápady i
+              vizuální řešení, která v sobě nesou záměr a hodnotu. Tato stránka
+              je živý projekt. Postupně ji rozšiřuji a upravuji podle toho, co
+              se učím a co mi dává smysl. Budu nesmírně ráda za zpětnou vazbu.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -161,39 +158,41 @@
       </section>
 
       <section class="contacts" id="contacts">
-        <div class="icon_contacts">
-          <nav class="socials" aria-label="Sociální sítě">
-            <ul class="socials_list">
-              <li>
-                <a href="https://facebook.com" aria-label="Facebook">
-                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://m.me/..." aria-label="Messenger">
-                  <i
-                    class="fa-brands fa-facebook-messenger"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://instagram.com" aria-label="Instagram">
-                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://wa.me/..." aria-label="WhatsApp">
-                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com" aria-label="LinkedIn">
-                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <div class="contacts_content container">
+          <div class="icon_contacts">
+            <nav class="socials" aria-label="Sociální sítě">
+              <ul class="socials_list">
+                <li>
+                  <a href="https://facebook.com" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://m.me/..." aria-label="Messenger">
+                    <i
+                      class="fa-brands fa-facebook-messenger"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/..." aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </section>
     </div>

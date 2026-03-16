@@ -14,10 +14,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-padding-top: 70px; // výška headeru //
-}
-
 section {
   position: relative;
   width: 100%;
@@ -46,15 +42,17 @@ body {
   }
 }
 
-.layout {
-  padding-inline: 20px;
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
 .container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.paragraph_text {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  font-weight: 300;
+  padding-inline: 10px;
 }
 
 @media (min-width: b.$tabletBreakPoint) {

@@ -4,11 +4,6 @@
 @use "../../styles/variables/hero_scale" as s;
 @use "../../styles/variables/mixins" as m;
 
-p {
-  @include m.heroText(20px, c.$SmallTextColor);
-  letter-spacing: 0.07em;
-}
-
 .about {
   position: relative;
   color: white;
@@ -19,12 +14,18 @@ p {
 
 .about_text {
   overflow-wrap: break-word;
+  padding-top: 50px;
+  overflow-y: auto;
+
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0px, black 80px);
+
+  mask-image: linear-gradient(to bottom, transparent 0px, black 80px);
 }
 
 @media (min-width: b.$tabletBreakPoint) {
   .about_content {
     display: grid;
-    grid-template-columns: minmax(0, 0.7fr) minmax(0, 0.7fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 40px;
     width: 100%;
     .about_text {

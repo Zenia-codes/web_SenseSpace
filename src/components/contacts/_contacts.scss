@@ -4,23 +4,8 @@
 @use "../../styles/variables/hero_scale" as s;
 @use "../../styles/variables/mixins" as m;
 
-// p {
-//   @include m.heroText(22px, c.$SmallTextColor);
-//   letter-spacing: 0.07em;
-// }
-
 .contacts {
-  position: fixed;
-  inset: 0;
-  background: #111;
+  position: relative;
   color: white;
-
-  opacity: 0;
-  pointer-events: none;
   transition: opacity 0.4s ease;
-}
-
-.contacts.show {
-  opacity: 1;
-  pointer-events: auto;
 }
