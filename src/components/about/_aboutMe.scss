@@ -15,11 +15,6 @@
 .about_text {
   overflow-wrap: break-word;
   padding-top: 50px;
-  overflow-y: auto;
-
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0px, black 80px);
-
-  mask-image: linear-gradient(to bottom, transparent 0px, black 80px);
 }
 
 @media (min-width: b.$tabletBreakPoint) {
@@ -30,6 +25,7 @@
     width: 100%;
     .about_text {
       padding: 20px;
+      margin-top: 150px;
       min-width: 0;
     }
   }

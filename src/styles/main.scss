@@ -9,6 +9,7 @@
 @use "../components/project/project" as p;
 @use "../components/portfolio/portfolio" as o;
 @use "../components/contacts/contacts" as k;
+@use "./variables/mixins" as m;
 
 * {
   box-sizing: border-box;
@@ -48,11 +49,9 @@ body {
 }
 
 .paragraph_text {
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  @include m.heroText(18px, c.$SmallTextColor);
   line-height: 1.2em;
-  font-weight: 300;
-  padding-inline: 10px;
+  padding-inline: 15px;
 }
 
 @media (min-width: b.$tabletBreakPoint) {

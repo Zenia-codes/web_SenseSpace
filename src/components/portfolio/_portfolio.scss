@@ -4,23 +4,20 @@
 @use "../../styles/variables/hero_scale" as s;
 @use "../../styles/variables/mixins" as m;
 
-p {
-  @include m.heroText(22px, c.$SmallTextColor);
-  letter-spacing: 0.07em;
-}
+// .portfolio {
+//   position: fixed;
+//   inset: 0;
+//   background: #111;
+//   opacity: 0;
+//   pointer-events: none;
+//   transition: opacity 0.4s ease;
+//   .paragraph_text {
+//     @include m.heroText(22px, c.$SmallTextColor);
+//     letter-spacing: 0.07em;
+//   }
+// }
 
-.portfolio {
-  position: fixed;
-  inset: 0;
-  background: #111;
-  color: white;
-
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-.portfolio.show {
-  opacity: 1;
-  pointer-events: auto;
-}
+// .portfolio.show {
+//   opacity: 1;
+//   pointer-events: auto;
+// }

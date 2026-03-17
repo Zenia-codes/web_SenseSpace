@@ -44,8 +44,22 @@
   justify-content: space-around;
 }
 
-.logo img {
-  height: 32px;
+.logo-link {
+  display: inline-block;
+  position: relative;
+  @include m.heroText(25px, c.$SmallTextColor);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    // border: 5px solid pink;
+    background-color: c.$DecorationColor;
+    border-radius: 50%;
+    top: 20px;
+    right: -13px;
+  }
 }
 
 .menu_button {
