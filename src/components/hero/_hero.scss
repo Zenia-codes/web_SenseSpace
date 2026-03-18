@@ -33,11 +33,10 @@
   font-size: 0.7em;
 }
 
-h1 {
+.myName {
   @include m.heroText(22px, c.$SmallTextColor);
   font-weight: 500;
   letter-spacing: 0.13em;
-  margin-bottom: 8px;
 }
 
 .design_frontend {
@@ -215,10 +214,9 @@ h1 {
     }
   }
 
-  h1 {
+  .myName {
     font-size: s.$HeroScaleName;
     transform: translateX(-20px);
-    margin-bottom: 4px;
   }
 
   .design_frontend {
