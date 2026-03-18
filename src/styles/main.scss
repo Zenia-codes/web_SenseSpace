@@ -9,17 +9,18 @@
 @use "../components/project/project" as p;
 @use "../components/portfolio/portfolio" as o;
 @use "../components/contacts/contacts" as k;
+@use "../components/footer/footer" as t;
 @use "./variables/mixins" as m;
 
 * {
   box-sizing: border-box;
 }
 
-section {
-  position: relative;
-  width: 100%;
-  color: #fff;
-}
+// section {
+//   position: relative;
+//   width: 100%;
+//   color: #fff;
+// }
 
 body {
   position: relative;
@@ -51,7 +52,7 @@ body {
 .paragraph_text {
   @include m.heroText(18px, c.$SmallTextColor);
   line-height: 1.2em;
-  padding-inline: 15px;
+  letter-spacing: 0.1em;
 }
 
 @media (min-width: b.$tabletBreakPoint) {
@@ -59,9 +60,9 @@ body {
     background-image: url("../assets/images/background.png");
   }
 
-  // .layout {
-  //   display: grid;
-  //   min-height: 100vh;
-  //   grid-template-rows: auto 1fr;
-  // }
+  .layout {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr;
+  }
 }

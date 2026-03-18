@@ -146,8 +146,6 @@ h1 {
   @include m.heroText(15px, c.$SmallTextColor);
   letter-spacing: 0.1em;
   font-weight: 600;
-  // animation: gentleFloat 4s ease-in-out infinite;
-  // will-change: transform;
 
   .rocket {
     width: 36px;

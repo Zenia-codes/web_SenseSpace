@@ -1,0 +1,34 @@
+@use "../../styles/variables/colors" as c;
+@use "../../styles/variables/fonts" as f;
+@use "../../styles/variables/breakpoints" as b;
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding-block: 70px;
+  .socials_list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    a {
+      display: inline-block;
+      color: c.$SmallTextColor;
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      opacity: 1;
+      transform: translateY(-4px) scale(1.1);
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.footer_info {
+  font-family: f.$basicFont;
+  color: c.$SmallTextColor;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
