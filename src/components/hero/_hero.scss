@@ -37,6 +37,7 @@
   @include m.heroText(22px, c.$SmallTextColor);
   font-weight: 500;
   letter-spacing: 0.13em;
+  filter: drop-shadow(0 0 1px c.$textLight);
 }
 
 .design_frontend {
@@ -45,6 +46,7 @@
   letter-spacing: 0.1em;
   margin-bottom: 16px;
   line-height: 1.15;
+  filter: drop-shadow(0 0 1px c.$textLight);
 
   .break {
     display: block;
@@ -60,9 +62,9 @@
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
-  //pojistka proti useknutí písmene g
   line-height: 1.25;
-  padding-bottom: 0.08em;
+  filter: drop-shadow(0 0 1px c.$textLight);
+  //padding-bottom: 0.08em; // pojistka proti useknutí písmene g
 }
 
 .hero_motiv {
@@ -138,18 +140,25 @@
   height: 55px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 15px;
   border: 1px solid transparent;
   background: none;
-  @include m.heroText(15px, c.$SmallTextColor);
+  @include m.heroText(18px, c.$SmallTextColor);
   letter-spacing: 0.1em;
   font-weight: 600;
+  gap: 5px;
 
   .rocket {
-    width: 36px;
-    padding: 2px 5px;
-    filter: drop-shadow(-1px 0px 0px c.$DarkShadow);
+    width: 25px;
+    filter: drop-shadow(0 0 1px c.$textLight);
+    opacity: 0.9;
+    transition: transform 0.7s ease;
+  }
+
+  .text {
+    position: relative;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
   }
 
   &::before {
@@ -159,6 +168,19 @@
     background: url("/src/assets/icons/main_button.png") center / 100% no-repeat;
     z-index: -1;
     filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
   }
 }
 
@@ -191,6 +213,18 @@
   }
 }
 
+// hover tlačítka "Explore" je aplikovaný pouze na zařízení, která ho podporují
+@media (hover: hover) and (pointer: fine) {
+  .button:hover .rocket {
+    transform: translate(2px, -2px);
+  }
+
+  .button:hover .text {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  }
+}
+
+// breakpoint pro tablet
 @media (min-width: b.$tabletBreakPoint) {
   .hero {
     padding-top: 10vh;
@@ -251,7 +285,7 @@
   .button {
     margin-top: 25px;
     width: s.$HeroButton;
-    font-size: 17px;
+    font-size: 19px;
     letter-spacing: 0.1em;
     margin-left: 10px;
   }

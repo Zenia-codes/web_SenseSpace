@@ -184,10 +184,11 @@
     justify-content: space-between;
   }
 
-  .logo {
-    padding: 0 10px;
-    img {
-      height: 36px;
-    }
+  .logo img {
+    height: 36px;
+  }
+
+  .logo-link {
+    padding-left: 25px;
   }
 }
