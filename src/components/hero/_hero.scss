@@ -149,6 +149,12 @@
   font-weight: 600;
   gap: 5px;
 
+  // malá animace stisknutí buttonu na mobilu
+  &:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease;
+  }
+
   .rocket {
     width: 25px;
     filter: drop-shadow(0 0 1px c.$textLight);
