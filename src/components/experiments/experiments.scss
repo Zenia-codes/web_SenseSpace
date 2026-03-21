@@ -1,31 +1,19 @@
 @use "../../styles/variables/colors" as c;
 @use "../../styles/variables/fonts" as f;
 @use "../../styles/variables/breakpoints" as b;
-@use "../../styles/variables/hero_scale" as s;
-@use "../../styles/variables/mixins" as m;
 
-.about {
+.experiments {
   position: relative;
   transition: opacity 0.4s ease;
-  margin: 40px 0;
+  margin: 50px 0;
   overflow: hidden;
 }
 
-h1 {
-  @include m.heroText(22px, c.$SmallTextColor);
-  transform: none;
-  padding-bottom: 15px;
-}
-
 @media (min-width: b.$tabletBreakPoint) {
-  .about_content {
+  .experiments_content {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 40px;
     width: 100%;
-    .about_text {
-      margin-top: 150px;
-      min-width: 0;
-    }
   }
 }
