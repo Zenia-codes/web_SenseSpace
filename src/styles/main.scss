@@ -44,9 +44,9 @@ body {
   padding-inline: 15px;
 }
 
-.paragraph_text,
+.about_allGroups,
 .experiments_text,
-.project_text,
+.project_allGroups,
 .about_text {
   @include m.heroText(18px, c.$SmallTextColor);
   line-height: 1.2em;

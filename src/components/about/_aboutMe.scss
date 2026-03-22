@@ -6,15 +6,15 @@
 
 .about {
   position: relative;
-  transition: opacity 0.4s ease;
   margin: 40px 0;
   overflow: hidden;
+  .about_content {
+    max-width: 600px;
+  }
 }
 
-h1 {
-  @include m.heroText(22px, c.$SmallTextColor);
-  transform: none;
-  padding-bottom: 15px;
+.about_title {
+  text-align: center;
 }
 
 @media (min-width: b.$tabletBreakPoint) {
@@ -22,8 +22,8 @@ h1 {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 40px;
-    width: 100%;
-    .about_text {
+    // width: 100%;
+    .about_allGroups {
       margin-top: 150px;
       min-width: 0;
     }
