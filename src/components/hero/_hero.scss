@@ -18,39 +18,40 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 5px;
+
+    .myName {
+      @include m.heroText(22px, c.$SmallTextColor);
+      font-weight: 500;
+      letter-spacing: 0.13em;
+      filter: drop-shadow(0 0 1px c.$textLight);
+    }
+
+    .design_frontend {
+      @include m.heroText(16px, c.$SmallTextColor);
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      line-height: 1.15;
+      filter: drop-shadow(0 0 1px c.$textLight);
+
+      .dot {
+        position: relative;
+        top: -0.2em; // pozicování tečky
+        font-size: 0.7em;
+      }
+    }
+
+    .graphic {
+      @include m.heroText(16px, c.$SmallTextColor);
+      letter-spacing: 0.08em;
+      padding-bottom: 15px;
+    }
   }
 
   .slogan_button {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-
-.dot {
-  position: relative;
-  top: -0.2em; // pozicování tečky
-  font-size: 0.7em;
-}
-
-.myName {
-  @include m.heroText(22px, c.$SmallTextColor);
-  font-weight: 500;
-  letter-spacing: 0.13em;
-  filter: drop-shadow(0 0 1px c.$textLight);
-}
-
-.design_frontend {
-  @include m.heroText(16px, c.$SmallTextColor);
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  margin-bottom: 16px;
-  line-height: 1.15;
-  filter: drop-shadow(0 0 1px c.$textLight);
-
-  .break {
-    display: block;
-    letter-spacing: 0.08em;
   }
 }
 
@@ -246,33 +247,32 @@
     min-width: 0; // ochrana proti přetečení textu mimo grid
     .text {
       align-items: start;
+
+      .myName {
+        font-size: s.$HeroScaleName;
+        transform: translateX(-20px);
+      }
+
+      .design_frontend {
+        font-size: s.$HeroScaleDesign;
+        transform: translateX(-15px);
+      }
+
+      .graphic {
+        font-size: s.$HeroScaleDesign;
+        transform: translateX(5px);
+      }
     }
 
     .slogan_button {
       align-items: start;
       padding-left: 10px;
+
+      .design_a_kod {
+        font-size: s.$HeroScaleKod;
+        letter-spacing: 0.1em;
+      }
     }
-  }
-
-  .myName {
-    font-size: s.$HeroScaleName;
-    transform: translateX(-20px);
-  }
-
-  .design_frontend {
-    font-size: s.$HeroScaleDesign;
-    transform: translateX(-15px);
-    margin-bottom: 20px;
-
-    .break {
-      display: flex;
-      transform: translateX(20px);
-    }
-  }
-
-  .design_a_kod {
-    font-size: s.$HeroScaleKod;
-    letter-spacing: 0.1em;
   }
 
   .hero_motiv {

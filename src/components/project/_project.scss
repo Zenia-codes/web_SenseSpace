@@ -22,7 +22,7 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 40px;
-    // width: 100%; // zabírej celou šířku rodiče...pojistka - zapnu,pokud bude třeba
+    // overflow-wrap: break-word; // zalomí text...pojistka - zapnu, pokud bude třeba
     .project_allGroups {
       margin-top: 150px;
       min-width: 0; // řeší přetékání sloupců, zalamuje text
