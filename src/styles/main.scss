@@ -59,7 +59,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: e.$paragraph-gap;
-  max-width: e.$max-text-width;
 }
 
 @media (min-width: b.$tabletBreakPoint) {
