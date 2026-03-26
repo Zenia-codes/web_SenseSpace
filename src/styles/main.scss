@@ -49,16 +49,24 @@ body {
   padding-inline: 30px;
 }
 
+h1 {
+  @include m.heroText(24px, c.$SmallTextColor);
+  font-weight: 500;
+}
+
+strong {
+  @include m.heroText(16px, c.$SmallTextColor);
+  font-weight: 500;
+}
+
 .about_allGroups,
 .experiments_text,
 .project_allGroups,
 .about_text {
-  @include m.heroText(18px, c.$SmallTextColor);
+  @include m.heroText(15px, c.$SmallTextColor);
   line-height: e.$line-height;
   letter-spacing: 0.1em;
-  display: flex;
-  flex-direction: column;
-  gap: e.$paragraph-gap;
+  font-weight: 200;
 }
 
 @media (min-width: b.$tabletBreakPoint) {
