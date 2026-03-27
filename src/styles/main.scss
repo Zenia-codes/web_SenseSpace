@@ -55,7 +55,7 @@ h1 {
 }
 
 strong {
-  @include m.heroText(16px, c.$SmallTextColor);
+  @include m.heroText(15px, c.$SmallTextColor);
   font-weight: 500;
 }
 
@@ -63,7 +63,7 @@ strong {
 .experiments_text,
 .project_allGroups,
 .about_text {
-  @include m.heroText(15px, c.$SmallTextColor);
+  @include m.heroText(14px, c.$SmallTextColor);
   line-height: e.$line-height;
   letter-spacing: 0.1em;
   font-weight: 200;

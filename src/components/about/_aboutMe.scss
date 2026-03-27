@@ -19,14 +19,22 @@
 }
 
 .about_title {
-  text-align: left;
+  text-align: center;
   margin-bottom: 15px;
 }
 
+.about_intro_motiv,
+.about_spaceAndTexture_motiv,
+.about_technologyAndTools_motiv,
+.about_artAndMind_motiv,
+.about_outro_motiv {
+  text-align: center;
+}
+
 .about_motiv img {
-  width: 100%;
+  width: 95%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 40px;
   margin-bottom: 60px;
 }
 
@@ -35,9 +43,9 @@
 .about_technologyAndTools_motiv img,
 .about_artAndMind_motiv img,
 .about_outro_motiv img {
-  width: 50%;
+  width: 70%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 @media (min-width: b.$tabletBreakPoint) {
@@ -46,6 +54,18 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     min-width: 0;
     column-gap: 40px;
+    row-gap: 50px;
+    align-items: stretch;
+
+    .intro_text,
+    .spaceAndTexture,
+    .technologyAndTools,
+    .artAndMind,
+    .outro_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .about_intro_motiv,
     .about_spaceAndTexture_motiv,
@@ -57,7 +77,6 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 20px;
       }
     }
 
@@ -76,35 +95,43 @@
       grid-row: 3;
     }
 
-    .about_artAndMind_motiv {
+    .about_artAndMind_motiv img {
       grid-column: 2;
       grid-row: 4;
     }
 
-    .about_outro_motiv {
+    .about_outro_motiv img {
       grid-column: 1;
       grid-row: 5;
     }
 
-    .intro {
+    .intro_text {
       grid-column: 2;
       grid-row: 1;
     }
+
     .spaceAndTexture {
       grid-column: 1;
       grid-row: 2;
     }
+
     .technologyAndTools {
       grid-column: 2;
       grid-row: 3;
     }
+
     .artAndMind {
       grid-column: 1;
       grid-row: 4;
     }
-    .outro {
+
+    .outro_text {
       grid-column: 2;
       grid-row: 5;
     }
+  }
+
+  .about_title {
+    text-align: left;
   }
 }
