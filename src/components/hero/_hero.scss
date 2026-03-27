@@ -180,7 +180,7 @@
     z-index: -1;
     filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
   }
-
+  // stín za buttonem
   &::after {
     content: "";
     position: absolute;
