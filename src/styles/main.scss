@@ -65,7 +65,7 @@ strong {
 .about_text {
   @include m.heroText(14px, c.$SmallTextColor);
   line-height: e.$line-height;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
   font-weight: 200;
 }
 
