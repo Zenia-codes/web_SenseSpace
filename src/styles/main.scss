@@ -13,12 +13,44 @@
 @use "./variables/mixins" as m;
 @use "./variables/text" as e;
 
+@use "sass:math";
+
 * {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth; // jemný plynulý scroll
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    pointer-events: none;
+  }
+}
+
+// background s hvězdami
+$star-count: 100;
+$stars: ();
+
+@for $i from 1 through $star-count {
+  $x: math.random(100) * 1%;
+  $y: math.random(100) * 1%;
+  $size: (math.random(2) + 0.1) * 1px;
+
+  $stars: append(
+    $stars,
+    radial-gradient(
+      circle at $x $y,
+      rgba(255, 255, 255, 0.2) 0,
+      rgba(255, 255, 255, 0.15) calc(#{$size} * 0.5),
+      rgba(255, 255, 255, 0.08) $size,
+      transparent calc(#{$size} * 2)
+    ),
+    comma
+  );
 }
 
 body {
@@ -28,19 +60,31 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   &::after {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
+    z-index: 1;
+
     background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.35) 0%,
-      rgba(0, 0, 0, 0) 25%,
-      rgba(0, 0, 0, 0) 75%,
-      rgba(0, 0, 0, 0.35) 100%
-    );
+        to right,
+        rgba(0, 0, 0, 0.35) 0%,
+        rgba(0, 0, 0, 0) 25%,
+        rgba(0, 0, 0, 0) 75%,
+        rgba(0, 0, 0, 0.35) 100%
+      ),
+      $stars;
+
+    background-repeat: no-repeat;
   }
+}
+
+.layout,
+.container {
+  position: relative;
+  z-index: 2;
 }
 
 .container {
