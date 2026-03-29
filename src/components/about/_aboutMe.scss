@@ -75,6 +75,23 @@
 .about_artAndMind_motiv,
 .about_outro_motiv {
   text-align: center;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+
+  -webkit-mask-image: radial-gradient(
+    circle at 60% 40%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.6) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  mask-image: radial-gradient(
+    circle at 60% 40%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.6) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .about_motiv {
@@ -86,8 +103,23 @@
     margin-bottom: 60px;
     object-fit: cover;
     box-shadow: 0 0 20px #dddddd2e;
+    filter: brightness(0.9) contrast(0.8) saturate(0.8);
     // object-position: center; // ladění uvnitř obrázku - top, bottom, left, right
   }
+
+  -webkit-mask-image: radial-gradient(
+    circle at 60% 40%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.6) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  mask-image: radial-gradient(
+    circle at 60% 40%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.6) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .about_intro_motiv img,
@@ -99,6 +131,8 @@
   height: auto;
   border-radius: 20px;
   box-shadow: 0 0 20px #dddddd2e;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(0.9) saturate(1);
 }
 
 @media (min-width: b.$tabletBreakPoint) {
