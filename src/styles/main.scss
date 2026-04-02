@@ -11,9 +11,6 @@
 @use "../components/footer/footer" as t;
 @use "./variables/mixins" as m;
 @use "./variables/text" as e;
-@use "./variables/imgMask" as g;
-
-@use "sass:math";
 
 * {
   box-sizing: border-box;
@@ -29,28 +26,6 @@ html {
     z-index: 0;
     pointer-events: none;
   }
-}
-
-// background s hvězdami
-$star-count: 100;
-$stars: ();
-
-@for $i from 1 through $star-count {
-  $x: math.random(100) * 1%;
-  $y: math.random(100) * 1%;
-  $size: (math.random(2) + 0.1) * 1px;
-
-  $stars: append(
-    $stars,
-    radial-gradient(
-      circle at $x $y,
-      rgba(255, 255, 255, 0.2) 0,
-      rgba(255, 255, 255, 0.15) calc(#{$size} * 0.5),
-      rgba(255, 255, 255, 0.08) $size,
-      transparent calc(#{$size} * 1)
-    ),
-    comma
-  );
 }
 
 body {
@@ -69,15 +44,22 @@ body {
     z-index: 1;
 
     background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.35) 0%,
-        rgba(0, 0, 0, 0) 25%,
-        rgba(0, 0, 0, 0) 75%,
-        rgba(0, 0, 0, 0.35) 100%
-      ),
-      $stars;
+      to right,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0.35) 100%
+    );
+  }
 
-    background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url(../assets/images/stars.png);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.2;
   }
 }
 
@@ -89,7 +71,7 @@ body {
 .layout,
 .container {
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 
 .container {
@@ -129,9 +111,7 @@ strong {
   justify-content: center;
   gap: 15px;
   padding-block: 30px;
-  .about_title {
-    text-align: center;
-  }
+  .about_title,
   .project_title,
   .project_name {
     text-align: center;
@@ -151,7 +131,7 @@ strong {
 
 .split_image {
   text-align: center;
-  @extend %image-mask;
+  @include m.image-mask;
 
   img {
     width: 70%;

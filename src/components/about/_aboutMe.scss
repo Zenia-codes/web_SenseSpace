@@ -3,7 +3,6 @@
 @use "../../styles/variables/breakpoints" as b;
 @use "../../styles/variables/hero_scale" as s;
 @use "../../styles/variables/mixins" as m;
-@use "../../styles/variables/imgMask" as g;
 
 .about_mainImage {
   border-radius: 20px;
@@ -17,7 +16,7 @@
     filter: brightness(0.9) contrast(0.9) saturate(0.9);
     // object-position: center; // ladění uvnitř obrázku
   }
-  @extend %image-mask;
+  @include m.image-mask;
 }
 
 @media (min-width: b.$tabletBreakPoint) {
