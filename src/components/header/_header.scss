@@ -11,17 +11,8 @@
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(20px);
-
-  &:has(.menu_button_checkbox:checked) {
-    .navigation_menu {
-      transform: translateX(0%) translateY(0);
-      opacity: 1;
-      pointer-events: auto;
-      z-index: 1000;
-    }
-  }
 }
-
+//ztmavení - mizení obsahu pod headerem
 .header::after {
   content: "";
   position: absolute;
@@ -41,56 +32,92 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logo-link {
   display: inline-block;
   position: relative;
   @include m.heroText(25px, c.$SmallTextColor);
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    // border: 5px solid pink;
-    background-color: c.$DecorationColor;
-    border-radius: 50%;
-    top: 20px;
-    right: -13px;
-  }
 }
 
 .menu_button {
-  font-size: 20px;
+  position: relative;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
   color: white;
-  background-color: c.$DecorationColor;
+  border: 0px solid transparent;
   border-radius: 50%;
-  box-shadow: 0px 0px 1px black;
-  padding: 7px;
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle at 10% 30%,
+      hsl(10, 100%, 74%),
+      #ff4ecb,
+      #89016c
+    );
+    z-index: 0;
+    filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
+  }
 }
 
-.menu_button_checkbox {
-  position: absolute;
+.menu_button[aria-expanded="true"] .icon-open {
   opacity: 0;
-  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.icon-open {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.menu_button[aria-expanded="true"] .icon-close {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.icon-close {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 .navigation_menu {
   position: absolute;
   top: 100%;
-  margin-top: 10px;
   left: 0;
   right: 0;
   background-color: c.$SmallTextColor;
   border-radius: 5px;
+  backface-visibility: hidden;
+  margin-top: 10px;
   transform: translateX(0%) translateY(-10px);
-  opacity: 0;
-  pointer-events: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
   will-change: transform, opacity;
-  backface-visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  // třída vytvořená pro funkčnost v JS, není v DOM
+  &.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
 
   .navigation_items {
     position: relative;
@@ -100,7 +127,7 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    padding: 10px 0;
+    padding-block: 20px;
 
     li {
       font-family: f.$basicFont;
