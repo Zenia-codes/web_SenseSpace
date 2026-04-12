@@ -773,6 +773,10 @@ body {
   position: relative;
 }
 
+body:before {
+  content: none !important;
+}
+
 #about, #project {
   scroll-margin-top: 75px;
 }
@@ -858,6 +862,7 @@ strong {
 @media (width >= 768px) {
   body {
     background-image: url("background.4b1972f3.png");
+    position: relative;
   }
 
   body:before {
@@ -865,7 +870,7 @@ strong {
     pointer-events: none;
     z-index: 0;
     background: linear-gradient(to right, #00000059 0%, #0000 25% 75%, #00000059 100%);
-    position: fixed;
+    position: absolute;
     inset: 0;
   }
 
