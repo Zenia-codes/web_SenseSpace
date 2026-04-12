@@ -27,6 +27,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  &::before {
+    content: none !important;
+  }
 }
 
 #about,
@@ -112,11 +116,12 @@ strong {
 
 @media (min-width: b.$tabletBreakPoint) {
   body {
+    position: relative;
     background-image: url("../assets/images/background.png");
 
     &::before {
       content: "";
-      position: fixed;
+      position: absolute;
       inset: 0;
       pointer-events: none;
       z-index: 0;
