@@ -9,17 +9,17 @@
   text-decoration: none;
 }
 
-@mixin image-mask {
-  -webkit-mask-image: radial-gradient(
-    circle at 60% 40%,
-    #000 20%,
-    rgba(0, 0, 0, 0.6) 85%,
-    transparent 100%
-  );
-  mask-image: radial-gradient(
-    circle at 60% 40%,
-    #000 20%,
-    rgba(0, 0, 0, 0.6) 85%,
-    transparent 100%
-  );
-}
+// @mixin image-mask {
+//   -webkit-mask-image: radial-gradient(
+//     circle at 60% 40%,
+//     #000 20%,
+//     rgba(0, 0, 0, 0.6) 85%,
+//     transparent 100%
+//   );
+//   mask-image: radial-gradient(
+//     circle at 60% 40%,
+//     #000 20%,
+//     rgba(0, 0, 0, 0.6) 85%,
+//     transparent 100%
+//   );
+// }

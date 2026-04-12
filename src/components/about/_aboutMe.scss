@@ -12,11 +12,12 @@
     height: 300px; // na mobilu fixní výška, umožní ořez
     border-radius: 20px;
     object-fit: cover;
-    box-shadow: 0 0 20px #dddddd2e;
+    // border: 2px solid c.$SmallTextColor;
+    box-shadow: 0 0 12px 0px #9f9f9fa0;
     filter: brightness(0.9) contrast(0.9) saturate(0.9);
     // object-position: center; // ladění uvnitř obrázku
   }
-  @include m.image-mask;
+  // @include m.image-mask;
 }
 
 @media (min-width: b.$tabletBreakPoint) {
