@@ -25,14 +25,14 @@
     gap: 8px;
 
     .myName {
-      @include m.heroText(22px, c.$SmallTextColor);
+      @include m.heroText(24px, c.$SmallTextColor);
       font-weight: 500;
       letter-spacing: 0.13em;
       filter: drop-shadow(0 0 1px c.$textLight);
     }
 
     .design_frontend {
-      @include m.heroText(16px, c.$SmallTextColor);
+      @include m.heroText(18px, c.$SmallTextColor);
       font-weight: 300;
       letter-spacing: 0.1em;
       line-height: 1.15;
@@ -68,7 +68,8 @@
   -webkit-background-clip: text;
   color: transparent;
   line-height: 1.25;
-  margin-block: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   filter: drop-shadow(0 0 1px c.$DarkShadow);
   //padding-bottom: 0.08em; // pojistka proti useknutí písmene g
 }
@@ -76,7 +77,7 @@
 .hero_motiv {
   position: relative;
   isolation: isolate;
-  width: 240px;
+  width: 250px;
   aspect-ratio: 1 / 1;
 
   .person {
