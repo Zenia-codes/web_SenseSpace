@@ -768,9 +768,9 @@ html {
 
 body {
   background-image: url("background_mobile.2b6e5691.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top;
+  background-repeat: repeat;
+  background-size: contain;
   min-height: 100vh;
   position: relative;
 }
@@ -851,7 +851,7 @@ strong {
 }
 
 .about, .project {
-  margin: 70px 0;
+  padding-top: 70px;
   position: relative;
 }
 
