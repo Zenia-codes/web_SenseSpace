@@ -60,19 +60,19 @@ strong {
   font-style: italic;
   color: c.$SmallTextColor;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .split_groups {
   @include m.heroText(14px, c.$SmallTextColor);
   line-height: e.$line-height;
-  letter-spacing: 0.09em;
-  font-weight: 200;
+  letter-spacing: 0.1em;
+  font-weight: 300;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
   text-align: justify;
-  hyphens: auto; // umožní dělení slov, text vypadá přirozeněji
+  hyphens: none; // dělení slov
 }
 
 .split_text {
@@ -87,6 +87,17 @@ strong {
     text-align: center;
   }
 }
+// efekt scroll reveal
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .about,
 .project {
@@ -96,7 +107,7 @@ strong {
 
 .about_content,
 .project_content {
-  max-width: 65ch; // škálování podle typografie, ch = šířka znaku „0“ v daném fontu
+  max-width: 50ch; // škálování podle typografie, ch = šířka znaku „0“ v daném fontu
 }
 
 .split_image {
@@ -140,6 +151,11 @@ strong {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr;
+  }
+
+  .about_content,
+  .project_content {
+    max-width: 69ch;
   }
 
   .split_groups {
