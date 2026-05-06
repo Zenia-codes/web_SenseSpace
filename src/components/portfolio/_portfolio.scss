@@ -3,21 +3,19 @@
 @use "../../styles/variables/breakpoints" as b;
 @use "../../styles/variables/hero_scale" as s;
 @use "../../styles/variables/mixins" as m;
+@use "../../styles/variables/text" as e;
 
-// .portfolio {
-//   position: fixed;
-//   inset: 0;
-//   background: #111;
-//   opacity: 0;
-//   pointer-events: none;
-//   transition: opacity 0.4s ease;
-//   .paragraph_text {
-//     @include m.heroText(22px, c.$SmallTextColor);
-//     letter-spacing: 0.07em;
-//   }
-// }
+.portfolio_intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  row-gap: 8px;
+}
 
-// .portfolio.show {
-//   opacity: 1;
-//   pointer-events: auto;
-// }
+.portfolio_text {
+  @include m.heroText(16px, c.$SmallTextColor);
+  line-height: e.$line-height;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  hyphens: none; // dělení slov
+}

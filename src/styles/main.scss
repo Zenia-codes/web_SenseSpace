@@ -33,6 +33,14 @@ body {
   }
 }
 
+.section {
+  padding-block: 70px;
+}
+
+// .section:first-of-type {
+//   padding-top: 0;
+// }
+
 #about,
 #project {
   scroll-margin-top: 75px;
@@ -97,12 +105,6 @@ strong {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-.about,
-.project {
-  position: relative;
-  padding-top: 70px;
 }
 
 .about_content,
