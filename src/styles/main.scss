@@ -37,26 +37,25 @@ body {
   padding-block: 70px;
 }
 
-// .section:first-of-type {
-//   padding-top: 0;
-// }
-
 #about,
-#project,
+#project {
+  scroll-margin-top: 75px;
+  padding-inline: 30px;
+}
+
 #portfolio {
   scroll-margin-top: 75px;
 }
 
-.layout,
-.container {
+.layout {
   position: relative;
   z-index: 10;
 }
 
 .container {
+  position: relative;
   max-width: 1080px;
   margin: 0 auto;
-  padding-inline: 40px;
 }
 
 h1 {
@@ -65,7 +64,13 @@ h1 {
 }
 
 h3 {
-  @include m.heroText(18px, c.$SmallTextColor);
+  @include m.heroText(17px, c.$SmallTextColor);
+  font-weight: 500;
+}
+
+p {
+  @include m.heroText(14px, c.$SmallTextColor);
+  line-height: e.$line-height;
 }
 
 strong {
@@ -163,6 +168,10 @@ strong {
   .about_content,
   .project_content {
     max-width: 69ch;
+  }
+
+  h3 {
+    font-size: 22px;
   }
 
   .split_groups {
