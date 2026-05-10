@@ -231,10 +231,6 @@
 }
 
 @media (min-width: b.$tabletBreakPoint) {
-  // .hero {
-  //   padding-top: 10vh;
-  // }
-
   .hero_content {
     display: grid;
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
@@ -249,12 +245,11 @@
 
       .myName {
         font-size: s.$HeroScaleName;
-        transform: translateX(-18px);
+        transform: translateX(-10px);
       }
 
       .design_frontend {
         font-size: s.$HeroScaleDesign;
-        transform: translateX(-11px);
       }
     }
 
@@ -264,7 +259,6 @@
 
       .design_a_kod {
         font-size: s.$HeroScaleKod;
-        letter-spacing: 0.1em;
       }
     }
   }
@@ -283,10 +277,9 @@
   }
 
   .button {
-    margin-top: 15px;
     width: s.$HeroButton;
     font-size: 19px;
     letter-spacing: 0.1em;
-    margin-left: 10px;
+    margin-left: 30px;
   }
 }

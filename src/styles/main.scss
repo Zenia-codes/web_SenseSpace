@@ -63,14 +63,13 @@ h1 {
   font-weight: 500;
 }
 
+h2 {
+  @include m.heroText(20px, c.$SmallTextColor);
+}
+
 h3 {
   @include m.heroText(17px, c.$SmallTextColor);
   font-weight: 500;
-}
-
-p {
-  @include m.heroText(14px, c.$SmallTextColor);
-  line-height: e.$line-height;
 }
 
 strong {
@@ -167,7 +166,7 @@ strong {
 
   .about_content,
   .project_content {
-    max-width: 69ch;
+    max-width: 80ch;
   }
 
   h3 {
@@ -175,6 +174,7 @@ strong {
   }
 
   .split_groups {
+    font-size: 17px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -203,7 +203,7 @@ strong {
     .split_row {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      column-gap: 70px;
+      column-gap: 60px;
       align-items: center;
     }
 
