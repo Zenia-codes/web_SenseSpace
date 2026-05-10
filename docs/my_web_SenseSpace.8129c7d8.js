@@ -714,13 +714,38 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"8B5It":[function(require,module,exports,__globalThis) {
-const portfolio = document.getElementById("portfolio");
-const portfolioBtn = document.getElementById("portfolioBtn");
-portfolioBtn.addEventListener("click", (e)=>{
-    e.preventDefault();
-    portfolio.classList.add("show");
+const dots = document.querySelectorAll(".slider_dot");
+const slides = document.querySelectorAll(".project_card");
+function showSlide(index) {
+    dots.forEach((dot)=>{
+        dot.classList.remove("active");
+    });
+    slides.forEach((slide)=>{
+        slide.classList.remove("active-slide");
+    });
+    slides[index].classList.add("active-slide");
+    dots[index].classList.add("active");
+}
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        //   zjisti index
+        //    zobraz správný slide
+        if (entry.isIntersecting) {
+            const index = [
+                ...slides
+            ].indexOf(entry.target);
+            showSlide(index);
+            console.log(index);
+        }
+    });
+}, {
+    threshold: 0.5
 });
-console.log("portfolio script running");
+slides.forEach((el)=>observer.observe(el)); // Napojení observeru na prvky
+showSlide(0); // observer napoj na .project_card
+ // sleduj entry.isIntersecting
+ // z elementu zjisti jeho index
+ // aktivuj správnou tečku
 
 },{}]},["jGyb9","8B5It"], "8B5It", "parcelRequire774d", {})
 
