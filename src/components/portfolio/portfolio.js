@@ -1,23 +1,42 @@
-const dots = document.querySelectorAll(".dot");
+const dots = document.querySelectorAll(".slider_dot");
 const slides = document.querySelectorAll(".project_card");
-
-let currentSlide = 0;
 
 function showSlide(index) {
   dots.forEach((dot) => {
     dot.classList.remove("active");
   });
 
+  slides.forEach((slide) => {
+    slide.classList.remove("active-slide");
+  });
+
   slides[index].classList.add("active-slide");
   dots[index].classList.add("active");
 }
 
-// dots.addEventListener("click", () => {
-//   currentSlide++;
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      //   zjisti index
+      //    zobraz správný slide
+      if (entry.isIntersecting) {
+        const index = [...slides].indexOf(entry.target);
+        showSlide(index);
+        console.log(index);
+      }
+    });
+  },
 
-//   if (currentSlide >= slides.length) {
-//     currentSlide = 0;
-//   }
+  {
+    threshold: 0.5, // 60 % prvku ve viewportu
+  }
+);
 
-//   showSlide(currentSlide);
-// });
+slides.forEach((el) => observer.observe(el)); // Napojení observeru na prvky
+
+showSlide(0);
+
+// observer napoj na .project_card
+// sleduj entry.isIntersecting
+// z elementu zjisti jeho index
+// aktivuj správnou tečku
