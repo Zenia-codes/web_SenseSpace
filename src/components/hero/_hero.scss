@@ -57,7 +57,7 @@
   @include m.heroText(18px, #fbe183);
   font-weight: 600;
   letter-spacing: 0.1em;
-  background: linear-gradient(45deg, #fbe183, #fc5dcc, #c7d5db);
+  background: linear-gradient(45deg, #fbe183, #fc5dcc);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -137,14 +137,13 @@
 
 .button {
   position: relative;
-  width: 180px;
+  min-width: 180px;
   height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
   background: none;
-  letter-spacing: 0.1em;
   font-weight: 600;
   gap: 5px;
   @include m.heroText(18px, c.$SmallTextColor);

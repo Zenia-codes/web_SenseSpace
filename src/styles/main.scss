@@ -40,7 +40,7 @@ body {
 #about,
 #project {
   scroll-margin-top: 75px;
-  padding-inline: 30px;
+  padding-inline: 40px;
 }
 
 #portfolio {
@@ -59,7 +59,7 @@ body {
 }
 
 h1 {
-  @include m.heroText(24px, c.$SmallTextColor);
+  @include m.heroText(35px, c.$SmallTextColor);
   font-weight: 500;
 }
 
@@ -123,13 +123,12 @@ strong {
 
 .split_image {
   text-align: center;
-  // @include m.image-mask;
 
   img {
     width: 70%;
     height: auto;
     // border: 2px solid c.$SmallTextColor;
-    border-radius: 20px;
+    border-radius: 50%;
     box-shadow: 0 0 12px 0px #9f9f9fa0;
     object-fit: cover;
     filter: brightness(0.9) contrast(0.9) saturate(1);
@@ -194,9 +193,8 @@ strong {
       align-items: center;
 
       img {
-        width: 100%;
+        width: 90%;
         height: auto;
-        border-radius: 40px;
       }
     }
 

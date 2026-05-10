@@ -116,14 +116,14 @@
   // třída vytvořená pro funkčnost v JS, není v DOM
   &.is-open {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 0.9;
     pointer-events: auto;
+    z-index: 1000;
   }
 
   .navigation_items {
     position: relative;
     text-decoration: none;
-    color: c.$DecorationColor;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -133,7 +133,7 @@
     li {
       font-family: f.$basicFont;
       letter-spacing: 0.1em;
-      font-weight: 400;
+      font-weight: 500;
       font-style: italic;
       list-style: none;
       text-transform: uppercase;
@@ -143,29 +143,6 @@
         display: inline-block;
         text-decoration: none;
         color: c.$DecorationColor;
-        transition: transform 0.15s ease;
-
-        &:active {
-          transform: scale(0.95);
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          left: 50%;
-          bottom: -5px;
-
-          width: 0;
-          height: 2px;
-          border-bottom: 2px dotted c.$DecorationColor;
-
-          transform: translateX(-50%);
-          transition: width 0.3s ease;
-        }
-
-        &:hover::after {
-          width: 100%;
-        }
       }
 
       // odstraní tečkovaný bílý rámeček -a:focus- při kliknutí
@@ -218,5 +195,18 @@
 
   .logo-link {
     padding-left: 25px;
+  }
+
+  .dotted-link,
+  .logo-link {
+    transition: transform 0.7s ease, filter 0.5s ease;
+
+    &:hover {
+      filter: drop-shadow(0 0 1px c.$textLight);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
   }
 }
