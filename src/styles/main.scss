@@ -97,7 +97,7 @@ strong {
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-  padding-block: 40px;
+  padding-bottom: 40px;
   .about_title,
   .project_title,
   .project_name {
@@ -122,16 +122,34 @@ strong {
 }
 
 .split_image {
+  position: relative;
   text-align: center;
+  padding-bottom: 85px;
 
   img {
+    position: relative;
+    z-index: 1;
     width: 70%;
     height: auto;
-    // border: 2px solid c.$SmallTextColor;
     border-radius: 50%;
     box-shadow: 0 0 12px 0px #9f9f9fa0;
     object-fit: cover;
     filter: brightness(0.9) contrast(0.9) saturate(1);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    overflow: visible;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background: url("/src/assets/images/mlha.png") center / contain no-repeat;
+    background-size: 110%;
+    transform-origin: center;
+    opacity: 0.6;
+    animation: lightSway 7s ease-in-out infinite;
+    will-change: transform;
   }
 }
 

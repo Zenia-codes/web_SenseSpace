@@ -20,7 +20,11 @@
   .portfolio_slogan {
     @include m.heroText(23px, c.$DecorationColor);
     font-weight: 600;
-    hyphens: none;
+    background: linear-gradient(237deg, #fbe183, #fc5dcc);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-bottom: 6px;
   }
 }
 
