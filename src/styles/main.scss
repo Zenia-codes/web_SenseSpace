@@ -33,9 +33,9 @@ body {
   }
 }
 
-.section {
-  padding-block: 70px;
-}
+// .section {
+//   padding-block: 20px;
+// }
 
 #about,
 #project {
@@ -97,7 +97,7 @@ strong {
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-  padding-block: 20px;
+  padding-block: 40px;
   .about_title,
   .project_title,
   .project_name {
