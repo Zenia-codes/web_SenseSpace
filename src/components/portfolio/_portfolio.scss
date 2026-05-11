@@ -34,7 +34,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  padding: 1rem 1rem 1rem 2rem;
+  padding-inline: 2rem;
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
@@ -45,6 +45,7 @@
 .project_wrappers {
   display: flex;
   gap: 30px;
+  margin-top: 20px;
 }
 
 .project_wrapper {
@@ -58,6 +59,9 @@
     background: #000000;
     border: 1px solid white;
     border-radius: 20px;
+    @include m.heroText(16px, c.$SmallTextColor);
+    color: #bdbdbd;
+    padding: 40px;
   }
 
   .project_text {
@@ -93,13 +97,14 @@
 @media (min-width: b.$tabletBreakPoint) {
   .projects_slider {
     overflow: visible;
-    padding: 0;
     scroll-snap-type: none;
   }
 
   .project_wrappers {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    justify-items: center;
   }
 
   .project_wrapper {

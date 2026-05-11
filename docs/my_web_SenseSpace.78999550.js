@@ -1,2 +1,2 @@
 let e=document.querySelectorAll(".navigation_menu a"),t=document.querySelector(".navigation_menu"),a=document.querySelector(".menu_button");function n(){t.classList.remove("is-open"),a.setAttribute("aria-expanded","false"),a.setAttribute("aria-label","Open menu")}e.forEach(e=>{e.addEventListener("click",n)}),a.addEventListener("click",()=>{"true"===a.getAttribute("aria-expanded")?n():(t.classList.add("is-open"),a.setAttribute("aria-expanded","true"),a.setAttribute("aria-label","Close menu"))}),document.addEventListener("click",e=>{t.contains(e.target)||a.contains(e.target)||n()});
-//# sourceMappingURL=my_web_SenseSpace.12fe17fa.js.map
+//# sourceMappingURL=my_web_SenseSpace.78999550.js.map

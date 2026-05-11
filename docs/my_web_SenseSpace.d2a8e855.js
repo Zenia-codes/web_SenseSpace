@@ -1,2 +1,2 @@
 let e=document.querySelectorAll(".slider_dot"),t=document.querySelectorAll(".project_card");function c(c){e.forEach(e=>{e.classList.remove("active")}),t.forEach(e=>{e.classList.remove("active-slide")}),t[c].classList.add("active-slide"),e[c].classList.add("active")}let s=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){let s=[...t].indexOf(e.target);c(s),console.log(s)}})},{threshold:.5});t.forEach(e=>s.observe(e)),c(0);
-//# sourceMappingURL=my_web_SenseSpace.65358d58.js.map
+//# sourceMappingURL=my_web_SenseSpace.d2a8e855.js.map
