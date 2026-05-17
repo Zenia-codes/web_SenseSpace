@@ -17,8 +17,6 @@ function showSlide(index) {
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      //   zjisti index
-      //    zobraz správný slide
       if (entry.isIntersecting) {
         const index = [...slides].indexOf(entry.target);
         showSlide(index);
@@ -36,7 +34,13 @@ slides.forEach((el) => observer.observe(el)); // Napojení observeru na prvky
 
 showSlide(0);
 
-// observer napoj na .project_card
-// sleduj entry.isIntersecting
-// z elementu zjisti jeho index
-// aktivuj správnou tečku
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    showSlide(index); //showSlide ukáže správnou tečku a scrollIntoView posune tečku
+
+    slides[index].scrollIntoView({
+      behavior: "smooth", // pomalý posun slidu
+      inline: "center", // zarovnání slidu doprostřed
+    });
+  });
+});

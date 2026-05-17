@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  row-gap: 5px;
   margin-top: 50px;
   padding-bottom: 10px;
 
@@ -60,20 +59,40 @@
 
   .project_card {
     width: 100%;
+    height: 320px;
     aspect-ratio: 1 / 1;
-    background: #000000;
-    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px dotted white;
     border-radius: 20px;
+    padding: 0; // zrušen automatický padding buttonu
     @include m.heroText(16px, c.$SmallTextColor);
     color: #bdbdbd;
-    padding: 40px;
+    overflow: hidden;
+  }
+
+  .project_preview {
+    display: flex;
+    padding: 20px 20px 0 20px;
+    justify-content: center;
+
+    img {
+      border-radius: 50%;
+      // min-width: 100%;
+      height: 180px;
+    }
   }
 
   .project_text {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 15px 15px 5px 15px;
+    gap: 4px;
+    padding: 15px;
+
+    .tags {
+      color: c.$SmallTextColor;
+      letter-spacing: 0.1rem;
+      font-size: 10px;
+    }
   }
 }
 
@@ -117,10 +136,11 @@
     max-width: 300px;
 
     .project_card {
-      transition: 0.7s ease;
-
       &:hover {
-        transform: scale(1.05);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        transition: 0.4s ease;
+        transform: scale(1.01);
       }
     }
   }

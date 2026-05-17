@@ -7,6 +7,7 @@
 @use "../components/hero/hero" as h;
 @use "../components/about/aboutMe" as a;
 @use "../components/portfolio/portfolio" as o;
+@use "../components/portfolio/modal";
 @use "../components/contacts/contacts" as k;
 @use "../components/footer/footer" as t;
 @use "./variables/mixins" as m;
@@ -32,10 +33,6 @@ body {
     content: none !important;
   }
 }
-
-// .section {
-//   padding-block: 20px;
-// }
 
 #about,
 #project {

@@ -149,10 +149,10 @@
   @include m.heroText(18px, c.$SmallTextColor);
 
   // malá animace stisknutí buttonu na mobilu
-  &:active {
-    transform: scale(0.97);
-    transition: transform 0.1s ease;
-  }
+  // &:active {
+  //   transform: scale(0.97);
+  //   transition: transform 0.1s ease;
+  // }
 
   .rocket {
     width: 25px;
