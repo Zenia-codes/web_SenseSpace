@@ -1,4 +1,6 @@
 const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal_content");
+const closeBtn = document.querySelector(".close_modal");
 
 document.querySelectorAll(".project_card").forEach((card) => {
   card.addEventListener("click", () => {
@@ -26,5 +28,16 @@ document.querySelectorAll(".close_modal").forEach((button) => {
 
     // vrátí scroll stránky
     document.body.classList.remove("modal_open");
+  });
+});
+
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("click", (e) => {
+    const modalContent = modal.querySelector(".modal_content");
+
+    if (!modalContent.contains(e.target)) {
+      modal.classList.add("hidden");
+      document.body.classList.remove("modal_open");
+    }
   });
 });
