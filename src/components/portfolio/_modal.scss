@@ -42,6 +42,14 @@ body.modal_open {
   padding-inline: 5px;
 }
 
+.yellow {
+  background-color: rgb(255, 255, 90);
+  border-radius: 10px;
+  text-align: center;
+  margin-block: 30px;
+  font-size: medium;
+}
+
 .modal_text {
   @include m.heroText(16px, rgba(25, 46, 60));
   padding-bottom: 10px;
@@ -50,7 +58,13 @@ body.modal_open {
 
 @media (min-width: b.$tabletBreakPoint) {
   .modal {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .modal_content {
+      width: 55%;
+    }
   }
 }

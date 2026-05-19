@@ -154,12 +154,14 @@
 
     img {
       transition: 0.4s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+        0 0 25px rgba(255, 255, 255, 0.35);
     }
 
     &::before {
-      content: "👁";
+      content: "click for detail";
       position: absolute;
-      font-size: 3rem;
+      font-size: 1rem;
       color: white;
       opacity: 0;
       z-index: 2;
@@ -172,14 +174,9 @@
       width: min(180px, 100%);
       aspect-ratio: 1 / 1;
       border-radius: 50%;
-      background: rgba(0, 0, 0, 0.35);
+      background: rgba(0, 0, 0, 0.6);
       opacity: 0;
       transition: 0.4s ease;
-    }
-
-    &:hover img {
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
-        0 0 25px rgba(255, 255, 255, 0.35);
     }
 
     &:hover::before,
