@@ -83,7 +83,6 @@ strong {
   letter-spacing: 0.1em;
   font-weight: 300;
   display: grid;
-  gap: 20px;
   grid-template-columns: 1fr;
   text-align: justify;
   hyphens: none; // dělení slov
@@ -191,7 +190,6 @@ strong {
     font-size: 17px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
 
     .split_text {
       .about_title {
