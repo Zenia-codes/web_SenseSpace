@@ -42,6 +42,13 @@ body.modal_open {
       border-radius: 1rem;
       background: #fff;
       line-height: e.$line-height;
+
+      .project_img {
+        position: absolute;
+        width: 135px;
+        top: -50px;
+        left: 0;
+      }
     }
   }
 }
@@ -50,15 +57,14 @@ body.modal_open {
   font-size: 22px;
   color: rgba(25, 46, 60);
   font-weight: 500;
-  padding-block: 10px;
-  padding-inline: 5px;
+  padding: 19px 8px;
 }
 
 .yellow {
-  background-color: rgb(255, 255, 90);
+  background-color: rgb(255, 255, 57);
   border-radius: 10px;
   text-align: center;
-  margin-block: 30px;
+  margin-top: 30px;
   font-size: medium;
 }
 
