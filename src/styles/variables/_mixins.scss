@@ -4,8 +4,19 @@
 @mixin heroText($fontSize, $fontColor) {
   font-family: f.$basicFont;
   font-size: $fontSize;
-  font-style: italic;
+  font-style: normal;
   color: $fontColor;
   text-decoration: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
+}
+
+@mixin titleText($fontSize, $fontColor) {
+  font-family: f.$titleFont;
+  font-size: $fontSize;
+  font-style: normal;
+  color: $fontColor;
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  // letter-spacing: 0.03em;
+  // text-transform: uppercase;
 }

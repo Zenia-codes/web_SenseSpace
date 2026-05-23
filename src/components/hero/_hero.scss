@@ -8,12 +8,7 @@
   min-height: calc(100dvh - 70px);
   display: flex;
   align-items: flex-start;
-  // justify-content: center;
   padding-top: 6vh;
-}
-
-#hero {
-  scroll-margin-top: 70px; // výška navigace //
 }
 
 .hero_Text {
@@ -37,12 +32,6 @@
       letter-spacing: 0.1em;
       line-height: 1.15;
       filter: drop-shadow(0 0 1px c.$textLight);
-
-      .dot {
-        position: relative;
-        top: -0.2em; // pozicování tečky
-        font-size: 0.7em;
-      }
     }
   }
 
@@ -147,6 +136,7 @@
   font-weight: 600;
   gap: 5px;
   @include m.heroText(18px, c.$SmallTextColor);
+  letter-spacing: 0.05em;
 
   // malá animace stisknutí buttonu na mobilu
   // &:active {

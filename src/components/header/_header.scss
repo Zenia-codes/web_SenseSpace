@@ -12,7 +12,6 @@
   width: 100%;
   z-index: 100;
   background: rgba(20, 20, 20, 0.5);
-
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
@@ -43,7 +42,7 @@
 .logo-link {
   display: inline-block;
   position: relative;
-  @include m.heroText(25px, c.$SmallTextColor);
+  @include m.titleText(22px, c.$SmallTextColor);
 }
 
 .menu_button {
@@ -135,10 +134,8 @@
     padding-block: 20px;
 
     li {
-      font-family: f.$basicFont;
-      letter-spacing: 0.1em;
-      font-weight: 500;
-      font-style: italic;
+      font-family: f.$titleFont;
+      font-weight: 400;
       list-style: none;
       text-transform: uppercase;
 
