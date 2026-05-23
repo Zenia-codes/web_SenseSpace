@@ -84,17 +84,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    // gap: 25px;
     @include m.heroText(16px, c.$SmallTextColor);
-    overflow: hidden;
 
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(10px);
-
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 10px;
 
     padding: 15px 0;
+    overflow: hidden;
+  }
+
+  .tech-slide {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
   }
 
   .project_preview img {
@@ -108,14 +113,13 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    // padding: 15px;
   }
 }
 
 .text_content {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 
 .slider_dots {
