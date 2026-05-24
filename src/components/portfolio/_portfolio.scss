@@ -5,28 +5,7 @@
 @use "../../styles/variables/mixins" as m;
 @use "../../styles/variables/text" as e;
 
-.portfolio_intro {
-  display: flex;
-  flex-direction: column;
-  grid-template-columns: 1fr;
-  text-align: center;
-  margin-top: 40px;
-  padding-bottom: 10px;
-}
-
-.portfolio_sloganF {
-  @include m.titleText(19px, c.$DecorationColor);
-  font-weight: 500;
-  padding-bottom: 6px;
-}
-
-.portfolio_sloganG {
-  @include m.titleText(19px, c.$akcentColor);
-  font-weight: 500;
-  padding-bottom: 6px;
-}
-
-.portfolio_sections {
+.portfolio_header {
   display: flex;
   flex-direction: column;
   line-height: 1.7em;
@@ -35,18 +14,35 @@
   gap: 5px;
 }
 
-.portfolio_title {
+.portfolio_intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+// společné barvy pro varianty
+.portfolio_number,
+.portfolio_subtitle {
+  &.frontend {
+    color: c.$DecorationColor;
+  }
+
+  &.graphic {
+    color: c.$akcentColor;
+  }
+}
+
+.portfolio_label {
   @include m.titleText(25px, c.$SmallTextColor);
   font-weight: 500;
   padding-bottom: 16px;
 }
 
-.numberFrontend {
-  color: c.$DecorationColor;
-}
-
-.numberGraphic {
-  color: c.$akcentColor;
+.portfolio_subtitle {
+  @include m.titleText(19px, c.$SmallTextColor);
+  font-weight: 500;
 }
 
 .portfolio_text {
@@ -56,7 +52,7 @@
   hyphens: none; // dělení slov
 }
 
-.projects_slider {
+.portfolio_slider {
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -68,15 +64,15 @@
   }
 }
 
-.project_wrappers {
+.project_container {
   display: flex;
   gap: 30px;
   margin-top: 20px;
-}
 
-.project_wrapper {
-  flex: 0 0 270px; // flex-grow: 0; flex-shrink: 0; flex-basis: 270px;
-  scroll-snap-align: center;
+  > * {
+    flex: 0 0 270px;
+    scroll-snap-align: center;
+  }
 
   .project_card {
     width: 100%;
@@ -96,13 +92,19 @@
     overflow: hidden;
   }
 
-  .tech-slide {
+  .project_card_tags {
     display: flex;
     justify-content: center;
     gap: 5px;
   }
+}
 
-  .project_preview img {
+.project_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .project_image img {
     width: min(180px, 100%); // Použij menší z těchto dvou hodnot.
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -114,12 +116,6 @@
     flex-direction: column;
     gap: 4px;
   }
-}
-
-.text_content {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .slider_dots {
@@ -146,43 +142,37 @@
 }
 
 @media (min-width: b.$tabletBreakPoint) {
-  .projects_slider {
+  .portfolio_slider {
     overflow: visible;
     scroll-snap-type: none;
   }
 
-  .project_wrappers {
+  .project_container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: center;
     margin-bottom: 50px;
-  }
 
-  .project_wrapper {
-    width: 100%;
-    min-width: 0;
+    > * {
+      width: 100%;
+      min-width: 0;
+    }
 
     .project_card {
+      transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
       &:hover {
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
         text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-        transition: 0.4s ease;
+
         // transform: scale(1.01);
       }
     }
   }
 
-  .slider_dots {
-    display: none;
-  }
-
-  .project_preview {
+  .project_image {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: fit-content;
-    margin-inline: auto;
     cursor: pointer;
 
     img {
@@ -199,6 +189,7 @@
       opacity: 0;
       z-index: 2;
       transition: 0.4s ease;
+      top: 47%;
     }
 
     &::after {
@@ -218,7 +209,7 @@
     }
   }
 
-  .wrapper_section {
-    margin: 30px 30px;
+  .slider_dots {
+    display: none;
   }
 }

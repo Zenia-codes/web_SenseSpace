@@ -239,225 +239,92 @@
 
       <!-- section front-end -->
       <section class="portfolio section" id="portfolio">
-        <div class="portfolio_content container">
-          <div class="wrapper_section">
-            <div class="portfolio_sections">
-              <h1 class="project_title">Portfolio</h1>
-            </div>
+        <div class="container">
+          <div class="portfolio_header">
+            <h1 class="project_title">Portfolio</h1>
             <div class="portfolio_intro">
-              <div class="portfolio_title">
-                <span class="numberFrontend">[01]</span> Frontend Space
+              <div class="portfolio_label">
+                <span class="portfolio_number frontend">[01]</span>
+                Frontend Space
               </div>
-              <p class="portfolio_sloganF">Small projects. Big lessons.</p>
+              <p class="portfolio_subtitle frontend">
+                Small projects. Big lessons.
+              </p>
               <p class="portfolio_text">
                 Each project is a step in my development.
               </p>
             </div>
-            <div class="projects_slider">
-              <div class="project_wrappers">
-                <div class="project_wrapper">
-                  <button
-                    class="project_card active-slide"
-                    data-modal="project1"
-                    type="button"
-                  >
-                    <div class="text_content">
-                      <div class="project_preview">
-                        <img
-                          src="./assets/images/portfolio_section/NOphoto.jpg"
-                          alt="invitation"
-                        />
-                      </div>
-                      <div class="project_text">
-                        <h3>Electronic RSVP invitation</h3>
-                      </div>
-                    </div>
-
-                    <div class="tech-slide">
-                      <div class="tech-tag">
-                        <p>JavaScript</p>
-                      </div>
-                      <div class="tech-tag">
-                        <p>SCSS</p>
-                      </div>
-                      <div class="tech-tag">
-                        <p>API</p>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-
-                <div class="project_wrapper">
-                  <button
-                    class="project_card active-slide"
-                    data-modal="project2"
-                    type="button"
-                  >
-                    <div class="text_content">
-                      <div class="project_preview">
-                        <img
-                          src="./assets/images/portfolio_section/NOphoto.jpg"
-                          alt="invitation"
-                        />
-                      </div>
-                      <div class="project_text">
-                        <h3>Responsive Web Page with Calculator</h3>
-                      </div>
-                    </div>
-                    <div class="tech-slide">
-                      <div class="tech-tag">
-                        <p>JavaScript</p>
-                      </div>
-                      <div class="tech-tag">
-                        <p>SCSS</p>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-
-                <div class="project_wrapper">
-                  <button
-                    class="project_card active-slide"
-                    data-modal="project3"
-                    type="button"
-                  >
-                    <div class="text_content">
-                      <div class="project_preview">
-                        <img
-                          src="./assets/images/portfolio_section/NOphoto.jpg"
-                          alt="invitation"
-                        />
-                      </div>
-                      <div class="project_text">
-                        <h3>Vision play for Kids</h3>
-                      </div>
-                    </div>
-                    <div class="tech-slide">
-                      <div class="tech-tag">
-                        <p>JavaScript</p>
-                      </div>
-                      <div class="tech-tag">
-                        <p>SCSS</p>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider_dots">
-              <span class="slider_dot active"></span>
-              <span class="slider_dot"></span>
-              <span class="slider_dot"></span>
-            </div>
           </div>
-        </div>
-      </section>
-    </div>
-    <!-- section graphic -->
-    <section class="portfolio section" id="graphic">
-      <div class="portfolio_content container">
-        <div class="wrapper_section">
-          <div class="portfolio_intro">
-            <div class="portfolio_title">
-              <span class="numberGraphic">[02] </span>Graphic Space
-            </div>
-            <p class="portfolio_sloganG">Visual ideas. Creative process.</p>
-            <p class="portfolio_text">
-              A small universe of my ideas and creativity.
-            </p>
-          </div>
-          <div class="projects_slider">
-            <div class="project_wrappers">
-              <div class="project_wrapper">
-                <button
-                  class="project_card active-slide"
-                  data-modal="project1"
-                  type="button"
-                >
-                  <div class="text_content">
-                    <div class="project_preview">
-                      <img
-                        src="./assets/images/portfolio_section/Graphic/pizza-logo_nahled-web.png"
-                        alt="logo Pizza Pronto"
-                      />
-                    </div>
-                    <div class="project_text">
-                      <h3>Restaurant Pizza Pronto</h3>
-                    </div>
-                  </div>
 
-                  <div class="tech-slide">
-                    <div class="tech-tag">
-                      <p>Graphic design</p>
-                    </div>
-                    <div class="tech-tag">
-                      <p>Print</p>
-                    </div>
+          <div class="portfolio_slider">
+            <div class="project_container">
+              <button
+                class="project_card active-slide"
+                data-modal="project1"
+                type="button"
+              >
+                <div class="project_content">
+                  <div class="project_image">
+                    <img
+                      src="./assets/images/portfolio_section/NOphoto.jpg"
+                      alt="invitation"
+                    />
                   </div>
-                </button>
-              </div>
+                  <div class="project_text">
+                    <h3>Electronic RSVP invitation</h3>
+                  </div>
+                </div>
 
-              <div class="project_wrapper">
-                <button
-                  class="project_card active-slide"
-                  data-modal="project2"
-                  type="button"
-                >
-                  <div class="text_content">
-                    <div class="project_preview">
-                      <img
-                        src="./assets/images/portfolio_section/Graphic/dance-logo_nahled-web.png"
-                        alt="logo with dancer"
-                      />
-                    </div>
-                    <div class="project_text">
-                      <h3>Logo for dance club</h3>
-                    </div>
-                  </div>
+                <ul class="project_card_tags">
+                  <li class="tech-tag">JavaScript</li>
+                  <li class="tech-tag">SCSS</li>
+                  <li class="tech-tag">API</li>
+                </ul>
+              </button>
 
-                  <div class="tech-slide">
-                    <div class="tech-tag">
-                      <p>Graphic design</p>
-                    </div>
-                    <div class="tech-tag">
-                      <p>Print</p>
-                    </div>
+              <button
+                class="project_card active-slide"
+                data-modal="project2"
+                type="button"
+              >
+                <div class="project_content">
+                  <div class="project_image">
+                    <img
+                      src="./assets/images/portfolio_section/NOphoto.jpg"
+                      alt="invitation"
+                    />
                   </div>
-                </button>
-              </div>
+                  <div class="project_text">
+                    <h3>Responsive Web Page with Calculator</h3>
+                  </div>
+                </div>
+                <ul class="project_card_tags">
+                  <li class="tech-tag">JavaScript</li>
+                  <li class="tech-tag">SCSS</li>
+                </ul>
+              </button>
 
-              <div class="project_wrapper">
-                <button
-                  class="project_card active-slide"
-                  data-modal="project3"
-                  type="button"
-                >
-                  <div class="text_content">
-                    <div class="project_preview">
-                      <img
-                        src="./assets/images/portfolio_section/Graphic/pozv60_nahled-web.png"
-                        alt="invitation"
-                      />
-                    </div>
-                    <div class="project_text">
-                      <h3>Birthday invitation</h3>
-                    </div>
+              <button
+                class="project_card active-slide"
+                data-modal="project3"
+                type="button"
+              >
+                <div class="project_content">
+                  <div class="project_image">
+                    <img
+                      src="./assets/images/portfolio_section/NOphoto.jpg"
+                      alt="invitation"
+                    />
                   </div>
-
-                  <div class="tech-slide">
-                    <div class="tech-tag">
-                      <p>Graphic design</p>
-                    </div>
-                    <div class="tech-tag">
-                      <p>Print</p>
-                    </div>
-                    <div class="tech-tag">
-                      <p>Laser cut</p>
-                    </div>
+                  <div class="project_text">
+                    <h3>Vision play for Kids</h3>
                   </div>
-                </button>
-              </div>
+                </div>
+                <ul class="project_card_tags">
+                  <li class="tech-tag">JavaScript</li>
+                  <li class="tech-tag">SCSS</li>
+                </ul>
+              </button>
             </div>
           </div>
 
@@ -466,6 +333,102 @@
             <span class="slider_dot"></span>
             <span class="slider_dot"></span>
           </div>
+        </div>
+      </section>
+    </div>
+    <!-- section graphic -->
+    <section class="portfolio section" id="graphic">
+      <div class="container">
+        <div class="portfolio_header">
+          <div class="portfolio_label">
+            <span class="portfolio_number graphic">[02] </span>Graphic Space
+          </div>
+          <p class="portfolio_subtitle graphic">
+            Visual ideas. Creative process.
+          </p>
+          <p class="portfolio_text">
+            A small universe of my ideas and creativity.
+          </p>
+        </div>
+
+        <div class="portfolio_slider">
+          <div class="project_container">
+            <button
+              class="project_card active-slide"
+              data-modal="project1"
+              type="button"
+            >
+              <div class="project_content">
+                <div class="project_image">
+                  <img
+                    src="./assets/images/portfolio_section/Graphic/pizza-logo_nahled-web.png"
+                    alt="logo Pizza Pronto"
+                  />
+                </div>
+                <div class="project_text">
+                  <h3>Restaurant Pizza Pronto</h3>
+                </div>
+              </div>
+
+              <ul class="project_card_tags">
+                <li class="tech-tag">Graphic design</li>
+                <li class="tech-tag">Print</li>
+              </ul>
+            </button>
+
+            <button
+              class="project_card active-slide"
+              data-modal="project2"
+              type="button"
+            >
+              <div class="project_content">
+                <div class="project_image">
+                  <img
+                    src="./assets/images/portfolio_section/Graphic/dance-logo_nahled-web.png"
+                    alt="logo with dancer"
+                  />
+                </div>
+                <div class="project_text">
+                  <h3>Logo for dance club</h3>
+                </div>
+              </div>
+
+              <ul class="project_card_tags">
+                <li class="tech-tag">Graphic design</li>
+                <li class="tech-tag">Print</li>
+              </ul>
+            </button>
+
+            <button
+              class="project_card active-slide"
+              data-modal="project3"
+              type="button"
+            >
+              <div class="project_content">
+                <div class="project_image">
+                  <img
+                    src="./assets/images/portfolio_section/Graphic/pozv60_nahled-web.png"
+                    alt="invitation"
+                  />
+                </div>
+                <div class="project_text">
+                  <h3>Birthday invitation</h3>
+                </div>
+              </div>
+
+              <ul class="project_card_tags">
+                <li class="tech-tag">Graphic design</li>
+                <li class="tech-tag">Print</li>
+                <li class="tech-tag">Laser cut</li>
+              </ul>
+            </button>
+          </div>
+        </div>
+
+        <div class="slider_dots">
+          <span class="slider_dot active"></span>
+          <span class="slider_dot"></span>
+          <span class="slider_dot"></span>
         </div>
       </div>
     </section>
