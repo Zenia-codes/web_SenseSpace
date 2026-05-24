@@ -148,6 +148,40 @@
   }
 }
 
+.project_hover_bg {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 0.45s ease, transform 0.6s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: brightness(0.45);
+  }
+}
+
+// reset hoveru, ochrana pred chybou na mobilu
+@media (hover: none) {
+  .project_card:hover .project_hover_bg,
+  .project_card:active .project_hover_bg {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+
+  .project_card:hover .project_image,
+  .project_card:active .project_image {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (min-width: b.$tabletBreakPoint) {
   .project_content,
   .project_card_tags {
@@ -175,12 +209,13 @@
       position: relative;
       overflow: hidden;
       isolation: isolate;
+      contain: paint; // zabrání “rozlévání” absolutních vrstev
+      -webkit-tap-highlight-color: transparent;
+
       transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
       &:hover {
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
         text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-
-        // transform: scale(1.01);
       }
 
       &::before {
@@ -208,24 +243,6 @@
     }
   }
 
-  .project_hover_bg {
-    height: 100%;
-    position: absolute;
-    inset: 0;
-
-    opacity: 0;
-    transform: scale(1.08);
-    transition: opacity 0.45s ease, transform 0.6s ease;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
-      filter: brightness(0.45);
-    }
-  }
-
   .project_image {
     position: relative;
     display: flex;
@@ -236,27 +253,27 @@
       transition: opacity 0.35s ease, transform 0.4s ease;
     }
 
-    &::before {
-      content: "click for detail";
-      position: absolute;
-      font-size: 1rem;
-      color: white;
-      opacity: 0;
-      z-index: 2;
-      transition: 0.4s ease;
-      top: 47%;
-    }
+    // &::before {
+    //   content: "click for detail";
+    //   position: absolute;
+    //   font-size: 1rem;
+    //   color: white;
+    //   opacity: 0;
+    //   z-index: 2;
+    //   transition: 0.4s ease;
+    //   top: 47%;
+    // }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: min(180px, 100%);
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      background: rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      transition: 0.4s ease;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: min(180px, 100%);
+    //   aspect-ratio: 1 / 1;
+    //   border-radius: 50%;
+    //   background: rgba(0, 0, 0, 0.6);
+    //   opacity: 0;
+    //   transition: 0.4s ease;
+    // }
 
     &:hover::before,
     &:hover::after {
