@@ -102,6 +102,8 @@ strong {
   justify-content: center;
   gap: 15px;
   padding-bottom: 40px;
+  hyphens: auto;
+
   .about_title,
   .project_title,
   .project_name {
@@ -273,5 +275,11 @@ strong {
         grid-column: 1;
       }
     }
+  }
+}
+
+@media (min-width: b.$desktopBreakPoint) {
+  .split_text {
+    hyphens: none;
   }
 }

@@ -46,7 +46,7 @@
   @include m.heroText(15px, c.$SmallTextColor);
   line-height: e.$line-height;
   font-weight: 300;
-  hyphens: none; // dělení slov
+  hyphens: auto; // dělení slov
   text-align: center;
 }
 
@@ -54,7 +54,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  padding-inline: 2rem;
+  scroll-behavior: smooth;
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
@@ -65,20 +65,27 @@
 .project_container {
   display: flex;
   gap: 30px;
+  // odsazení slideru zleva a zprava
+  &::before,
+  &::after {
+    content: "";
+    flex: 0 0 2rem;
+  }
 
   > * {
     flex: 0 0 270px;
-    scroll-snap-align: center;
+    scroll-snap-align: center; //vycentrování karty při scrollu
   }
 
   .project_card {
+    position: relative;
     width: 100%;
     height: 350px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // gap: 25px;
+
     @include m.heroText(16px, c.$SmallTextColor);
 
     background: rgba(255, 255, 255, 0.04);
@@ -86,7 +93,7 @@
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 10px;
 
-    padding: 0;
+    padding-inline: 15px;
     overflow: hidden;
   }
 
@@ -167,13 +174,11 @@
 
 // reset hoveru, ochrana pred chybou na mobilu
 @media (hover: none) {
-  .project_card:hover .project_hover_bg,
   .project_card:active .project_hover_bg {
     opacity: 0;
     transform: scale(1.08);
   }
 
-  .project_card:hover .project_image,
   .project_card:active .project_image {
     opacity: 1;
     transform: none;
@@ -183,7 +188,7 @@
 @media (min-width: b.$tabletBreakPoint) {
   .portfolio_header {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    justify-items: left;
+    justify-items: start;
   }
 
   .portfolio_subtitle {
@@ -193,6 +198,7 @@
 
   .portfolio_text {
     text-align: left;
+    hyphens: none; // dělení slov
   }
 
   .project_content,
@@ -210,24 +216,29 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: center;
+    padding-inline: 2rem;
     margin-bottom: 50px;
 
+    &::before,
+    &::after {
+      content: none;
+    }
+
     > * {
-      width: 100%;
-      min-width: 0;
+      flex: unset;
     }
 
     .project_card {
-      position: relative;
       overflow: hidden;
       isolation: isolate;
+      cursor: pointer;
       contain: paint; // zabrání “rozlévání” absolutních vrstev
       -webkit-tap-highlight-color: transparent;
 
       transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
 
       .project_card_tags {
-        font-size: 15px;
+        font-size: 14px;
       }
 
       &:hover {
@@ -264,33 +275,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    transition: opacity 0.35s ease, transform 0.4s ease;
 
-    img {
-      transition: opacity 0.35s ease, transform 0.4s ease;
+    & img {
+      transition: transform 0.4s ease;
     }
-
-    // &::before {
-    //   content: "click for detail";
-    //   position: absolute;
-    //   font-size: 1rem;
-    //   color: white;
-    //   opacity: 0;
-    //   z-index: 2;
-    //   transition: 0.4s ease;
-    //   top: 47%;
-    // }
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   width: min(180px, 100%);
-    //   aspect-ratio: 1 / 1;
-    //   border-radius: 50%;
-    //   background: rgba(0, 0, 0, 0.6);
-    //   opacity: 0;
-    //   transition: 0.4s ease;
-    // }
 
     &:hover::before,
     &:hover::after {
