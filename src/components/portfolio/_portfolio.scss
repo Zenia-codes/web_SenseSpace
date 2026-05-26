@@ -5,21 +5,18 @@
 @use "../../styles/variables/mixins" as m;
 @use "../../styles/variables/text" as e;
 
-.portfolio_header {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.7em;
+.project_title {
   text-align: center;
-  margin-top: 50px;
-  gap: 5px;
+  padding-block: 30px;
 }
 
-.portfolio_intro {
-  display: flex;
-  flex-direction: column;
+.portfolio_header {
+  display: grid;
+  width: min(80%, 700px);
+  row-gap: 7px;
+  margin-inline: auto;
   text-align: center;
-  margin-top: 40px;
-  padding-bottom: 10px;
+  padding: 30px 0 50px 0;
 }
 
 // společné barvy pro varianty
@@ -37,12 +34,12 @@
 .portfolio_label {
   @include m.titleText(25px, c.$SmallTextColor);
   font-weight: 500;
-  padding-bottom: 16px;
 }
 
 .portfolio_subtitle {
   @include m.titleText(19px, c.$SmallTextColor);
   font-weight: 500;
+  align-self: end;
 }
 
 .portfolio_text {
@@ -50,6 +47,7 @@
   line-height: e.$line-height;
   font-weight: 300;
   hyphens: none; // dělení slov
+  text-align: center;
 }
 
 .portfolio_slider {
@@ -67,7 +65,6 @@
 .project_container {
   display: flex;
   gap: 30px;
-  margin-top: 20px;
 
   > * {
     flex: 0 0 270px;
@@ -98,6 +95,7 @@
     justify-content: center;
     gap: 5px;
 
+    font-size: 12px;
     padding-bottom: 10px;
   }
 }
@@ -183,6 +181,20 @@
 }
 
 @media (min-width: b.$tabletBreakPoint) {
+  .portfolio_header {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    justify-items: left;
+  }
+
+  .portfolio_subtitle {
+    text-align: end;
+    justify-self: end;
+  }
+
+  .portfolio_text {
+    text-align: left;
+  }
+
   .project_content,
   .project_card_tags {
     position: relative;
@@ -213,6 +225,11 @@
       -webkit-tap-highlight-color: transparent;
 
       transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
+
+      .project_card_tags {
+        font-size: 15px;
+      }
+
       &:hover {
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
         text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
