@@ -1,0 +1,46 @@
+@keyframes softlyGlow {
+  0% {
+    opacity: 0.7;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.15);
+  }
+
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.45),
+      0 0 12px rgba(255, 255, 255, 0.18);
+  }
+
+  100% {
+    opacity: 0.7;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.15);
+  }
+}
+
+@keyframes wireGlow {
+  0% {
+    opacity: 0.4;
+    filter: brightness(1) drop-shadow(0 0 5px #fff);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.6) drop-shadow(0 0 20px #fff);
+  }
+
+  100% {
+    opacity: 0.4;
+    filter: brightness(1) drop-shadow(0 0 5px #fff);
+  }
+}
+
+@keyframes lightSway {
+  0% {
+    transform: translate(0, -8px);
+  }
+  50% {
+    transform: translate(calc(2%));
+  }
+  100% {
+    transform: translate(0, -8px);
+  }
+}

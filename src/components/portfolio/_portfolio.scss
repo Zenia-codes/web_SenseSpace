@@ -6,7 +6,6 @@
 @use "../../styles/variables/text" as e;
 
 .project_title {
-  text-align: center;
   padding-block: 30px;
 }
 
@@ -241,7 +240,7 @@
       transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
 
       &:hover {
-        box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 8px #7dd4fc64;
         text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
       }
 
@@ -255,7 +254,7 @@
       }
 
       &:hover::before {
-        background: rgba(0, 0, 0, 0.45);
+        background: rgba(0, 0, 0, 0.1);
       }
 
       &:hover .project_hover_bg {

@@ -23,7 +23,8 @@
       @include m.heroText(24px, c.$SmallTextColor);
       font-weight: 500;
       letter-spacing: 0.13em;
-      filter: drop-shadow(0 0 1px c.$textLight);
+      animation: softlyGlow 4s ease-in-out infinite;
+      will-change: transform;
     }
 
     .design_frontend {
@@ -31,7 +32,8 @@
       font-weight: 300;
       letter-spacing: 0.1em;
       line-height: 1.15;
-      filter: drop-shadow(0 0 1px c.$textLight);
+      animation: softlyGlow 4s ease-in-out infinite;
+      will-change: transform;
     }
   }
 
@@ -43,17 +45,14 @@
 }
 
 .design_a_kod {
-  @include m.heroText(18px, #fbe183);
-  font-weight: 600;
+  @include m.heroText(18px, c.$akcentColor);
+  font-weight: 500;
   letter-spacing: 0.1em;
-  background: linear-gradient(45deg, #fbe183, #fc5dcc);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
   line-height: 1.25;
   margin-top: 10px;
   margin-bottom: 20px;
-  filter: drop-shadow(0 0 1px c.$DarkShadow);
+  animation: softlyGlow 4s ease-in-out infinite;
+  will-change: transform;
   //padding-bottom: 0.08em; // pojistka proti useknutí písmene g
 }
 
@@ -176,35 +175,6 @@
     border-radius: 50%;
     filter: blur(15px);
     z-index: -2;
-  }
-}
-
-@keyframes wireGlow {
-  0% {
-    opacity: 0.4;
-    filter: brightness(1) drop-shadow(0 0 5px #fff);
-  }
-
-  50% {
-    opacity: 1;
-    filter: brightness(1.6) drop-shadow(0 0 20px #fff);
-  }
-
-  100% {
-    opacity: 0.4;
-    filter: brightness(1) drop-shadow(0 0 5px #fff);
-  }
-}
-
-@keyframes lightSway {
-  0% {
-    transform: translate(0, -8px);
-  }
-  50% {
-    transform: translate(calc(2%));
-  }
-  100% {
-    transform: translate(0, -8px);
   }
 }
 

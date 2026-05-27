@@ -12,6 +12,7 @@
 @use "../components/footer/footer" as t;
 @use "./variables/mixins" as m;
 @use "./variables/text" as e;
+@use "./variables/animations" as i;
 
 * {
   box-sizing: border-box;
@@ -60,17 +61,17 @@ body {
 }
 
 h1 {
-  @include m.titleText(29px, c.$SmallTextColor);
+  @include m.titleText(29px, c.$textLight);
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
 h2 {
-  @include m.titleText(20px, c.$SmallTextColor);
+  @include m.titleText(20px, c.$textLight);
 }
 
 h3 {
-  @include m.titleText(17px, c.$SmallTextColor);
+  @include m.titleText(17px, c.$textLight);
   font-weight: 500;
 }
 
@@ -103,12 +104,14 @@ strong {
   gap: 15px;
   padding-bottom: 40px;
   hyphens: auto;
+}
 
-  .about_title,
-  .project_title,
-  .project_name {
-    text-align: center;
-  }
+.about_title,
+.project_title,
+.project_name {
+  text-align: center;
+  animation: softlyGlow 4s ease-in-out infinite;
+  will-change: transform;
 }
 // efekt scroll reveal
 .reveal {
@@ -189,8 +192,8 @@ strong {
 
 .tech-tag:hover {
   transform: translateY(-2px);
-  border-color: rgba(125, 211, 252, 0.4);
-  box-shadow: 0 0 20px rgba(125, 211, 252, 0.12);
+  border-color: rgba(125, 211, 252, 0.5);
+  box-shadow: 0 0 20px rgba(125, 211, 252, 0.2);
   // background: rgba(125, 211, 252, 0.06);
 }
 
