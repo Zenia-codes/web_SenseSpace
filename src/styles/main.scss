@@ -169,16 +169,14 @@ strong {
 .tech-tag {
   display: inline-flex;
 
-  padding: 0.2rem 1rem;
+  padding: 4px 10px;
 
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
 
-  // background: rgba(255, 255, 255, 0.04);
-  // background: #ffffff2e;
   backdrop-filter: blur(10px);
 
-  color: #f5f5f5f2;
+  color: #f5f5f5b3;
   letter-spacing: 0.4px;
 
   transition: all 0.3s ease;
