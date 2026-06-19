@@ -81,6 +81,8 @@
   }
 }
 
+// způsob, jak přepínat dvě ikonky (hamburger a X) pomocí atributu + animace
+// translate(-50%, -50%) = centrování
 .menu_button[aria-expanded="true"] .icon-open {
   opacity: 0;
   transform: translate(-50%, -50%) rotate(90deg);

@@ -5,7 +5,7 @@
 @use "../../styles/variables/mixins" as m;
 
 .hero {
-  min-height: calc(100dvh - 70px);
+  min-height: calc(100vh - 70px);
   display: flex;
   align-items: flex-start;
   padding-top: 6vh;
