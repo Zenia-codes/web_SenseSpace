@@ -24,7 +24,6 @@ html {
 
 body {
   position: relative;
-  min-height: 100vh;
   background-image: url("../assets/images/background_mobile.png");
   background-repeat: repeat;
   background-size: contain;
@@ -36,17 +35,15 @@ body {
 }
 
 #about,
-#project {
+#project,
+#portfolio {
   scroll-margin-top: 75px;
   padding-inline: 40px;
+  padding-top: 70px;
 }
 
 #hero {
   scroll-margin-top: 70px; // výška navigace //
-}
-
-#portfolio {
-  scroll-margin-top: 75px;
 }
 
 .layout {

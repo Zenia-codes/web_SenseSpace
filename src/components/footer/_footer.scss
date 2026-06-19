@@ -23,6 +23,17 @@
       text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
     }
   }
+
+  &__copyright {
+    padding-block: 15px;
+    font-family: f.$basicFont;
+    font-size: 12px;
+    text-align: center;
+    color: c.$SmallTextColor;
+    letter-spacing: 0.07em;
+    opacity: 0.8;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
 }
 
 .footer_info {
