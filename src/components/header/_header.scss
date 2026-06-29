@@ -180,7 +180,8 @@
       flex-direction: row;
       gap: 20px;
       li {
-        padding: 0 20px;
+        padding-inline: 5px;
+        font-size: 14px;
         .dotted-link {
           color: white;
         }
@@ -210,6 +211,18 @@
 
     &:active {
       transform: scale(0.95);
+    }
+  }
+}
+
+@media (min-width: b.$desktopBreakPoint) {
+  .navigation_menu {
+    .navigation_items {
+      gap: 30px;
+      li {
+        padding-inline: 10px;
+        font-size: 15px;
+      }
     }
   }
 }
