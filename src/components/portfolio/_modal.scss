@@ -50,28 +50,30 @@ body.modal_open {
         left: 0;
       }
     }
+    .modal_links {
+      display: flex;
+      gap: 15px;
+      padding-block: 10px;
+    }
   }
 }
 
 .modal_title {
-  font-size: 22px;
   color: rgba(25, 46, 60);
   font-weight: 500;
-  padding: 19px 8px;
 }
 
 .yellow {
   background-color: rgb(255, 255, 57);
   border-radius: 10px;
   text-align: center;
-  margin-top: 30px;
+  margin-block: 50px 20px;
   font-size: medium;
 }
 
 .modal_text {
   @include m.heroText(16px, rgba(25, 46, 60));
-  padding-bottom: 10px;
-  padding-inline: 5px;
+  padding-block: 5px;
 }
 
 @media (min-width: b.$tabletBreakPoint) {

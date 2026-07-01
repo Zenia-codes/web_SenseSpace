@@ -79,7 +79,7 @@
   .project_card {
     position: relative;
     width: 100%;
-    height: 350px;
+    min-height: 350px;
 
     display: flex;
     flex-direction: column;
@@ -87,18 +87,23 @@
 
     @include m.heroText(16px, c.$SmallTextColor);
 
-    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(10px); // Safari / iOS Safari
     backdrop-filter: blur(10px);
+    background: rgba(
+      255,
+      255,
+      255,
+      0.04
+    ); // přidání průhlednosti pro starší prohlížeče
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 10px;
 
-    padding: 0 15px 10px 15px;
+    padding: 35px 10px 15px;
     overflow: hidden;
   }
 
   .project_card_tags {
     font-size: 12px;
-    padding-block: 10px;
     padding-inline-end: 24px; // aby poslední tag nezajížděl do fade
 
     display: flex;
@@ -134,10 +139,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-
-  .project_image {
-    padding-top: 20px;
-  }
 
   img {
     width: min(180px, 100%); // Použij menší z těchto dvou hodnot.
@@ -180,18 +181,56 @@
   width: 100%;
   position: absolute;
   inset: 0;
-  pointer-events: none;
+  // pointer-events: none;
 
   opacity: 0;
   transform: scale(1.08);
   transition: opacity 0.45s ease, transform 0.6s ease;
 
-  img {
+  .hover-bg-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
     filter: brightness(0.45);
+  }
+
+  .click-badge {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+
+    -webkit-backdrop-filter: blur(4px); // Safari / iOS Safari
+    backdrop-filter: blur(4px);
+    background: rgba(
+      255,
+      255,
+      255,
+      0.2
+    ); // přidání průhlednosti pro starší prohlížeče
+
+    .click-icon {
+      width: 60px;
+      height: auto;
+    }
+
+    span {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.9);
+    }
   }
 }
 
@@ -224,10 +263,14 @@
     hyphens: none; // dělení slov
   }
 
-  .project_content,
-  .project_card_tags {
+  .project_content {
     position: relative;
     z-index: 3;
+  }
+
+  .project_card_tags {
+    position: relative;
+    z-index: 5;
   }
 
   .portfolio_slider {
@@ -252,7 +295,6 @@
     }
 
     .project_card {
-      height: 400px;
       overflow: hidden;
       isolation: isolate;
       cursor: pointer;
@@ -280,13 +322,14 @@
       }
 
       &:hover .project_hover_bg {
+        z-index: 4;
         opacity: 1;
         transform: scale(1);
       }
 
       &:hover .project_image {
         opacity: 0;
-        transform: scale(0.7);
+        transform: scale(1.7);
       }
     }
   }
@@ -314,10 +357,6 @@
 
 @media (min-width: b.$desktopBreakPoint) {
   .project_container {
-    .project_card {
-      height: 360px;
-    }
-
     .project_card_tags {
       flex-wrap: wrap;
       overflow-x: visible;
