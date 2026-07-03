@@ -11,7 +11,7 @@
 
 .portfolio_header {
   display: grid;
-  width: 70%;
+  width: 80%;
   row-gap: 8px;
   margin-inline: auto;
   justify-content: center;
@@ -38,11 +38,11 @@
 
 .subtitle_wrapper {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
 
   @include m.titleText(17px, c.$SmallTextColor);
   font-weight: 500;
-  align-self: end;
+  // align-self: end;
   letter-spacing: 0.03em;
 }
 
@@ -85,7 +85,7 @@
   .project_card {
     position: relative;
     width: 100%;
-    min-height: 350px;
+    min-height: 370px;
 
     display: flex;
     flex-direction: column;
@@ -110,34 +110,10 @@
 
   .project_card_tags {
     font-size: 12px;
-    padding-inline-end: 24px; // aby poslední tag nezajížděl do fade
-
     display: flex;
     gap: 5px;
-
-    overflow-x: auto;
-    text-wrap-mode: nowrap;
-
-    scrollbar-width: none; // Firefox
-    -ms-overflow-style: none; // starší Edge
-
-    &::-webkit-scrollbar {
-      display: none; // Chrome, Safari, Edge
-    }
-
-    mask-image: linear-gradient(
-      to right,
-      black 0,
-      black calc(100% - 30px),
-      transparent 100%
-    );
-
-    -webkit-mask-image: linear-gradient(
-      to right,
-      black 0,
-      black calc(100% - 30px),
-      transparent 100%
-    );
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -267,17 +243,20 @@
 
   .portfolio_label {
     font-size: 21px;
+    align-self: end;
   }
 
   .subtitle_wrapper {
-    flex-direction: row;
     justify-content: end;
+    align-self: end;
     gap: 8px;
+    font-size: 16px;
   }
 
   .portfolio_text {
     text-align: left;
     hyphens: none; // dělení slov
+    grid-row: 2;
   }
 
   .project_content {
@@ -375,6 +354,10 @@
 }
 
 @media (min-width: b.$desktopBreakPoint) {
+  .portfolio_header {
+    width: 60%;
+  }
+
   .project_container {
     .project_card_tags {
       flex-wrap: wrap;

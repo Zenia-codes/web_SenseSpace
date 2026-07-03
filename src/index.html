@@ -61,7 +61,7 @@
     </header>
     <div class="layout">
       <section class="hero section" id="hero">
-        <div class="hero_content container">
+        <div class="hero_content">
           <div class="hero_motiv">
             <div class="person">
               <div class="person_wrapper">
@@ -251,96 +251,95 @@
 
       <!-- section front-end -->
       <section class="portfolio section" id="portfolio">
-        <div class="container">
-          <!-- <h1 class="project_title">[ Portfolio ]</h1> -->
-          <div class="portfolio_header">
-            <div class="portfolio_label">
-              <span class="portfolio_number frontend">[01]</span>
-              Frontend Space
-            </div>
-            <div class="subtitle_wrapper">
-              <p class="portfolio_subtitle frontend">Small projects.</p>
-              <p class="portfolio_subtitle frontend">Big lessons.</p>
-            </div>
-            <p class="portfolio_text">
-              Each project is a step in my development.
-            </p>
+        <!-- <h1 class="project_title">[ Portfolio ]</h1> -->
+        <div class="portfolio_header">
+          <div class="portfolio_label">
+            <span class="portfolio_number frontend">[01]</span>
+            Frontend Space
           </div>
+          <div class="subtitle_wrapper">
+            <span class="portfolio_subtitle frontend">Small projects.</span>
+            <span class="portfolio_subtitle frontend">Big lessons.</span>
+          </div>
+          <p class="portfolio_text">
+            Each project is a step in my development.
+          </p>
+        </div>
 
-          <div class="portfolio_slider">
-            <div class="project_container">
-              <button
-                class="project_card active-slide"
-                data-modal="BestShop"
-                type="button"
-              >
-                <div class="project_hover_bg">
+        <div class="portfolio_slider">
+          <div class="project_container">
+            <button
+              class="project_card active-slide"
+              data-modal="BestShop"
+              type="button"
+            >
+              <div class="project_hover_bg">
+                <img
+                  src="./assets/images/portfolio_section/Frontend/BestShop_preview_mobile.png"
+                  alt="project preview"
+                  class="hover-bg-image"
+                />
+                <div class="click-badge">
+                  <img
+                    src="./assets/icons/click-ikon.png"
+                    alt="click icon"
+                    class="click-icon"
+                  />
+                  <span>Explore</span>
+                </div>
+              </div>
+              <div class="project_content">
+                <div class="project_image">
                   <img
                     src="./assets/images/portfolio_section/Frontend/BestShop_preview_mobile.png"
-                    alt="project preview"
-                    class="hover-bg-image"
+                    alt="invitation"
                   />
-                  <div class="click-badge">
-                    <img
-                      src="./assets/icons/click-ikon.png"
-                      alt="click icon"
-                      class="click-icon"
-                    />
-                    <span>Explore</span>
-                  </div>
                 </div>
-                <div class="project_content">
-                  <div class="project_image">
-                    <img
-                      src="./assets/images/portfolio_section/Frontend/BestShop_preview_mobile.png"
-                      alt="invitation"
-                    />
-                  </div>
-                  <div class="project_text">
-                    <h3>BestShop Web Page</h3>
-                  </div>
+                <div class="project_text">
+                  <h3>BestShop Web Page</h3>
                 </div>
-                <ul class="project_card_tags">
-                  <li class="tech-tag">Web</li>
-                  <li class="tech-tag">JavaScript</li>
-                  <li class="tech-tag">SCSS</li>
-                  <li class="tech-tag">UI/UX</li>
-                </ul>
-              </button>
+              </div>
+              <ul class="project_card_tags">
+                <li class="tech-tag">Frontend</li>
+                <li class="tech-tag">JavaScript</li>
+                <li class="tech-tag">SCSS</li>
+                <li class="tech-tag">Responsive Design</li>
+              </ul>
+            </button>
 
-              <button
-                class="project_card active-slide"
-                data-modal="SofieInvitation"
-                type="button"
-              >
-                <div class="project_hover_bg">
+            <button
+              class="project_card active-slide"
+              data-modal="SofieInvitation"
+              type="button"
+            >
+              <div class="project_hover_bg">
+                <img
+                  src="./assets/images/portfolio_section/galaxy_background1.png"
+                  alt=""
+                />
+              </div>
+              <div class="project_content">
+                <div class="project_image">
                   <img
                     src="./assets/images/portfolio_section/galaxy_background1.png"
-                    alt=""
+                    alt="invitation"
                   />
                 </div>
-                <div class="project_content">
-                  <div class="project_image">
-                    <img
-                      src="./assets/images/portfolio_section/galaxy_background1.png"
-                      alt="invitation"
-                    />
-                  </div>
-                  <div class="project_text">
-                    <h3>Electronic RSVP invitation</h3>
-                  </div>
+                <div class="project_text">
+                  <h3>Electronic RSVP invitation</h3>
                 </div>
+              </div>
 
-                <ul class="project_card_tags">
-                  <li class="tech-tag">JavaScript</li>
-                  <li class="tech-tag">SCSS</li>
-                  <li class="tech-tag">UI/UX</li>
-                  <li class="tech-tag">API</li>
-                  <li class="tech-tag">Figma</li>
-                </ul>
-              </button>
+              <ul class="project_card_tags">
+                <li class="tech-tag">Frontend</li>
+                <li class="tech-tag">JavaScript</li>
+                <li class="tech-tag">SCSS</li>
+                <li class="tech-tag">API</li>
+                <li class="tech-tag">Figma</li>
+              </ul>
+            </button>
 
-              <!-- <button
+            <!-- <button
                 class="project_card active-slide"
                 data-modal="straboGame"
                 type="button"
@@ -367,137 +366,133 @@
                   <li class="tech-tag">SCSS</li>
                 </ul>
               </button> -->
-            </div>
-          </div>
-
-          <div class="slider_dots">
-            <span class="slider_dot active"></span>
-            <span class="slider_dot"></span>
-            <!-- <span class="slider_dot"></span> -->
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- section graphic -->
-    <section class="portfolio section" id="graphic">
-      <div class="container">
-        <div class="portfolio_header">
-          <div class="portfolio_label">
-            <span class="portfolio_number graphic">[02] </span>Graphic Space
-          </div>
-          <div class="subtitle_wrapper">
-            <p class="portfolio_subtitle graphic">Visual ideas.</p>
-            <p class="portfolio_subtitle graphic">Creative process.</p>
-          </div>
-          <p class="portfolio_text">
-            A small universe of my ideas and creativity.
-          </p>
-        </div>
-
-        <div class="portfolio_slider">
-          <div class="project_container">
-            <button
-              class="project_card active-slide"
-              data-modal="pizzaPronto"
-              type="button"
-            >
-              <div class="project_hover_bg">
-                <img
-                  src="./assets/images/portfolio_section/galaxy_background1.png"
-                  alt=""
-                />
-              </div>
-              <div class="project_content">
-                <div class="project_image">
-                  <img
-                    src="./assets/images/portfolio_section/Graphic/pizza-logo_nahled-web.png"
-                    alt="logo Pizza Pronto"
-                  />
-                </div>
-                <div class="project_text">
-                  <h3>Pizzeria Pizza Pronto</h3>
-                </div>
-              </div>
-
-              <ul class="project_card_tags">
-                <li class="tech-tag">Branding</li>
-                <li class="tech-tag">Vector</li>
-                <li class="tech-tag">Rastr</li>
-                <li class="tech-tag">Illustrator</li>
-                <li class="tech-tag">Photoshop</li>
-                <li class="tech-tag">Print</li>
-              </ul>
-            </button>
-
-            <button
-              class="project_card active-slide"
-              data-modal="LogoDanceClub"
-              type="button"
-            >
-              <div class="project_hover_bg">
-                <img
-                  src="./assets/images/portfolio_section/galaxy_background1.png"
-                  alt=""
-                />
-              </div>
-              <div class="project_content">
-                <div class="project_image">
-                  <img
-                    src="./assets/images/portfolio_section/Graphic/dance-logo_nahled-web.png"
-                    alt="logo with dancer"
-                  />
-                </div>
-                <div class="project_text">
-                  <h3>Logo for dance club</h3>
-                </div>
-              </div>
-
-              <ul class="project_card_tags">
-                <li class="tech-tag">Branding</li>
-                <li class="tech-tag">Vector</li>
-                <li class="tech-tag">Illustrator</li>
-                <li class="tech-tag">Print</li>
-              </ul>
-            </button>
-
-            <button
-              class="project_card active-slide"
-              data-modal="musicalInv"
-              type="button"
-            >
-              <div class="project_hover_bg">
-                <img
-                  src="./assets/images/portfolio_section/galaxy_background1.png"
-                  alt=""
-                />
-              </div>
-              <div class="project_content">
-                <div class="project_image">
-                  <img
-                    src="./assets/images/portfolio_section/Graphic/pozv60_nahled-web.png"
-                    alt="invitation"
-                  />
-                </div>
-                <div class="project_text">
-                  <h3>Musical birthday invitation</h3>
-                </div>
-              </div>
-
-              <ul class="project_card_tags">
-                <li class="tech-tag">Vector</li>
-                <li class="tech-tag">Illustrator</li>
-                <li class="tech-tag">Print</li>
-                <li class="tech-tag">Laser cut</li>
-              </ul>
-            </button>
           </div>
         </div>
 
         <div class="slider_dots">
           <span class="slider_dot active"></span>
           <span class="slider_dot"></span>
-          <span class="slider_dot"></span>
+          <!-- <span class="slider_dot"></span> -->
         </div>
+      </section>
+    </div>
+    <!-- section graphic -->
+    <section class="portfolio section" id="graphic">
+      <div class="portfolio_header">
+        <div class="portfolio_label">
+          <span class="portfolio_number graphic">[02] </span>Graphic Space
+        </div>
+        <div class="subtitle_wrapper">
+          <span class="portfolio_subtitle graphic">Visual ideas.</span>
+          <span class="portfolio_subtitle graphic">Creative process.</span>
+        </div>
+        <p class="portfolio_text">
+          A small universe of my ideas and creativity.
+        </p>
+      </div>
+
+      <div class="portfolio_slider">
+        <div class="project_container">
+          <button
+            class="project_card active-slide"
+            data-modal="pizzaPronto"
+            type="button"
+          >
+            <div class="project_hover_bg">
+              <img
+                src="./assets/images/portfolio_section/galaxy_background1.png"
+                alt=""
+              />
+            </div>
+            <div class="project_content">
+              <div class="project_image">
+                <img
+                  src="./assets/images/portfolio_section/Graphic/pizza-logo_nahled-web.png"
+                  alt="logo Pizza Pronto"
+                />
+              </div>
+              <div class="project_text">
+                <h3>Pizzeria Pizza Pronto</h3>
+              </div>
+            </div>
+
+            <ul class="project_card_tags">
+              <li class="tech-tag">Graphic design</li>
+              <li class="tech-tag">Branding</li>
+              <li class="tech-tag">Illustrator</li>
+              <li class="tech-tag">Photoshop</li>
+              <li class="tech-tag">Print</li>
+            </ul>
+          </button>
+
+          <button
+            class="project_card active-slide"
+            data-modal="LogoDanceClub"
+            type="button"
+          >
+            <div class="project_hover_bg">
+              <img
+                src="./assets/images/portfolio_section/galaxy_background1.png"
+                alt=""
+              />
+            </div>
+            <div class="project_content">
+              <div class="project_image">
+                <img
+                  src="./assets/images/portfolio_section/Graphic/dance-logo_nahled-web.png"
+                  alt="logo with dancer"
+                />
+              </div>
+              <div class="project_text">
+                <h3>Logo for dance club</h3>
+              </div>
+            </div>
+
+            <ul class="project_card_tags">
+              <li class="tech-tag">Graphic design</li>
+              <li class="tech-tag">Branding</li>
+              <li class="tech-tag">Illustrator</li>
+              <li class="tech-tag">Print</li>
+            </ul>
+          </button>
+
+          <button
+            class="project_card active-slide"
+            data-modal="musicalInv"
+            type="button"
+          >
+            <div class="project_hover_bg">
+              <img
+                src="./assets/images/portfolio_section/galaxy_background1.png"
+                alt=""
+              />
+            </div>
+            <div class="project_content">
+              <div class="project_image">
+                <img
+                  src="./assets/images/portfolio_section/Graphic/pozv60_nahled-web.png"
+                  alt="invitation"
+                />
+              </div>
+              <div class="project_text">
+                <h3>Musical birthday invitation</h3>
+              </div>
+            </div>
+
+            <ul class="project_card_tags">
+              <li class="tech-tag">Graphic design</li>
+              <li class="tech-tag">Illustrator</li>
+              <li class="tech-tag">Print</li>
+              <li class="tech-tag">Laser cut</li>
+            </ul>
+          </button>
+        </div>
+      </div>
+
+      <div class="slider_dots">
+        <span class="slider_dot active"></span>
+        <span class="slider_dot"></span>
+        <span class="slider_dot"></span>
       </div>
     </section>
 
@@ -685,48 +680,46 @@
     </section>
 
     <footer class="footer">
-      <div class="container">
-        <ul class="socials_list">
-          <li>
-            <a href="mailto:zenia.codes@gmail.com" aria-label="Email">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/zde%C5%88ka-be%C5%A5%C3%A1kov%C3%A1-a7505b372/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/zenia-codes"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://wa.me/420775500744"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-            >
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-        <p class="footer__copyright">
-          © 2026 Designed & Developed by Zdeňka Beťáková
-        </p>
-      </div>
+      <ul class="socials_list">
+        <li>
+          <a href="mailto:zenia.codes@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/zde%C5%88ka-be%C5%A5%C3%A1kov%C3%A1-a7505b372/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/zenia-codes"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/420775500744"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        © 2026 Designed & Developed by Zdeňka Beťáková
+      </p>
     </footer>
 
     <script type="module" src="./main.js"></script>
