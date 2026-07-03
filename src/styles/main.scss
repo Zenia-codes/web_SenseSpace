@@ -37,12 +37,11 @@ body {
 #about,
 #project {
   scroll-margin-top: 75px;
-  padding-inline: 40px;
   padding-top: 70px;
 }
 
 #portfolio {
-  padding-top: 70px;
+  padding-top: 120px;
 }
 
 #hero {
@@ -61,17 +60,17 @@ body {
 }
 
 h1 {
-  @include m.titleText(29px, c.$textLight);
+  @include m.titleText(21px, c.$textLight);
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
 h2 {
-  @include m.titleText(20px, c.$textLight);
+  @include m.titleText(17px, c.$textLight);
 }
 
 h3 {
-  @include m.titleText(17px, c.$textLight);
+  @include m.titleText(16px, c.$textLight);
   font-weight: 500;
 }
 
@@ -80,7 +79,7 @@ span {
 }
 
 a {
-  @include m.titleText(15px, rgba(25, 46, 60));
+  @include m.titleText(11px, rgba(25, 46, 60));
   text-decoration: none;
 }
 
@@ -91,23 +90,28 @@ strong {
   font-weight: 600;
 }
 
+// společné texty - odstavce
 .split_groups {
-  @include m.heroText(15px, c.$SmallTextColor);
+  @include m.heroText(14px, c.$SmallTextColor);
   line-height: e.$line-height;
-  letter-spacing: 0.1em;
   font-weight: 300;
   display: grid;
-  grid-template-columns: 1fr;
+  gap: 60px;
   text-align: justify;
-  hyphens: none; // dělení slov
+  padding-inline: 50px;
+}
+
+.split_row {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 
 .split_text {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
   justify-content: center;
   gap: 15px;
-  padding-bottom: 40px;
   hyphens: auto;
 }
 
@@ -138,13 +142,11 @@ strong {
 .split_image {
   position: relative;
   text-align: center;
-  padding-bottom: 85px;
 
   img {
     position: relative;
     z-index: 1;
-    width: 70%;
-    height: auto;
+    width: clamp(180px, calc(161.45px + 3.9vw), 220px);
     border-radius: 50%;
     box-shadow: 0 0 12px 0px #9f9f9fa0;
     object-fit: cover;
@@ -155,11 +157,10 @@ strong {
     content: "";
     position: absolute;
     overflow: visible;
-    inset: 0;
+    inset: -35% 0%;
     z-index: 2;
     pointer-events: none;
     background: url("/src/assets/images/mlha.png") center / contain no-repeat;
-    background-size: 110%;
     transform-origin: center;
     opacity: 0.6;
     animation: lightSway 7s ease-in-out infinite;
@@ -230,12 +231,6 @@ strong {
     }
   }
 
-  .layout {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr;
-  }
-
   .about_content,
   .project_content {
     max-width: 80ch;
@@ -246,9 +241,7 @@ strong {
   }
 
   .split_groups {
-    font-size: 17px;
-    display: flex;
-    flex-direction: column;
+    font-size: 14px;
 
     .split_text {
       .about_title {
@@ -256,42 +249,49 @@ strong {
       }
       .project_title,
       .project_name {
-        text-align: right;
+        text-align: left;
       }
     }
 
     .split_image {
-      display: flex;
-      align-items: center;
-
-      img {
-        width: 90%;
-        height: auto;
+      &::before {
+        inset: -30% -20%;
       }
     }
 
     .split_row {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      column-gap: 60px;
+      grid-template-columns: auto auto;
       align-items: center;
+      justify-self: center;
     }
 
-    .split_row.reverse {
-      .split_text {
-        grid-column: 2;
-        grid-row: 1;
-      }
+    .split_row .split_image {
+      grid-column: 1;
+      grid-row: 1;
+    }
 
-      .split_image {
-        grid-column: 1;
-      }
+    .split_row .split_text {
+      grid-column: 2;
+      max-width: 330px;
+    }
+
+    .split_row.reverse .split_image {
+      grid-column: 2;
+    }
+
+    .split_row.reverse .split_text {
+      grid-column: 1;
     }
   }
 }
 
 @media (min-width: b.$desktopBreakPoint) {
-  .split_text {
-    hyphens: none;
+  a {
+    @include m.titleText(15px, rgba(25, 46, 60));
+  }
+
+  .split_groups {
+    font-size: 15px;
   }
 }

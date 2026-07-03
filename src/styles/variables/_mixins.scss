@@ -7,7 +7,7 @@
   font-style: normal;
   color: $fontColor;
   text-decoration: none;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
 }
 
 @mixin titleText($fontSize, $fontColor) {
@@ -17,6 +17,4 @@
   color: $fontColor;
   text-decoration: none;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
-  // letter-spacing: 0.03em;
-  // text-transform: uppercase;
 }

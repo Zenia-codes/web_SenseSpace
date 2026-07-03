@@ -44,15 +44,22 @@
 }
 
 .design_a_kod {
-  @include m.heroText(18px, c.$akcentColor);
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  @include m.heroText(17px, c.$akcentColor);
+  font-family: Oxanium, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
   line-height: 1.25;
   margin-top: 10px;
   margin-bottom: 20px;
   animation: softlyGlow 4s ease-in-out infinite;
   will-change: transform;
   //padding-bottom: 0.08em; // pojistka proti useknutí písmene g
+  background: radial-gradient(circle at 10% 30%, #ffb87a, #ff917a, #ff4ecb);
+  text-shadow: 0 1px 1px #cccccc36;
+  background-clip: text;
+  -webkit-background-clip: text; // Chrome, Edge, Safari
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero_motiv {
@@ -114,7 +121,7 @@
 
   .mlha {
     position: absolute;
-    inset: 0px;
+    inset: -22px;
     background: url("/src/assets/images/mlha.png") center / contain no-repeat;
     opacity: 1;
     animation: lightSway 7s ease-in-out infinite;
@@ -236,8 +243,16 @@
 
   .button {
     width: s.$HeroButton;
-    font-size: 19px;
+    font-size: 16px;
     letter-spacing: 0.1em;
-    margin-left: 30px;
+  }
+}
+
+@media (min-width: b.$desktopBreakPoint) {
+  .hero_content {
+    .button {
+      font-size: 19px;
+      margin-left: 30px;
+    }
   }
 }

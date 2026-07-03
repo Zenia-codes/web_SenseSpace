@@ -178,7 +178,7 @@
 
     .navigation_items {
       flex-direction: row;
-      gap: 20px;
+      gap: 14px;
       li {
         padding-inline: 5px;
         font-size: 14px;
@@ -197,9 +197,9 @@
     height: 36px;
   }
 
-  .logo-link {
-    padding-left: 25px;
-  }
+  // .logo-link {
+  //   padding-left: 25px;
+  // }
 
   .dotted-link,
   .logo-link {
