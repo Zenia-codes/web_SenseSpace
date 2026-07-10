@@ -5,16 +5,17 @@
 .footer {
   width: 100%;
   min-height: 100px;
-  padding-block: 70px;
+  padding-block: 50px;
   .socials_list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 28px;
     a {
       display: inline-block;
       color: c.$SmallTextColor;
       opacity: 0.8;
       transition: 0.3s;
+      font-size: 17px;
     }
 
     a:hover {
