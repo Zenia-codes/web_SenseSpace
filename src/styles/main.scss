@@ -79,7 +79,7 @@ span {
 }
 
 a {
-  @include m.titleText(11px, rgba(25, 46, 60));
+  @include m.titleText(13px, rgba(25, 46, 60));
   text-decoration: none;
 }
 
@@ -242,6 +242,7 @@ strong {
 
   .split_groups {
     font-size: 14px;
+    gap: 100px;
     padding-inline: 0;
 
     .split_text {

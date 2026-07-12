@@ -38,11 +38,10 @@
 
 .subtitle_wrapper {
   display: flex;
-  // flex-direction: row;
+  gap: 5px;
 
   @include m.titleText(17px, c.$SmallTextColor);
   font-weight: 500;
-  // align-self: end;
   letter-spacing: 0.03em;
 }
 

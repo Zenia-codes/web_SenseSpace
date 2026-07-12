@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "slogan": "Where Design Meets Code",
+    "button": "EXPLORE"
+  },
+
+  "nav": {
+    "about": "ABOUT ME",
+    "project": "PROJECT",
+    "contact": "CONTACT"
+  },
+
+  "about": {
+    "frontend": {
+      "title": "My approach to development",
+      "content_development": "An interest in technology combined with design led me to <strong>front-end development</strong>.",
+      "content_webdesign": "I discovered a world where creativity naturally blends with logic. I was excited by the opportunity to bring my own designs to life and turn them into interactive websites.",
+      "content_skills": "Today, I can translate design into responsive and functional solutions and I continue to push myself to create modern digital products with an emphasis on user experience."
+    },
+
+    "UX": {
+      "title": "Design that makes sense",
+      "content_design": "If I had to characterize my creative style, I would choose the combination <strong>minimalist design</strong>.",
+      "content_exp": "I believe that every element on a website should have its own meaning and clear purpose. My goal is to create visually clean and uncluttered websites that offer visitors a pleasant user experience, with an emphasis on quick navigation through content and functionality."
+    },
+
+    "graphic": {
+      "title": "Graphic & Print",
+      "content_graphic": "I have been involved in <strong>Graphic design</strong> for many years. I design flyers, posters, invitations, business cards, logos and other products, especially of an advertising nature.",
+      "content_print": "Thanks to my experience in <strong>print production</strong>, I understand not only the design itself, but also the entire production process. I prepare materials for printing, plotter cutting, textile printing and laser engraving/cutting.",
+      "content_workflow": "I place great emphasis on detail, the right choice of colors, materials and production technologies so that the final product it was professional and suited its purpose.",
+      "content_control": "I carefully check every project from the initial design to the final implementation."
+    },
+
+    "workflow": {
+      "AI": "A more efficient path to results",
+      "content_AI-agent": "I also use <strong>artificial intelligence</strong> tools in my work. I see AI as a useful assistant for quick edits, code review and repetitive tasks.",
+      "content_AI-creative": "I gradually discovered that working with AI brings new technological possibilities and inspiration that I can further develop. However, the suggestions, key decisions and communication with the customer always remain my responsibility."
+    },
+
+    "offer": {
+      "title": "Let's create together",
+      "content_build": "Are you interested in my approach? Let's turn your ideas into <strong>digital products</strong> that are understandable, visually appealing, and functional. Together, we'll find a solution that will appeal to your target audience and support your business."
+    }
+  },
+
+  "project": {
+    "inspiration": {
+      "title": "Why the name <span>SenseSpace</span>?",
+      "content": "<strong>The universe</strong> is a source of inspiration for me. I see it as a space of <strong>infinite possibilities</strong>, <strong>deep meaning and freedom</strong> that naturally mixes with fixed laws. Here I want to create, experiment and share projects that are meaningful to me."
+    },
+
+    "learn": {
+      "title": "What did I learn from this project?",
+      "content_learn": "This project really helped me gain hands-on experience with <strong>JavaScript</strong>, DOM manipulation, event listeners, interactive components, modal windows, sliders, and responsive layouts using HTML/CSS Grid. It also improved my ability to debug code and solve common front-end development challenges.",
+      "content_living": "This is a <strong>living project</strong>. I gradually develop it based on what I learn and what makes sense to me. I would greatly appreciate any <strong>feedback</strong>."
+    }
+  }
+}
