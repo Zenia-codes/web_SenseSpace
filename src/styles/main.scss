@@ -6,6 +6,7 @@
 @use "../components/header/header" as n;
 @use "../components/hero/hero" as h;
 @use "../components/about/aboutMe" as a;
+@use "../components/project/project" as p;
 @use "../components/portfolio/portfolio" as o;
 @use "../components/portfolio/modal";
 @use "../components/contacts/contacts" as k;
@@ -37,7 +38,7 @@ body {
 #about,
 #project {
   scroll-margin-top: 75px;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 #portfolio {
