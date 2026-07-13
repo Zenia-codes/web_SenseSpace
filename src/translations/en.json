@@ -12,48 +12,52 @@
 
   "about": {
     "frontend": {
-      "title": "My approach to development",
-      "content_development": "An interest in technology combined with design led me to <strong>front-end development</strong>.",
-      "content_webdesign": "I discovered a world where creativity naturally blends with logic. I was excited by the opportunity to bring my own designs to life and turn them into interactive websites.",
-      "content_skills": "Today, I can translate design into responsive and functional solutions and I continue to push myself to create modern digital products with an emphasis on user experience."
+      "title": "What can I create for you?",
+      "content_development": "My interest in the intersection of technology and design led me to <strong>front-end development</strong>. I discovered a world where creativity naturally blends with logic. I was excited by the opportunity to bring my own designs to life and transform them into interactive websites.",
+      "content_webdesign": "Today, I create and transform designs into responsive, functional solutions with a focus on user experience."
+    },
+
+    "workflow": {
+      "AI": "A more efficient path to results",
+      "content_AI-agent": "I also use <strong>artificial intelligence</strong> tools in my work. I view it as a useful aid, particularly for quickly editing and debugging code or automating routine tasks.",
+      "content_AI-creative": "Collaborating with AI opens up new technological possibilities for me and provides inspiration for further development.",
+      "content_human": "However, I always personally handle the designs, key decisions, and communication with the client."
     },
 
     "UX": {
       "title": "Design that makes sense",
       "content_design": "If I had to characterize my creative style, I would choose the combination <strong>minimalist design</strong>.",
-      "content_exp": "I believe that every element on a website should have its own meaning and clear purpose. My goal is to create visually clean and uncluttered websites that offer visitors a pleasant user experience, with an emphasis on quick navigation through content and functionality."
+      "content_exp": "I believe that every element—whether in digital or any other form—should have a clear purpose. My goal is to create visually clean and uncluttered websites where visitors feel at ease and can easily navigate the content."
     },
 
     "graphic": {
       "title": "Graphic & Print",
       "content_graphic": "I have been involved in <strong>Graphic design</strong> for many years. I design flyers, posters, invitations, business cards, logos and other products, especially of an advertising nature.",
-      "content_print": "Thanks to my experience in <strong>print production</strong>, I understand not only the design itself, but also the entire production process. I prepare materials for printing, plotter cutting, textile printing and laser engraving/cutting.",
+      "content_print": "Thanks to my experience in <strong>print production</strong>, I understand not only the design itself but also the entire manufacturing process. I can prepare files for printing, plotter or laser cutting, textile printing, and engraving.",
       "content_workflow": "I place great emphasis on detail, the right choice of colors, materials and production technologies so that the final product it was professional and suited its purpose.",
-      "content_control": "I carefully check every project from the initial design to the final implementation."
-    },
-
-    "workflow": {
-      "AI": "A more efficient path to results",
-      "content_AI-agent": "I also use <strong>artificial intelligence</strong> tools in my work. I see AI as a useful assistant for quick edits, code review and repetitive tasks.",
-      "content_AI-creative": "I gradually discovered that working with AI brings new technological possibilities and inspiration that I can further develop. However, the suggestions, key decisions and communication with the customer always remain my responsibility."
+      "content_control": "I carefully oversee every project from the design stage to final implementation."
     },
 
     "offer": {
       "title": "Let's create together",
-      "content_build": "Are you interested in my approach? Let's turn your ideas into <strong>digital products</strong> that are understandable, visually appealing, and functional. Together, we'll find a solution that will appeal to your target audience and support your business."
+      "content_build": "Does my approach appeal to you? Let’s work together to turn ideas into products that are <strong>clear, visually appealing, and functional</strong>. Together, we will find a solution that resonates with your target audience and supports your business.",
+      "content_form": "Do you have an idea or a question, or do you simply want to discuss the possibilities? Send me a message using this no-obligation form.",
+      "content_message": "I will get back to you shortly via message or phone (depending on your preference). I look forward to working with you."
     }
   },
 
   "project": {
+    "about": "Project SenseSpace",
     "inspiration": {
       "title": "Why the name <span>SenseSpace</span>?",
-      "content": "<strong>The universe</strong> is a source of inspiration for me. I see it as a space of <strong>infinite possibilities</strong>, <strong>deep meaning and freedom</strong> that naturally mixes with fixed laws. Here I want to create, experiment and share projects that are meaningful to me."
+      "content": "For me, the universe is a source of inspiration. I perceive it as a realm of infinite possibilities, profound meaning, and a freedom that naturally intertwines with immutable laws. It is here that I want to create, experiment, and share projects that hold meaning—both for myself and for others."
     },
 
     "learn": {
+      "details": "Technical notes for developers",
       "title": "What did I learn from this project?",
-      "content_learn": "This project really helped me gain hands-on experience with <strong>JavaScript</strong>, DOM manipulation, event listeners, interactive components, modal windows, sliders, and responsive layouts using HTML/CSS Grid. It also improved my ability to debug code and solve common front-end development challenges.",
-      "content_living": "This is a <strong>living project</strong>. I gradually develop it based on what I learn and what makes sense to me. I would greatly appreciate any <strong>feedback</strong>."
+      "content_learn": "This project helps me gain practical experience with HTML, CSS, and JavaScript—specifically DOM manipulation and the creation of event listeners, interactive components, modal windows, sliders, and responsive layouts using HTML/CSS Grid. I am improving my ability to debug code and solve common front-end development issues.",
+      "content_living": "This is a <strong>living project</strong>. I am gradually developing it based on what I learn. Do you have an idea for improvement or have you found a bug? I appreciate any <strong>constructive feedback</strong>."
     }
   }
 }

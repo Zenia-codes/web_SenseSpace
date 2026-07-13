@@ -12,48 +12,52 @@
 
   "about": {
     "frontend": {
-      "title": "Můj přístup k vývoji",
-      "content_development": "Zájem o technologie ve spojení s designem mě přivedl k <strong>front-end vývoji</strong>.",
-      "content_webdesign": "Objevila jsem svět, ve kterém se kreativita přirozeně propojuje s logikou. Nadchla mě možnost oživit vlastní návrhy a proměnit je v interaktivní webové stránky.",
-      "content_skills": "Dnes dokážu převádět design do responzivních a funkčních řešení a stále se posouvám dál, abych vytvářela moderní digitální produkty s důrazem na uživatelský zážitek."
+      "title": "Co pro Vás mohu vytvořit?",
+      "content_development": "Zájem o technologie ve spojení s designem mě přivedl k <strong>front-end vývoji</strong>. Objevila jsem svět, ve kterém se kreativita přirozeně propojuje s logikou. Nadchla mě možnost oživit vlastní návrhy a proměnit je v interaktivní webové stránky.",
+      "content_webdesign": "Dnes vytvářím a převádím design do responzivních a funkčních řešení s důrazem na uživatelský zážitek."
     },
 
     "workflow": {
       "AI": "Efektivnější cesta k výsledku",
-      "content_AI-agent": "Ve své práci využívám také nástroje <strong>umělé inteligence</strong>. Vnímám ji jako užitečného pomocníka pro rychlé úpravy, kontrolu kódu a opakující se úkoly.",
-      "content_AI-creative": "Postupně jsem zjistila, že spolupráce s AI přináší nové technologické možnosti i inspiraci, kterou mohu dále rozvíjet. Návrhy, klíčová rozhodnutí i komunikace se zákazníkem ale zůstávají vždy na mně."
+      "content_AI-agent": "Ve své práci využívám také nástroje <strong>umělé inteligence</strong>. Vnímám ji jako užitečného pomocníka zejména pro rychlé úpravy a ladění kódu nebo automatizaci rutinních úkolů.",
+      "content_AI-creative": "Spolupráce s AI mi otevírá nové technologické možnosti a přináší inspiraci pro další rozvoj.",
+      "content_human": "Návrhy, klíčová rozhodnutí i komunikaci se zákazníkem mám však vždy ve své režii."
     },
 
     "UX": {
       "title": "Design, který dává smysl",
       "content_design": "Kdybych měla charakterizovat svůj styl tvorby, zvolila bych spojení <strong>minimalistický design</strong>.",
-      "content_exp": "Věřím, že každý prvek na webu by měl mít svůj smysl a jasný účel. Mým cílem je vytvářet vizuálně čisté a přehledné weby, které návštěvníkům nabízejí příjemný uživatelský zážitek, s důrazem na rychlou orientaci v obsahu a funkčnost."
+      "content_exp": "Věřím, že každý prvek, ať už v digitální, nebo jiné podobě, by měl mít svůj jasný účel. Mým cílem je vytvářet vizuálně čisté a přehledné weby, ve kterých se návštěvníci cítí příjemně a snadno se orientují v obsahu."
     },
 
     "graphic": {
       "title": "Grafika & tisk",
       "content_graphic": "Již řadu let se věnuji <strong>Grafickému designu</strong>. Navrhuji letáky, plakáty, pozvánky, vizitky, loga a další produkty, zejména reklamního charakteru.",
-      "content_print": "Díky zkušenostem z <strong>tiskové produkce</strong> rozumím nejen samotnému návrhu, ale i celému procesu výroby. Připravím podklady pro tisk, plotrový výsek, potisk textilu i laserové gravírování / výřez.",
+      "content_print": "Díky zkušenostem z <strong>tiskové produkce</strong> rozumím nejen samotnému návrhu, ale i celému procesu výroby. Zvládnu připravit podklady pro tisk, plotrový / laserový výsek, potisk textilu nebo gravírování.",
       "content_workflow": "Velký důraz kladu na detail, správnou volbu barev, materiálů a výrobních technologií, aby výsledný produkt působil profesionálně a odpovídal svému účelu.",
-      "content_control": "Každý projekt pečlivě kontroluji od prvotního návrhu až po finální realizaci."
+      "content_control": "Každý projekt pečlivě kontroluji od návrhu až po finální realizaci."
     },
 
     "offer": {
       "title": "Pojďme spolu tvořit",
-      "content_build": "Zaujal Vás můj přístup? Pojďme společně proměnit Vaše nápady v <strong>digitální produkty</strong>, které jsou srozumitelné, vizuálně atraktivní a funkční. Spolu najdeme řešení, které osloví Vaši cílovou skupinu a podpoří Vaše podnikání."
+      "content_build": "Zaujal Vás můj přístup? Pojďme společně proměnit nápady v produkty, které budou <strong>srozumitelné, vizuálně atraktivní a funkční</strong>. Spolu najdeme řešení, které osloví Vaši cílovou skupinu a podpoří Vaše podnikání.",
+      "content_form": "Máte nápad, otázku nebo jen chcete probrat možnosti? Napište mi prostřednictvím tohoto nezávazného formuláře.",
+      "content_message": "Ozvu se Vám obratem do zprávy nebo telefonicky (dle preferencí). Těším se na spolupráci."
     }
   },
 
   "project": {
+    "about": "Projekt SenseSpace",
     "inspiration": {
       "title": "Proč <span>SenseSpace</span>?",
-      "content": "Vesmír je pro mě zdrojem inspirace. Vnímám ho jako prostor nekonečných možností, hlubokého významu a svobody, které se přirozeně mísí s pevnými zákony. Chci zde vytvářet, experimentovat a sdílet projekty, které pro mě mají smysl."
+      "content": "Vesmír je pro mě zdrojem inspirace. Vnímám ho jako prostor nekonečných možností, hlubokého významu a svobody, která se přirozeně prolíná s pevnými zákonitostmi. Právě zde chci tvořit, experimentovat a sdílet projekty, které mají smysl – pro mě i pro ostatní."
     },
 
     "learn": {
+      "details": "Technické poznámky pro vývojáře",
       "title": "Co jsem se na tomto projektu naučila?",
-      "content_learn": "Tento projekt mi opravdu pomohl získat praktické zkušenosti s JavaScriptem, manipulací s DOMem, posluchači událostí, interaktivními komponentami, modálními okny, slidery a responzivním rozvržením pomocí HTML/CSS Gridu. Také mi zlepšil schopnost ladit kód a řešit běžné problémy s vývojem front-endu.",
-      "content_living": "Toto je <strong>živý projekt</strong>. Postupně ho rozvíjím na základě toho, co se naučím a co mi dává smysl. Velmi bych ocenil jakoukoli <strong>zpětnou vazbu</strong>."
+      "content_learn": "Tento projekt mi pomáhá získat praktické zkušenosti s HTML, CSS a JavaScriptem, zejména manipulace v DOM, tvorba posluchačů událostí, interaktivních komponent, modálních oken, sliderů a responzivního rozvržení pomocí HTML/CSS Gridu. Zlepšuji svou schopnost ladit kód a řešit běžné problémy s vývojem front-endu.",
+      "content_living": "Toto je <strong>živý projekt</strong>. Postupně ho rozvíjím na základě toho, co se učím. Máte nápad na vylepšení nebo jste našli chybu? Oceňuji jakoukoli <strong>konstruktivní zpětnou vazbu</strong>."
     }
   }
 }
