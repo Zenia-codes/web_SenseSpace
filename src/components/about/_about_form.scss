@@ -24,6 +24,10 @@
   gap: 20px;
   padding: 50px;
 
+  color: c.$akcentColor;
+  font-size: 14px;
+  font-family: f.$basicFont;
+
   .wrapper_contact {
     display: flex;
     flex-direction: column;
@@ -48,16 +52,16 @@
       border: none;
       background: transparent;
       outline: none;
-      color: c.$textLight;
+      color: c.$akcentColor;
       font-family: f.$basicFont;
 
-      caret-color: c.$SmallTextColor;
+      caret-color: c.$akcentColor;
 
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
       &:-webkit-autofill:focus,
       &:-webkit-autofill:active {
-        -webkit-text-fill-color: c.$SmallTextColor;
+        -webkit-text-fill-color: c.$akcentColor;
         -webkit-box-shadow: 0 0 0 1000px transparent inset;
         box-shadow: 0 0 0 1000px transparent inset;
         transition: background-color 9999s ease-in-out 0s;
@@ -94,5 +98,13 @@
     .checkboxText {
       line-height: normal;
     }
+  }
+}
+
+@media (min-width: b.$tabletBreakPoint) {
+  .form {
+    grid-template-columns: minmax(600px);
+    justify-content: center;
+    padding-block: 100px;
   }
 }
