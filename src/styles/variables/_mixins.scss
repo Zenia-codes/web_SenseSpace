@@ -4,10 +4,12 @@
 @mixin heroText($fontSize, $fontColor) {
   font-family: f.$basicFont;
   font-size: $fontSize;
+  font-weight: 300;
   font-style: normal;
   color: $fontColor;
   text-decoration: none;
-  letter-spacing: 0.05em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.03em;
 }
 
 @mixin titleText($fontSize, $fontColor) {
@@ -17,4 +19,23 @@
   color: $fontColor;
   text-decoration: none;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.03em;
+}
+
+@mixin spaceBorder(
+  $padding-top,
+  $padding-right,
+  $padding-bottom,
+  $padding-left
+) {
+  padding-top: $padding-top;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  padding-left: $padding-left;
+  -webkit-backdrop-filter: blur(8px); // Safari / iOS Safari
+  backdrop-filter: blur(8px);
+  background: #ffffff08;
+  border: 1px solid #ffffff1f;
+  border-radius: 10px;
+  overflow: hidden;
 }

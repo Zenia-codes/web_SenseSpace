@@ -16,7 +16,7 @@
   margin-inline: auto;
   justify-content: center;
   text-align: center;
-  padding: 30px 0 50px;
+  padding-block: 50px;
 }
 
 // společné barvy pro varianty
@@ -50,7 +50,7 @@
   line-height: e.$line-height;
   font-weight: 300;
   hyphens: auto; // dělení slov
-  text-align: center;
+  // text-align: center;
 }
 
 .portfolio_slider {
@@ -92,18 +92,8 @@
 
     @include m.heroText(16px, c.$SmallTextColor);
 
-    -webkit-backdrop-filter: blur(10px); // Safari / iOS Safari
-    backdrop-filter: blur(10px);
-    background: rgba(
-      255,
-      255,
-      255,
-      0.04
-    ); // přidání průhlednosti pro starší prohlížeče
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
+    @include m.spaceBorder(35px, 10px, 15px, 0);
 
-    padding: 35px 10px 15px;
     overflow: hidden;
   }
 

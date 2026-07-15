@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .hero_Text {
@@ -17,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 8px;
+    gap: 9px;
 
     .myName {
       @include m.heroText(24px, c.$SmallTextColor);
@@ -29,9 +30,7 @@
 
     .design_frontend {
       @include m.heroText(18px, c.$SmallTextColor);
-      font-weight: 300;
       letter-spacing: 0.1em;
-      line-height: 1.15;
       animation: softlyGlow 4s ease-in-out infinite;
       will-change: transform;
     }
@@ -45,20 +44,14 @@
 }
 
 .design_a_kod {
-  @include m.heroText(17px, c.$akcentColor);
-  font-family: Oxanium, sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.25;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  @include m.titleText(19px, c.$akcentColor);
+  padding-block: 20px;
   animation: softlyGlow 4s ease-in-out infinite;
   will-change: transform;
-  //padding-bottom: 0.08em; // pojistka proti useknutí písmene g
   background: radial-gradient(circle at 10% 30%, #ffb87a, #ff917a, #ff4ecb);
-  text-shadow: 0 1px 1px #cccccc36;
-  background-clip: text;
+
   -webkit-background-clip: text; // Chrome, Edge, Safari
+  background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
@@ -111,6 +104,7 @@
       }
     }
   }
+
   .prstenec {
     position: absolute;
     transform: scale(1.1);
@@ -141,6 +135,7 @@
   background: none;
   font-weight: 600;
   gap: 5px;
+
   @include m.heroText(18px, c.$SmallTextColor);
   letter-spacing: 0.05em;
 
@@ -170,6 +165,7 @@
     z-index: -1;
     filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
   }
+
   // stín za buttonem
   &::after {
     content: "";
@@ -197,6 +193,10 @@
 }
 
 @media (min-width: b.$tabletBreakPoint) {
+  .hero {
+    min-height: 85vh;
+  }
+
   .hero_content {
     display: grid;
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
@@ -219,13 +219,8 @@
       }
     }
 
-    .slogan_button {
-      align-items: start;
-      padding-left: 10px;
-
-      .design_a_kod {
-        font-size: s.$HeroScaleKod;
-      }
+    .design_a_kod {
+      font-size: s.$HeroScaleKod;
     }
   }
 
@@ -253,7 +248,6 @@
   .hero_content {
     .button {
       font-size: 19px;
-      margin-left: 30px;
     }
   }
 }

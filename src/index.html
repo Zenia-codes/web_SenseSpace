@@ -177,7 +177,7 @@
               </div>
             </div>
 
-            <div class="split_row reveal reverse">
+            <div class="split_row reveal reverse" id="contact">
               <div class="split_image">
                 <img
                   src="./assets/images/about_section/about sekce_cafe1.png"
@@ -188,11 +188,51 @@
                 <h2 class="project_name" data-i18n="about.offer.title"></h2>
                 <p data-i18n="about.offer.content_build"></p>
                 <p data-i18n="about.offer.content_form"></p>
-                <p data-i18n="about.offer.content_message"></p>
+                <!-- <p data-i18n="about.offer.content_message"></p> -->
               </div>
             </div>
           </div>
         </div>
+
+        <form class="form container">
+          <div class="wrapper_contact">
+            <div class="contact_form">
+              <label class="form-field" for="name">NAME</label>
+              <input type="text" id="name" class="text" />
+            </div>
+
+            <div class="contact_form">
+              <label class="form-field" for="email">EMAIL</label>
+              <input type="email" id="email" class="email" />
+            </div>
+
+            <div class="contact_form message">
+              <label class="form-field" for="message">
+                What can I help you with?</label
+              >
+              <textarea id="message" class="message" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-container">
+            <label class="form-checkbox">
+              <input type="checkbox" />
+              <span class="checkbox"></span>
+              <p class="form-text">I would like a no-obligation quote.</p>
+            </label>
+
+            <label class="form-checkbox">
+              <input type="checkbox" name="newsletter" />
+              <span class="checkbox"></span>
+              <p class="form-text">
+                I consent to the processing of my personal data for the purpose
+                of responding to my inquiry and providing customer support.
+              </p>
+            </label>
+          </div>
+
+          <button type="submit" class="btn button">Send Message</button>
+        </form>
       </section>
 
       <section class="project section" id="project">
@@ -659,7 +699,7 @@
       </div>
     </div>
 
-    <section class="contactfi" id="contact">
+    <section class="contactfi">
       <div class="contacts_content container"></div>
     </section>
 

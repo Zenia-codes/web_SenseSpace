@@ -41,8 +41,8 @@
     "offer": {
       "title": "Let's create together",
       "content_build": "Does my approach appeal to you? Let’s work together to turn ideas into products that are <strong>clear, visually appealing, and functional</strong>. Together, we will find a solution that resonates with your target audience and supports your business.",
-      "content_form": "Do you have an idea or a question, or do you simply want to discuss the possibilities? Send me a message using this no-obligation form.",
-      "content_message": "I will get back to you shortly via message or phone (depending on your preference). I look forward to working with you."
+      "content_form": "Do you have an idea or a question, or would you simply like to discuss the possibilities? Please get in touch using <strong class=\"offer_form_link\">no-obligation form</strong>. Filling it out takes about a minute, and it helps me better understand how I can assist you."
+      //   "content_message": "I will get back to you shortly via message or phone (depending on your preference). I look forward to working with you."
     }
   },
 
@@ -53,7 +53,7 @@
     },
 
     "learn": {
-      "details": "Technical notes for developers",
+      "details": "Technical details for developers",
       "title": "What did I learn from this project?",
       "content_learn": "This project helps me gain practical experience with HTML, CSS, and JavaScript—specifically DOM manipulation and the creation of event listeners, interactive components, modal windows, sliders, and responsive layouts using HTML/CSS Grid. I am improving my ability to debug code and solve common front-end development issues.",
       "content_living": "This is a <strong>living project</strong>. I am gradually developing it based on what I learn. Do you have an idea for improvement or have you found a bug? I appreciate any <strong>constructive feedback</strong>."

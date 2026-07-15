@@ -31,7 +31,7 @@
     },
 
     "graphic": {
-      "title": "Grafika & tisk",
+      "title": "Grafika & Tisk",
       "content_graphic": "Již řadu let se věnuji <strong>Grafickému designu</strong>. Navrhuji letáky, plakáty, pozvánky, vizitky, loga a další produkty, zejména reklamního charakteru.",
       "content_print": "Díky zkušenostem z <strong>tiskové produkce</strong> rozumím nejen samotnému návrhu, ale i celému procesu výroby. Zvládnu připravit podklady pro tisk, plotrový / laserový výsek, potisk textilu nebo gravírování.",
       "content_workflow": "Velký důraz kladu na detail, správnou volbu barev, materiálů a výrobních technologií, aby výsledný produkt působil profesionálně a odpovídal svému účelu.",
@@ -41,8 +41,8 @@
     "offer": {
       "title": "Pojďme spolu tvořit",
       "content_build": "Zaujal Vás můj přístup? Pojďme společně proměnit nápady v produkty, které budou <strong>srozumitelné, vizuálně atraktivní a funkční</strong>. Spolu najdeme řešení, které osloví Vaši cílovou skupinu a podpoří Vaše podnikání.",
-      "content_form": "Máte nápad, otázku nebo jen chcete probrat možnosti? Napište mi prostřednictvím tohoto nezávazného formuláře.",
-      "content_message": "Ozvu se Vám obratem do zprávy nebo telefonicky (dle preferencí). Těším se na spolupráci."
+      "content_form": "Máte nápad, otázku nebo jen chcete probrat možnosti? Napište mi prostřednictvím <span class=\"offer_form_link\">nezávazného formuláře</span>. Vyplnění zabere přibližně minutu a já díky tomu lépe pochopím, s čím vám mohu pomoci."
+      // "content_message": "Ozvu se Vám obratem do zprávy nebo telefonicky (dle preferencí). Těším se na spolupráci."
     }
   },
 
@@ -53,7 +53,7 @@
     },
 
     "learn": {
-      "details": "Technické poznámky pro vývojáře",
+      "details": "Technické detaily pro vývojáře",
       "title": "Co jsem se na tomto projektu naučila?",
       "content_learn": "Tento projekt mi pomáhá získat praktické zkušenosti s HTML, CSS a JavaScriptem, zejména manipulace v DOM, tvorba posluchačů událostí, interaktivních komponent, modálních oken, sliderů a responzivního rozvržení pomocí HTML/CSS Gridu. Zlepšuji svou schopnost ladit kód a řešit běžné problémy s vývojem front-endu.",
       "content_living": "Toto je <strong>živý projekt</strong>. Postupně ho rozvíjím na základě toho, co se učím. Máte nápad na vylepšení nebo jste našli chybu? Oceňuji jakoukoli <strong>konstruktivní zpětnou vazbu</strong>."
