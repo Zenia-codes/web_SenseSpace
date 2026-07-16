@@ -57,5 +57,43 @@
       "content_learn": "This project helps me gain practical experience with HTML, CSS, and JavaScript—specifically DOM manipulation and the creation of event listeners, interactive components, modal windows, sliders, and responsive layouts using HTML/CSS Grid. I am improving my ability to debug code and solve common front-end development issues.",
       "content_living": "This is a <strong>living project</strong>. I am gradually developing it based on what I learn. Do you have an idea for improvement or have you found a bug? I appreciate any <strong>constructive feedback</strong>."
     }
+  },
+
+  "form": {
+    "message": " 🛠 The contact form is currently under development. In the meantime, please contact me via email at zenia.codes@gmail.com.",
+    "name": "NAME",
+    "help": "What can I help you with?",
+    "quote": "I would like a no-obligation quote.",
+    "personalData": "I consent to the processing of my personal data for the purpose of handling my inquiry and communicating regarding my request.",
+    "button": "send message"
+  },
+
+  "portfolio": {
+    "frontend": {
+      "subtitle1": "Small projects.",
+      "subtitle2": "Big lessons.",
+      "text": "Each project is a step in my development.",
+      "bestshop": "BestShop Website",
+      "invitation": "Electronic RSVP invitation"
+    },
+
+    "graphic": {
+      "subtitle": "From concept to reality.",
+      "text": "A small universe of my creativity.",
+      "pizzaPronto": "Pizzeria Pizza Pronto",
+      "danceClub": "Logo for dance club",
+      "musicalInv": "Musical birthday invitation"
+    }
+  },
+
+  "modal": {
+    "bestshop": {
+      "title": "Responsive Website with Calculator",
+      "technology": "My first project using HTML, SCSS, and JavaScript.",
+      "content_design": "BestShop is a responsive landing page designed with a focus on clean aesthetics, a clear structure, and an intuitive user experience. Its visual style employs bold accents and modern elements that convey a sense of dynamic growth, service quality, and a rapid return on investment.",
+      "content_code": "During development, I focused on clean, well-organized code, responsive design across all devices, and intuitive controls. Thanks to JavaScript, the site also features an interactive calculator that helps visitors navigate the offerings.",
+      "visitWeb": "[ Visit Website ]",
+      "visitCode": "[ View Code ]"
+    }
   }
 }

@@ -196,24 +196,24 @@
 
         <form class="form container">
           <div class="wrapper_contact">
-            <p>
-              🛠 The contact form is currently under development. In the
-              meantime, please contact me via email at zenia.codes@gmail.com.
-            </p>
+            <p data-i18n="form.message"></p>
             <div class="contact_form">
-              <label class="form-field" for="name">NAME</label>
+              <label
+                class="form-field"
+                for="name"
+                data-i18n="form.name"
+              ></label>
               <input type="text" id="name" class="text" />
             </div>
 
             <div class="contact_form">
-              <label class="form-field" for="email">EMAIL</label>
+              <label class="form-field" for="email">E-MAIL</label>
               <input type="email" id="email" class="email" />
             </div>
 
             <div class="contact_form message">
-              <label class="form-field" for="message">
-                What can I help you with?</label
-              >
+              <label class="form-field" for="message" data-i18n="form.help">
+              </label>
               <textarea id="message" class="message" rows="5"></textarea>
             </div>
           </div>
@@ -222,20 +222,19 @@
             <label class="form-checkbox">
               <input type="checkbox" />
               <span class="checkbox"></span>
-              <p class="form-text">I would like a no-obligation quote.</p>
+              <p class="form-text" data-i18n="form.quote"></p>
             </label>
 
             <label class="form-checkbox">
               <input type="checkbox" name="newsletter" />
               <span class="checkbox"></span>
-              <p class="form-text">
-                I consent to the processing of my personal data for the purpose
-                of responding to my inquiry and providing customer support.
-              </p>
+              <p class="form-text" data-i18n="form.personalData"></p>
             </label>
           </div>
 
-          <button type="submit" class="btn button">send message</button>
+          <button type="submit" class="btn button" data-i18n="form.button">
+            send message
+          </button>
         </form>
 
         <!-- "content_message": "I will get back to you shortly via message or
@@ -291,12 +290,16 @@
             Frontend Space
           </div>
           <div class="subtitle_wrapper">
-            <span class="portfolio_subtitle frontend">Small projects.</span>
-            <span class="portfolio_subtitle frontend">Big lessons.</span>
+            <span
+              class="portfolio_subtitle frontend"
+              data-i18n="portfolio.frontend.subtitle1"
+            ></span>
+            <span
+              class="portfolio_subtitle frontend"
+              data-i18n="portfolio.frontend.subtitle2"
+            ></span>
           </div>
-          <p class="portfolio_text">
-            Each project is a step in my development.
-          </p>
+          <p class="portfolio_text" data-i18n="portfolio.frontend.text"></p>
         </div>
 
         <div class="portfolio_slider">
@@ -328,9 +331,10 @@
                     alt="invitation"
                   />
                 </div>
-                <div class="project_text">
-                  <h3>BestShop Web Page</h3>
-                </div>
+                <div
+                  class="project_text"
+                  data-i18n="portfolio.frontend.bestshop"
+                ></div>
               </div>
               <ul class="project_card_tags">
                 <li class="tech-tag">Frontend</li>
@@ -358,7 +362,10 @@
                     alt="invitation"
                   />
                 </div>
-                <div class="project_text">
+                <div
+                  class="project_text"
+                  data-i18n="portfolio.frontend.invitation"
+                >
                   <h3>Electronic RSVP invitation</h3>
                 </div>
               </div>
@@ -416,12 +423,12 @@
           <span class="portfolio_number graphic">[02] </span>Graphic Space
         </div>
         <div class="subtitle_wrapper">
-          <span class="portfolio_subtitle graphic">Visual ideas.</span>
-          <span class="portfolio_subtitle graphic">Creative process.</span>
+          <span
+            class="portfolio_subtitle graphic"
+            data-i18n="portfolio.graphic.subtitle"
+          ></span>
         </div>
-        <p class="portfolio_text">
-          A small universe of my ideas and creativity.
-        </p>
+        <p class="portfolio_text" data-i18n="portfolio.graphic.text"></p>
       </div>
 
       <div class="portfolio_slider">
@@ -444,9 +451,10 @@
                   alt="logo Pizza Pronto"
                 />
               </div>
-              <div class="project_text">
-                <h3>Pizzeria Pizza Pronto</h3>
-              </div>
+              <div
+                class="project_text"
+                data-i18n="portfolio.graphic.pizzaPronto"
+              ></div>
             </div>
 
             <ul class="project_card_tags">
@@ -476,9 +484,10 @@
                   alt="logo with dancer"
                 />
               </div>
-              <div class="project_text">
-                <h3>Logo for dance club</h3>
-              </div>
+              <div
+                class="project_text"
+                data-i18n="portfolio.graphic.danceClub"
+              ></div>
             </div>
 
             <ul class="project_card_tags">
@@ -507,9 +516,10 @@
                   alt="invitation"
                 />
               </div>
-              <div class="project_text">
-                <h3>Musical birthday invitation</h3>
-              </div>
+              <div
+                class="project_text"
+                data-i18n="portfolio.graphic.musicalInv"
+              ></div>
             </div>
 
             <ul class="project_card_tags">
@@ -556,20 +566,17 @@
             alt="astronaut flying on a rocket"
           /> -->
           <h1 class="modal_title">[ BestShop ]</h1>
-          <h2 class="modal_title">Responsive Web Page with Calculator</h2>
-          <p class="modal_text">
-            My first project using HTML, SCSS, and JavaScript.
-          </p>
-          <p class="modal_text">
-            I built this responsive landing page to practice creating a
-            responsive calculator and improve my front-end development skills.
-          </p>
+          <h2 class="modal_title" data-i18n="modal.bestshop.title"></h2>
+          <p class="modal_text" data-i18n="modal.bestshop.technology"></p>
+          <p class="modal_text" data-i18n="modal.bestshop.content_design"></p>
+          <p class="modal_text" data-i18n="modal.bestshop.content_code"></p>
           <div class="modal_links">
             <a
               href="https://zenia-codes.github.io/BestShop_project/"
               target="_blank"
               rel="noopener noreferrer"
               class="btn"
+              data-i18n="modal.bestshop.visitWeb"
               >[ Visit Website ]</a
             >
             <a
@@ -577,6 +584,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn"
+              data-i18n="modal.bestshop.visitCode"
             >
               [ View Code ]
             </a>

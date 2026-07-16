@@ -11,12 +11,11 @@
 
 .portfolio_header {
   display: grid;
-  width: 80%;
   row-gap: 8px;
   margin-inline: auto;
   justify-content: center;
   text-align: center;
-  padding-block: 50px;
+  padding: 50px;
 }
 
 // společné barvy pro varianty
@@ -32,21 +31,22 @@
 }
 
 .portfolio_label {
-  @include m.titleText(24px, c.$SmallTextColor);
+  @include m.titleText(21px, c.$SmallTextColor);
   font-weight: 500;
 }
 
 .subtitle_wrapper {
   display: flex;
-  gap: 5px;
+  justify-self: center;
+  gap: 6px;
 
-  @include m.titleText(17px, c.$SmallTextColor);
+  @include m.titleText(16px, c.$SmallTextColor);
   font-weight: 500;
   letter-spacing: 0.03em;
 }
 
 .portfolio_text {
-  @include m.heroText(14px, c.$SmallTextColor);
+  @include m.heroText(15px, c.$SmallTextColor);
   line-height: e.$line-height;
   font-weight: 300;
   hyphens: auto; // dělení slov
@@ -92,7 +92,7 @@
 
     @include m.heroText(16px, c.$SmallTextColor);
 
-    @include m.spaceBorder(35px, 10px, 15px, 0);
+    @include m.spaceBorder(35px, 7px, 15px, 7px);
 
     overflow: hidden;
   }
@@ -122,6 +122,8 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    font-family: f.$titleFont;
+    font-weight: 400;
   }
 }
 
@@ -236,7 +238,7 @@
   }
 
   .subtitle_wrapper {
-    justify-content: end;
+    justify-self: end;
     align-self: end;
     gap: 8px;
     font-size: 16px;

@@ -57,5 +57,43 @@
       "content_learn": "Tento projekt mi pomáhá získat praktické zkušenosti s HTML, CSS a JavaScriptem, zejména manipulace v DOM, tvorba posluchačů událostí, interaktivních komponent, modálních oken, sliderů a responzivního rozvržení pomocí HTML/CSS Gridu. Zlepšuji svou schopnost ladit kód a řešit běžné problémy s vývojem front-endu.",
       "content_living": "Toto je <strong>živý projekt</strong>. Postupně ho rozvíjím na základě toho, co se učím. Máte nápad na vylepšení nebo jste našli chybu? Oceňuji jakoukoli <strong>konstruktivní zpětnou vazbu</strong>."
     }
+  },
+
+  "form": {
+    "message": " 🛠 Kontaktní formulář se momentálně připravuje. Mezitím mě prosím kontaktujte e-mailem na adrese zenia.codes@gmail.com.",
+    "name": "JMÉNO",
+    "help": "S čím Vám mohu pomoci?",
+    "quote": "Chci nezávaznou kalkulaci.",
+    "personalData": "Souhlasím se zpracováním svých osobních údajů za účelem vyřízení dotazu a komunikace související s mou poptávkou.",
+    "button": "poslat zprávu"
+  },
+
+  "portfolio": {
+    "frontend": {
+      "subtitle1": "Malé projekty.",
+      "subtitle2": "Velké lekce.",
+      "text": "Každý projekt je krokem v mém vývoji.",
+      "bestshop": "Web BestShop",
+      "invitation": "Electronická RSVP pozvánka"
+    },
+
+    "graphic": {
+      "subtitle": "Od návrhu k realizaci.",
+      "text": "Malý vesmír mé kreativity.",
+      "pizzaPronto": "Pizzerie Pizza Pronto",
+      "danceClub": "Logo pro taneční klub",
+      "musicalInv": "Hudební narozeninová pozvánka"
+    }
+  },
+
+  "modal": {
+    "bestshop": {
+      "title": "Responzivní webová stránka s kalkulačkou",
+      "technology": "Můj první projekt vytvořený pomocí HTML, SCSS and JavaScriptu.",
+      "content_design": "BestShop je responzivní vstupní stránka navržená s důrazem na čistý design, přehlednou strukturu a intuitivní uživatelské prostředí. Grafický styl využívá výrazné akcenty a moderní prvky, které podporují dojem dynamického růstu, kvality služeb a rychlé návratnosti investice.",
+      "content_code": "Při vývoji jsem kladla důraz na čistý a přehledný kód, responzivní zobrazení na všech zařízeních a intuitivní ovládání. Díky JavaScriptu stránka obsahuje také interaktivní kalkulačku, která návštěvníkům usnadňuje orientaci v nabídce.",
+      "visitWeb": "[ Navštiv Web ]",
+      "visitCode": "[ Ukaž kód ]"
+    }
   }
 }
