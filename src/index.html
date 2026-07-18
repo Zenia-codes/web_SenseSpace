@@ -125,7 +125,7 @@
               </div>
               <div class="split_text">
                 <h2 class="project_name" data-i18n="about.frontend.title"></h2>
-                <p data-i18n="about.frontend.content_development"></p>
+                <p data-i18n="about.frontend.content_development" data-html></p>
                 <p data-i18n="about.frontend.content_webdesign"></p>
               </div>
             </div>
@@ -141,7 +141,7 @@
                 <h2 class="project_name" data-i18n="about.workflow.AI">
                   Creative Workflow
                 </h2>
-                <p data-i18n="about.workflow.content_AI-agent"></p>
+                <p data-i18n="about.workflow.content_AI-agent" data-html></p>
                 <p data-i18n="about.workflow.content_AI-creative"></p>
                 <p data-i18n="about.workflow.content_human"></p>
               </div>
@@ -156,7 +156,7 @@
               </div>
               <div class="split_text">
                 <h2 class="project_name" data-i18n="about.UX.title"></h2>
-                <p data-i18n="about.UX.content_design"></p>
+                <p data-i18n="about.UX.content_design" data-html></p>
                 <p data-i18n="about.UX.content_exp"></p>
               </div>
             </div>
@@ -170,8 +170,8 @@
               </div>
               <div class="split_text">
                 <h2 class="project_name" data-i18n="about.graphic.title"></h2>
-                <p data-i18n="about.graphic.content_graphic"></p>
-                <p data-i18n="about.graphic.content_print"></p>
+                <p data-i18n="about.graphic.content_graphic" data-html></p>
+                <p data-i18n="about.graphic.content_print" data-html></p>
                 <p data-i18n="about.graphic.content_workflow"></p>
                 <p data-i18n="about.graphic.content_control"></p>
               </div>
@@ -186,8 +186,8 @@
               </div>
               <div class="split_text">
                 <h2 class="project_name" data-i18n="about.offer.title"></h2>
-                <p data-i18n="about.offer.content_build"></p>
-                <p data-i18n="about.offer.content_form"></p>
+                <p data-i18n="about.offer.content_build" data-html></p>
+                <p data-i18n="about.offer.content_form" data-html></p>
                 <!-- <p data-i18n="about.offer.content_message"></p> -->
               </div>
             </div>
@@ -201,19 +201,28 @@
           </div>
 
           <div class="wrapper_contact">
-            <p data-i18n="form.message"></p>
             <div class="contact_form">
               <label
                 class="form-field"
-                for="name"
+                for="customerName"
                 data-i18n="form.name"
               ></label>
-              <input type="text" id="customerName" class="text" />
+              <input
+                type="text"
+                id="customerName"
+                class="text"
+                autocomplete="name"
+              />
             </div>
 
             <div class="contact_form">
               <label class="form-field" for="email">E-MAIL</label>
-              <input type="email" id="email" class="email" />
+              <input
+                type="email"
+                id="email"
+                class="email"
+                autocomplete="email"
+              />
             </div>
 
             <div class="contact_form message">
@@ -257,6 +266,7 @@
                 <h2
                   class="project_name"
                   data-i18n="project.inspiration.title"
+                  data-html
                 ></h2>
                 <p data-i18n="project.inspiration.content"></p>
               </div>
@@ -274,7 +284,7 @@
                 <div class="split_text">
                   <h2 class="project_name" data-i18n="project.learn.title"></h2>
                   <p data-i18n="project.learn.content_learn"></p>
-                  <p data-i18n="project.learn.content_living"></p>
+                  <p data-i18n="project.learn.content_living" data-html></p>
                 </div>
               </div>
             </details>

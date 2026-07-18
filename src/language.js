@@ -16,7 +16,12 @@ export function changeLanguage(lang) {
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
-    el.innerHTML = t(key);
+
+    if (el.hasAttribute("data-html")) {
+      el.innerHTML = t(key);
+    } else {
+      el.textContent = t(key);
+    }
   });
 
   localStorage.setItem("language", lang);

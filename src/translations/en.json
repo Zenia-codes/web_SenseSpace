@@ -60,7 +60,6 @@
   },
 
   "form": {
-    "message": " 🛠 The contact form is currently under development. In the meantime, please contact me via email at zenia.codes@gmail.com.",
     "name": "NAME",
     "help": "What can I help you with?",
     "quote": "I would like a no-obligation quote.",
