@@ -106,6 +106,7 @@
     "validation": {
       "nameTooShort": "Please enter your full name.",
       "nameTooLong": "The name is too long.",
+      "emailInvalid": "Please enter a valid email address.",
       "emailMissingDot": "The email is missing a dot.",
       "messageRequired": "Please enter your message.",
       "consent": "You must agree to the processing of personal data."
