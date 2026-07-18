@@ -3,12 +3,12 @@ import { t, changeLanguage } from "../../language.js";
 const form = document.querySelector(".form");
 const errorMessage = document.querySelector("#errorMessage");
 const successMessage = document.querySelector("#successMessage");
+const submitBtn = form.querySelector('button[type="submit"]');
 
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   //nejprve reset stareho stavu f.
-  hideMessages();
 
   const customerName = document.querySelector("#customerName").value.trim();
   const email = document.querySelector("#email").value.trim();
@@ -69,11 +69,41 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  successMessage.dataset.i18n = "messages.submit.success";
-  successMessage.textContent = t("messages.submit.success");
-  successMessage.classList.remove("hidden");
+  const formData = new FormData(form);
 
-  form.reset();
+  formData.append("access_key", "0c5f8f02-46c1-43bb-b8ee-02869c6c67ba");
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = t("messages.sending");
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    // console.log("Odesílám data:", Object.fromEntries(formData));
+
+    const data = await response.json();
+
+    if (response.ok) {
+      successMessage.dataset.i18n = "messages.submit.success";
+      successMessage.textContent = t("messages.submit.success");
+      successMessage.classList.remove("hidden");
+
+      form.reset();
+    } else {
+      errorMessage.textContent = data.message;
+      errorMessage.classList.remove("hidden");
+    }
+  } catch (error) {
+    errorMessage.dataset.i18n = "messages.submit.error";
+    errorMessage.textContent = t("messages.submit.error");
+    errorMessage.classList.remove("hidden");
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Odeslat";
+  }
 });
 
 function hideMessages() {

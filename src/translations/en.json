@@ -109,6 +109,8 @@
       "emailMissingDot": "The email is missing a dot.",
       "messageRequired": "Please enter your message.",
       "consent": "You must agree to the processing of personal data."
-    }
+    },
+
+    "sending": "sending..."
   }
 }

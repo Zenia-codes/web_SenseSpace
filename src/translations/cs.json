@@ -109,6 +109,8 @@
       "emailMissingDot": "V e-mailu chybí tečka.",
       "messageRequired": "Prosím, napište svou zprávu.",
       "consent": "Musíte souhlasit se zpracováním osobních dat."
-    }
+    },
+
+    "sending": "Odesílám..."
   }
 }

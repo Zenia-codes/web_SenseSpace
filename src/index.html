@@ -212,6 +212,7 @@
                 id="customerName"
                 class="text"
                 autocomplete="name"
+                name="name"
               />
             </div>
 
@@ -222,25 +223,31 @@
                 id="email"
                 class="email"
                 autocomplete="email"
+                name="email"
               />
             </div>
 
             <div class="contact_form message">
               <label class="form-field" for="message" data-i18n="form.help">
               </label>
-              <textarea id="message" class="message" rows="5"></textarea>
+              <textarea
+                id="message"
+                class="message"
+                name="message"
+                rows="5"
+              ></textarea>
             </div>
           </div>
 
           <div class="form-container">
             <label class="form-checkbox">
-              <input type="checkbox" id="request-quote" />
+              <input type="checkbox" id="request-quote" name="quote" />
               <span class="checkbox"></span>
               <p class="form-text" data-i18n="form.quote"></p>
             </label>
 
             <label class="form-checkbox">
-              <input type="checkbox" name="newsletter" id="privacy-consent" />
+              <input type="checkbox" name="personalData" id="privacy-consent" />
               <span class="checkbox"></span>
               <p class="form-text" data-i18n="form.personalData"></p>
             </label>
