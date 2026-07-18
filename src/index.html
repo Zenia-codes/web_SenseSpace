@@ -194,7 +194,12 @@
           </div>
         </div>
 
-        <form class="form container">
+        <form class="form container" novalidate>
+          <div id="formMessages">
+            <p id="errorMessage" class="hidden"></p>
+            <p id="successMessage" class="hidden"></p>
+          </div>
+
           <div class="wrapper_contact">
             <p data-i18n="form.message"></p>
             <div class="contact_form">
@@ -203,7 +208,7 @@
                 for="name"
                 data-i18n="form.name"
               ></label>
-              <input type="text" id="name" class="text" />
+              <input type="text" id="customerName" class="text" />
             </div>
 
             <div class="contact_form">
@@ -220,13 +225,13 @@
 
           <div class="form-container">
             <label class="form-checkbox">
-              <input type="checkbox" />
+              <input type="checkbox" id="request-quote" />
               <span class="checkbox"></span>
               <p class="form-text" data-i18n="form.quote"></p>
             </label>
 
             <label class="form-checkbox">
-              <input type="checkbox" name="newsletter" />
+              <input type="checkbox" name="newsletter" id="privacy-consent" />
               <span class="checkbox"></span>
               <p class="form-text" data-i18n="form.personalData"></p>
             </label>
@@ -236,11 +241,6 @@
             send message
           </button>
         </form>
-
-        <!-- "content_message": "I will get back to you shortly via message or
-        phone (depending on your preference). I look forward to working with
-        you." "content_message": "Ozvu se Vám obratem do zprávy nebo
-        telefonicky (dle preferencí). Těším se na spolupráci." -->
       </section>
 
       <section class="project section" id="project">
@@ -331,10 +331,9 @@
                     alt="invitation"
                   />
                 </div>
-                <div
-                  class="project_text"
-                  data-i18n="portfolio.frontend.bestshop"
-                ></div>
+                <div class="project_text">
+                  <h3 data-i18n="portfolio.frontend.bestshop"></h3>
+                </div>
               </div>
               <ul class="project_card_tags">
                 <li class="tech-tag">Frontend</li>
@@ -362,11 +361,8 @@
                     alt="invitation"
                   />
                 </div>
-                <div
-                  class="project_text"
-                  data-i18n="portfolio.frontend.invitation"
-                >
-                  <h3>Electronic RSVP invitation</h3>
+                <div class="project_text">
+                  <h3 data-i18n="portfolio.frontend.invitation"></h3>
                 </div>
               </div>
 
@@ -451,10 +447,9 @@
                   alt="logo Pizza Pronto"
                 />
               </div>
-              <div
-                class="project_text"
-                data-i18n="portfolio.graphic.pizzaPronto"
-              ></div>
+              <div class="project_text">
+                <h3 data-i18n="portfolio.graphic.pizzaPronto"></h3>
+              </div>
             </div>
 
             <ul class="project_card_tags">
@@ -484,10 +479,9 @@
                   alt="logo with dancer"
                 />
               </div>
-              <div
-                class="project_text"
-                data-i18n="portfolio.graphic.danceClub"
-              ></div>
+              <div class="project_text">
+                <h3 data-i18n="portfolio.graphic.danceClub"></h3>
+              </div>
             </div>
 
             <ul class="project_card_tags">
@@ -516,10 +510,9 @@
                   alt="invitation"
                 />
               </div>
-              <div
-                class="project_text"
-                data-i18n="portfolio.graphic.musicalInv"
-              ></div>
+              <div class="project_text">
+                <h3 data-i18n="portfolio.graphic.musicalInv"></h3>
+              </div>
             </div>
 
             <ul class="project_card_tags">

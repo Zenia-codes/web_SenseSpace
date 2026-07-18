@@ -48,7 +48,7 @@
   "project": {
     "inspiration": {
       "title": "Projekt <span>SenseSpace</span>",
-      "content": "Vesmír je pro mě zdrojem inspirace. Vnímám ho jako prostor nekonečných možností, hlubokého významu a svobody, která se přirozeně prolíná s pevnými zákonitostmi. Právě zde chci tvořit, experimentovat a sdílet projekty, které mají smysl – pro mě i pro ostatní."
+      "content": "Vesmír je pro mě zdrojem inspirace. Vnímám ho jako prostor nekonečných možností, hlubokého významu a svobody, která se přirozeně prolíná s pevnými zákonitostmi. V tomto svém vesmírném prostoru chci tvořit, experimentovat a sdílet projekty, které mají smysl – pro mě i pro ostatní."
     },
 
     "learn": {
@@ -94,6 +94,22 @@
       "content_code": "Při vývoji jsem kladla důraz na čistý a přehledný kód, responzivní zobrazení na všech zařízeních a intuitivní ovládání. Díky JavaScriptu stránka obsahuje také interaktivní kalkulačku, která návštěvníkům usnadňuje orientaci v nabídce.",
       "visitWeb": "[ Navštiv Web ]",
       "visitCode": "[ Ukaž kód ]"
+    }
+  },
+
+  "messages": {
+    "submit": {
+      "success": "Hotovo ✨ Formulář byl úspěšně odeslán. Brzy se vám ozvu. Těším se na případnou spolupráci.",
+      "error": "Něco se pokazilo 🚨 Zkuste to prosím znovu později."
+    },
+
+    "validation": {
+      "nameTooShort": "Prosím, vložte celé jméno.",
+      "nameTooLong": "Jméno je příliš dlouhé.",
+      "emailInvalid": "Prosím, vložte správnou e-mailovou adresu.",
+      "emailMissingDot": "V e-mailu chybí tečka.",
+      "messageRequired": "Prosím, napište svou zprávu.",
+      "consent": "Musíte souhlasit se zpracováním osobních dat."
     }
   }
 }

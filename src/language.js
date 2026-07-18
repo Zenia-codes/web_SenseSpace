@@ -11,22 +11,27 @@ function getTranslation(obj, path) {
   return path.split(".").reduce((acc, key) => acc?.[key], obj);
 }
 
-function changeLanguage(lang) {
-  const translation = translations[lang];
+export function changeLanguage(lang) {
+  document.documentElement.lang = lang;
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
-
-    if (!translation[key]) {
-      console.warn(`Missing translation: ${key}`);
-    }
-
-    el.innerHTML = getTranslation(translation, key) || key;
+    el.innerHTML = t(key);
   });
 
-  document.documentElement.lang = lang;
-
   localStorage.setItem("language", lang);
+}
+
+export function t(key) {
+  const lang = document.documentElement.lang;
+  const value = getTranslation(translations[lang], key);
+
+  if (value === undefined) {
+    console.warn(`Missing translation: ${key}`);
+    return key;
+  }
+
+  return value;
 }
 
 // tlačítka CZ / EN
