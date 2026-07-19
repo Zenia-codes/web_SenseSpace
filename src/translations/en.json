@@ -41,7 +41,7 @@
     "offer": {
       "title": "Let's create together",
       "content_build": "Does my approach appeal to you? Let’s work together to turn ideas into products that are <strong>clear, visually appealing, and functional</strong>. Together, we will find a solution that resonates with your target audience and supports your business.",
-      "content_form": "Do you have an idea or a question, or would you simply like to discuss the possibilities? Please get in touch using <strong class=\"offer_form_link\">no-obligation form</strong>. Filling it out takes about a minute, and it helps me better understand how I can assist you."
+      "content_form": "Do you have an idea or a question, or would you simply like to discuss the possibilities? Please get in touch using <strong><a href=\"#form\" class=\"offer_form_link\">no-obligation form</a></strong>. Filling it out takes about a minute, and it helps me better understand how I can assist you."
     }
   },
 
@@ -60,6 +60,7 @@
   },
 
   "form": {
+    "title": "Let´s Talk",
     "name": "NAME",
     "help": "What can I help you with?",
     "quote": "I would like a no-obligation quote.",

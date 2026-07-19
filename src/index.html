@@ -188,75 +188,10 @@
                 <h2 class="project_name" data-i18n="about.offer.title"></h2>
                 <p data-i18n="about.offer.content_build" data-html></p>
                 <p data-i18n="about.offer.content_form" data-html></p>
-                <!-- <p data-i18n="about.offer.content_message"></p> -->
               </div>
             </div>
           </div>
         </div>
-
-        <form class="form container" novalidate>
-          <div id="formMessages">
-            <p id="errorMessage" class="hidden"></p>
-            <p id="successMessage" class="hidden"></p>
-          </div>
-
-          <div class="wrapper_contact">
-            <div class="contact_form">
-              <label
-                class="form-field"
-                for="customerName"
-                data-i18n="form.name"
-              ></label>
-              <input
-                type="text"
-                id="customerName"
-                class="text"
-                autocomplete="name"
-                name="name"
-              />
-            </div>
-
-            <div class="contact_form">
-              <label class="form-field" for="email">E-MAIL</label>
-              <input
-                type="email"
-                id="email"
-                class="email"
-                autocomplete="email"
-                name="email"
-              />
-            </div>
-
-            <div class="contact_form message">
-              <label class="form-field" for="message" data-i18n="form.help">
-              </label>
-              <textarea
-                id="message"
-                class="message"
-                name="message"
-                rows="5"
-              ></textarea>
-            </div>
-          </div>
-
-          <div class="form-container">
-            <label class="form-checkbox">
-              <input type="checkbox" id="request-quote" name="quote" />
-              <span class="checkbox"></span>
-              <p class="form-text" data-i18n="form.quote"></p>
-            </label>
-
-            <label class="form-checkbox">
-              <input type="checkbox" name="personalData" id="privacy-consent" />
-              <span class="checkbox"></span>
-              <p class="form-text" data-i18n="form.personalData"></p>
-            </label>
-          </div>
-
-          <button type="submit" class="btn button" data-i18n="form.button">
-            send message
-          </button>
-        </form>
       </section>
 
       <section class="project section" id="project">
@@ -726,9 +661,74 @@
       </div>
     </div>
 
-    <section class="contactfi">
+    <!-- <section class="contactfi">
       <div class="contacts_content container"></div>
-    </section>
+    </section> -->
+
+    <form class="form container" novalidate id="form">
+      <div id="formMessages">
+        <p id="errorMessage" class="hidden"></p>
+        <p id="successMessage" class="hidden"></p>
+      </div>
+
+      <div class="wrapper_contact">
+        <h3 data-i18n="form.title"></h3>
+        <div class="contact_form">
+          <label
+            class="form-field"
+            for="customerName"
+            data-i18n="form.name"
+          ></label>
+          <input
+            type="text"
+            id="customerName"
+            class="text"
+            autocomplete="name"
+            name="name"
+          />
+        </div>
+
+        <div class="contact_form">
+          <label class="form-field" for="email">E-MAIL</label>
+          <input
+            type="email"
+            id="email"
+            class="email"
+            autocomplete="email"
+            name="email"
+          />
+        </div>
+
+        <div class="contact_form message">
+          <label class="form-field" for="message" data-i18n="form.help">
+          </label>
+          <textarea
+            id="message"
+            class="message"
+            name="message"
+            rows="5"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <label class="form-checkbox">
+          <input type="checkbox" id="request-quote" name="quote" />
+          <span class="checkbox"></span>
+          <p class="form-text" data-i18n="form.quote"></p>
+        </label>
+
+        <label class="form-checkbox">
+          <input type="checkbox" name="personalData" id="privacy-consent" />
+          <span class="checkbox"></span>
+          <p class="form-text" data-i18n="form.personalData"></p>
+        </label>
+      </div>
+
+      <button type="submit" class="btn button" data-i18n="form.button">
+        send message
+      </button>
+    </form>
 
     <footer class="footer">
       <ul class="socials_list">

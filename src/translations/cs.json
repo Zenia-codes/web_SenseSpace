@@ -41,7 +41,7 @@
     "offer": {
       "title": "Pojďme spolu tvořit",
       "content_build": "Zaujal Vás můj přístup? Pojďme společně proměnit nápady v produkty, které budou <strong>srozumitelné, vizuálně atraktivní a funkční</strong>. Spolu najdeme řešení, které osloví Vaši cílovou skupinu a podpoří Vaše podnikání.",
-      "content_form": "Máte nápad, otázku nebo jen chcete probrat možnosti? Napište mi prostřednictvím <span class=\"offer_form_link\">nezávazného formuláře</span>. Vyplnění zabere přibližně minutu a já díky tomu lépe pochopím, s čím vám mohu pomoci."
+      "content_form": "Máte nápad, otázku nebo jen chcete probrat možnosti? Napište mi prostřednictvím <strong><a href=\"#form\" class=\"offer_form_link\">nezávazného formuláře</a></strong>. Vyplnění zabere přibližně minutu a já díky tomu lépe pochopím, s čím vám mohu pomoci."
     }
   },
 
@@ -60,6 +60,7 @@
   },
 
   "form": {
+    "title": "Pojďme se spojit",
     "name": "JMÉNO",
     "help": "S čím Vám mohu pomoci?",
     "quote": "Chci nezávaznou kalkulaci.",

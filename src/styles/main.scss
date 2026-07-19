@@ -35,16 +35,19 @@ body {
   }
 }
 
-#about {
+#about,
+#project {
   scroll-margin-top: 40px;
   padding-top: 70px;
 }
 
-#portfolio {
+#portfolio,
+#contact {
   scroll-margin-top: 80px;
 }
 
-#hero {
+#hero,
+#form {
   scroll-margin-top: 70px; // výška navigace //
 }
 

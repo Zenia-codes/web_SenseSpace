@@ -5,9 +5,9 @@
 @use "../../styles/variables/mixins" as m;
 
 .offer_form_link {
-  color: c.$akcentColor;
+  @include m.heroText(15px, c.$akcentColor);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   border-bottom: 1px solid c.$akcentColor;
   transition: color 0.2s;
 
@@ -22,7 +22,7 @@
 .form {
   display: grid;
   gap: 20px;
-  padding: 50px;
+  padding: 20px 50px;
 
   color: c.$akcentColor;
   font-size: 14px;
@@ -31,7 +31,7 @@
   .wrapper_contact {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
   .form-field {
