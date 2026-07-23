@@ -6,7 +6,10 @@ const successMessage = document.querySelector("#successMessage");
 const submitBtn = form.querySelector('button[type="submit"]');
 
 form.addEventListener("submit", async function (e) {
+  console.log("FORM SUBMIT START");
   e.preventDefault();
+
+  console.log("AFTER PREVENT DEFAULT");
 
   //nejprve reset stareho stavu f.
 
@@ -17,6 +20,8 @@ form.addEventListener("submit", async function (e) {
 
   const quoteCheckbox = document.querySelector("#request-quote");
   const consentCheckbox = document.querySelector("#privacy-consent");
+
+  console.log("CHECKBOXES:", quoteCheckbox, consentCheckbox);
 
   const requestQuote = quoteCheckbox.checked;
   const privacyConsent = consentCheckbox.checked;
@@ -71,7 +76,11 @@ form.addEventListener("submit", async function (e) {
 
   const formData = new FormData(form);
 
+  console.log("FORM DATA CREATED");
+  console.log("WEB3 KEY EXISTS:", Boolean(process.env.WEB3FORMS_KEY));
+
   formData.append("access_key", process.env.WEB3FORMS_KEY);
+  console.log("WEB3 KEY:", process.env.WEB3FORMS_KEY);
 
   submitBtn.disabled = true;
   submitBtn.textContent = t("messages.sending");
@@ -82,9 +91,11 @@ form.addEventListener("submit", async function (e) {
       body: formData,
     });
 
-    // console.log("Odesílám data:", Object.fromEntries(formData));
+    console.log("FETCH RESPONSE", response);
 
     const data = await response.json();
+
+    console.log("RESULT", data);
 
     if (response.ok) {
       successMessage.dataset.i18n = "messages.submit.success";
