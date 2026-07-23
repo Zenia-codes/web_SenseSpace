@@ -33,6 +33,8 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env:
+          WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
