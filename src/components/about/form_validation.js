@@ -3,7 +3,7 @@ import { t, changeLanguage } from "../../language.js";
 const form = document.querySelector(".form");
 const errorMessage = document.querySelector("#errorMessage");
 const successMessage = document.querySelector("#successMessage");
-const submitBtn = form.querySelector('button[type="submit"]');
+const submitBtn = document.querySelector("#submitButton");
 
 form.addEventListener("submit", async function (e) {
   console.log("FORM SUBMIT START");
