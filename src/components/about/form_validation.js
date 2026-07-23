@@ -71,7 +71,7 @@ form.addEventListener("submit", async function (e) {
 
   const formData = new FormData(form);
 
-  formData.append("access_key", "0c5f8f02-46c1-43bb-b8ee-02869c6c67ba");
+  formData.append("access_key", process.env.WEB3FORMS_KEY);
 
   submitBtn.disabled = true;
   submitBtn.textContent = t("messages.sending");

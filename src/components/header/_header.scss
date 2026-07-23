@@ -7,12 +7,17 @@
 .changeLanguage {
   display: flex;
   gap: 10px;
-  border-radius: 8px;
+
   .lang-btn {
     font-family: f.$titleFont;
     font-size: 13px;
     font-weight: 600;
     line-height: 2;
+    border-radius: 8px;
+
+    &:active {
+      transform: scale(0.92);
+    }
   }
 }
 
