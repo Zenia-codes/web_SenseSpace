@@ -90,8 +90,8 @@
     "bestshop": {
       "title": "Responzivní webová stránka s kalkulačkou",
       "technology": "Můj první projekt vytvořený pomocí HTML, SCSS and JavaScriptu.",
-      "content_design": "BestShop je responzivní vstupní stránka navržená s důrazem na čistý design, přehlednou strukturu a intuitivní uživatelské prostředí. Grafický styl využívá výrazné akcenty a moderní prvky, které podporují dojem dynamického růstu, kvality služeb a rychlé návratnosti investice.",
-      "content_code": "Při vývoji jsem kladla důraz na čistý a přehledný kód, responzivní zobrazení na všech zařízeních a intuitivní ovládání. Díky JavaScriptu stránka obsahuje také interaktivní kalkulačku, která návštěvníkům usnadňuje orientaci v nabídce.",
+      "content_design": "BestShop jsem navrhovala s důrazem na čistý design, přehlednou strukturu a intuitivní uživatelské prostředí. Grafický styl využívá výrazné akcenty a moderní prvky, které podporují dojem dynamického růstu, kvality služeb a rychlé návratnosti investice.",
+      "content_code": "Při vývoji jsem dbala na čistý a přehledný kód, responzivní zobrazení na všech zařízeních a intuitivní ovládání. Pomocí JavaScriptu jsem vytvořila také interaktivní kalkulačku, která návštěvníkům usnadňuje orientaci v cenové nabídce.",
       "visitWeb": "[ Navštiv Web ]",
       "visitCode": "[ Ukaž kód ]"
     }

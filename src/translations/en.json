@@ -90,8 +90,8 @@
     "bestshop": {
       "title": "Responsive Website with Calculator",
       "technology": "My first project using HTML, SCSS, and JavaScript.",
-      "content_design": "BestShop is a responsive landing page designed with a focus on clean aesthetics, a clear structure, and an intuitive user experience. Its visual style employs bold accents and modern elements that convey a sense of dynamic growth, service quality, and a rapid return on investment.",
-      "content_code": "During development, I focused on clean, well-organized code, responsive design across all devices, and intuitive controls. Thanks to JavaScript, the site also features an interactive calculator that helps visitors navigate the offerings.",
+      "content_design": "I designed BestShop with a focus on clean aesthetics, a clear structure, and an intuitive user experience. The visual style employs bold accents and modern elements that convey a sense of dynamic growth, service quality, and a rapid return on investment.",
+      "content_code": "During development, I prioritized clean, well-organized code, responsive display across all devices, and intuitive controls. I also used JavaScript to create an interactive calculator that helps visitors easily navigate the pricing options.",
       "visitWeb": "[ Visit Website ]",
       "visitCode": "[ View Code ]"
     }
