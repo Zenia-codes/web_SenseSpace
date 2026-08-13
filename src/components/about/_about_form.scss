@@ -22,11 +22,11 @@
 .form {
   display: grid;
   gap: 20px;
-  padding-block: 20px;
 
   color: c.$akcentColor;
   font-size: 14px;
   font-family: f.$basicFont;
+  padding-inline: 30px;
 
   .wrapper_contact {
     display: flex;
@@ -111,6 +111,5 @@
 @media (min-width: b.$tabletBreakPoint) {
   .form {
     justify-content: center;
-    padding-block: 100px;
   }
 }

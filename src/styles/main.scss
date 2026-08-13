@@ -35,10 +35,24 @@ body {
   }
 }
 
+.layout {
+  position: relative;
+  z-index: 10;
+}
+
+.section {
+  padding-block: 60px;
+}
+
+.container {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 #about,
 #project {
   scroll-margin-top: 40px;
-  padding-top: 70px;
 }
 
 #portfolio,
@@ -48,22 +62,7 @@ body {
 
 #hero,
 #form {
-  scroll-margin-top: 70px; // výška navigace //
-}
-
-.layout {
-  position: relative;
-  z-index: 10;
-}
-
-.container {
-  position: relative;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.form {
-  padding-inline: 30px;
+  scroll-margin-top: 70px;
 }
 
 h1 {
@@ -93,12 +92,12 @@ strong {
 
 // společné texty - odstavce
 .split_groups {
-  @include m.heroText(14px, c.$SmallTextColor);
+  @include m.heroText(15px, c.$SmallTextColor);
   line-height: e.$line-height;
   display: grid;
   gap: 60px;
   text-align: justify;
-  padding-inline: 20px;
+  padding-inline: 30px;
 }
 
 .split_row {
@@ -226,9 +225,12 @@ strong {
     max-width: 75ch;
   }
 
-  h2,
-  h3 {
+  h2 {
     font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 
   .split_groups {

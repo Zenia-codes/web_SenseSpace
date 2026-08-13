@@ -15,12 +15,11 @@
   margin-inline: auto;
   justify-content: center;
   text-align: center;
-  padding-block: 50px;
+  padding-bottom: 50px;
 }
 
 // společné barvy pro varianty
-.portfolio_number,
-.portfolio_subtitle {
+.portfolio_number {
   &.frontend {
     color: c.$DecorationColor;
   }
@@ -33,16 +32,6 @@
 .portfolio_label {
   @include m.titleText(21px, c.$SmallTextColor);
   font-weight: 500;
-}
-
-.subtitle_wrapper {
-  display: flex;
-  justify-self: center;
-  gap: 6px;
-
-  @include m.titleText(16px, c.$SmallTextColor);
-  font-weight: 500;
-  letter-spacing: 0.03em;
 }
 
 .portfolio_text {
@@ -67,7 +56,6 @@
 
 .project_container {
   display: flex;
-  justify-items: center;
   gap: 30px;
   // odsazení slideru zleva a zprava
   &::before,
@@ -221,146 +209,131 @@
 }
 
 @media (min-width: b.$tabletBreakPoint) {
-  .portfolio_header {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    text-align: left;
-    width: clamp(70%, calc(35.88% + 4.44vw), 100%);
-  }
+  .portfolio {
+    padding-inline: 30px;
 
-  .portfolio_subtitle {
-    text-align: end;
-    justify-self: end;
-    letter-spacing: 0.01em;
-  }
-
-  .portfolio_label {
-    font-size: 21px;
-    align-self: end;
-  }
-
-  .subtitle_wrapper {
-    justify-self: end;
-    align-self: end;
-    gap: 8px;
-    font-size: 15px;
-  }
-
-  .portfolio_text {
-    text-align: left;
-    hyphens: none; // dělení slov
-    grid-row: 2;
-  }
-
-  .project_content {
-    position: relative;
-    z-index: 3;
-  }
-
-  .project_card_tags {
-    position: relative;
-    z-index: 5;
-  }
-
-  .portfolio_slider {
-    overflow: visible;
-    scroll-snap-type: none;
-  }
-
-  .project_container {
-    display: grid;
-    grid-template-columns: repeat(
-      2,
-      clamp(230px, calc(60.18px + 29.28vw), 360px)
-    );
-    justify-content: center;
-    margin-bottom: 50px;
-
-    &::before,
-    &::after {
-      content: none;
+    .portfolio_label {
+      font-size: 21px;
+      align-self: end;
     }
 
-    > * {
-      flex: unset;
+    .portfolio_text {
+      text-align: left;
+      hyphens: none; // dělení slov
+      grid-row: 2;
     }
 
-    .project_card {
-      overflow: hidden;
-      isolation: isolate;
-      cursor: pointer;
-      contain: paint; // zabrání “rozlévání” absolutních vrstev
-      -webkit-tap-highlight-color: transparent;
+    .project_content {
+      position: relative;
+      z-index: 3;
+    }
 
-      transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
+    .project_card_tags {
+      position: relative;
+      z-index: 5;
+    }
 
-      &:hover {
-        // box-shadow: 0 0 8px #7dd4fc64;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    .portfolio_slider {
+      overflow: visible;
+      scroll-snap-type: none;
+    }
+
+    .project_container {
+      display: grid;
+      grid-template-columns: repeat(
+        2,
+        clamp(230px, calc(60.18px + 29.28vw), 360px)
+      );
+      justify-content: center;
+
+      &::before,
+      &::after {
+        content: none;
       }
 
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0);
-        transition: 0.4s ease;
-        z-index: 1;
+      .project_card {
+        overflow: hidden;
+        isolation: isolate;
+        cursor: pointer;
+        contain: paint; // zabrání “rozlévání” absolutních vrstev
+        -webkit-tap-highlight-color: transparent;
+
+        transition: box-shadow 0.4s ease, text-shadow 0.4s ease;
+
+        &:hover {
+          text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0);
+          transition: 0.4s ease;
+          z-index: 1;
+        }
+
+        &:hover::before {
+          background: rgba(0, 0, 0, 0.1);
+        }
+
+        &:hover .project_hover_bg {
+          z-index: 4;
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        &:hover .project_image {
+          opacity: 0;
+          transform: scale(1.7);
+        }
+      }
+    }
+
+    .project_image {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      transition: opacity 0.35s ease, transform 0.4s ease;
+
+      & img {
+        transition: transform 0.4s ease;
       }
 
-      &:hover::before {
-        background: rgba(0, 0, 0, 0.1);
-      }
-
-      &:hover .project_hover_bg {
-        z-index: 4;
+      &:hover::before,
+      &:hover::after {
         opacity: 1;
-        transform: scale(1);
-      }
-
-      &:hover .project_image {
-        opacity: 0;
-        transform: scale(1.7);
       }
     }
-  }
 
-  .project_image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    transition: opacity 0.35s ease, transform 0.4s ease;
-
-    & img {
-      transition: transform 0.4s ease;
+    .slider_dots {
+      display: none;
     }
-
-    &:hover::before,
-    &:hover::after {
-      opacity: 1;
-    }
-  }
-
-  .slider_dots {
-    display: none;
   }
 }
 
 @media (min-width: b.$desktopBreakPoint) {
   .project_container {
+    &.graphic {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     .project_card_tags {
       flex-wrap: wrap;
       overflow-x: visible;
       padding-inline-end: 0px;
       justify-content: center;
-      mask-image: initial;
+      -webkit-mask-image: none; // pro Safari
+      mask-image: none;
     }
-  }
-
-  .portfolio_subtitle {
-    font-size: 19px;
   }
 
   .portfolio_label {
     font-size: 24px;
+  }
+
+  .portfolio_slider {
+    width: min(100%, 1080px);
+    margin-inline: auto;
   }
 }

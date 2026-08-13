@@ -63,9 +63,6 @@
 
   "portfolio": {
     "frontend": {
-      "subtitle1": "Malé projekty.",
-      "subtitle2": "Velké lekce.",
-      "text": "Každý projekt je krokem v mém vývoji.",
       "bestshop": "Web BestShop",
       "invitation": "Electronická RSVP pozvánka"
     },

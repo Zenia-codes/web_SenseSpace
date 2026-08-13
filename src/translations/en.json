@@ -63,9 +63,6 @@
 
   "portfolio": {
     "frontend": {
-      "subtitle1": "Small projects.",
-      "subtitle2": "Big lessons.",
-      "text": "Each project is a step in my development.",
       "bestshop": "BestShop Website",
       "invitation": "Electronic RSVP invitation"
     },
