@@ -62,18 +62,17 @@ body {
   margin: 0 auto;
 }
 
+.form {
+  padding-inline: 30px;
+}
+
 h1 {
   @include m.titleText(21px, c.$textLight);
   text-transform: uppercase;
 }
 
 h2 {
-  @include m.titleText(17px, c.$textLight);
-}
-
-h3 {
   @include m.titleText(16px, c.$textLight);
-  font-weight: 500;
 }
 
 span {
@@ -89,7 +88,7 @@ strong {
   font-family: f.$basicFont;
   color: c.$SmallTextColor;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 // společné texty - odstavce
@@ -99,7 +98,7 @@ strong {
   display: grid;
   gap: 60px;
   text-align: justify;
-  padding-inline: 50px;
+  padding-inline: 20px;
 }
 
 .split_row {
@@ -110,16 +109,22 @@ strong {
 
 .split_text {
   display: grid;
-
   justify-content: center;
-  gap: 15px;
-  hyphens: auto;
+  gap: 10px;
+  .padding {
+    padding: 13px 13px 25px;
+  }
+}
+
+.ul_seznam {
+  list-style-type: disc;
 }
 
 .about_title,
 .project_title,
 .project_name {
   text-align: center;
+  align-self: self-end;
   animation: softlyGlow 4s ease-in-out infinite;
   will-change: transform;
 }
@@ -154,19 +159,19 @@ strong {
     filter: brightness(0.9) contrast(0.9) saturate(1);
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    overflow: visible;
-    inset: -35% 0%;
-    z-index: 2;
-    pointer-events: none;
-    background: url("/src/assets/images/mlha.png") center / contain no-repeat;
-    transform-origin: center;
-    opacity: 0.6;
-    animation: lightSway 7s ease-in-out infinite;
-    will-change: transform;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   overflow: visible;
+  //   inset: -35% 0%;
+  //   z-index: 2;
+  //   pointer-events: none;
+  //   background: url("/src/assets/images/mlha.png") center / contain no-repeat;
+  //   transform-origin: center;
+  //   opacity: 0.6;
+  //   animation: lightSway 7s ease-in-out infinite;
+  //   will-change: transform;
+  // }
 }
 
 .dot {
@@ -221,12 +226,13 @@ strong {
     max-width: 75ch;
   }
 
+  h2,
   h3 {
     font-size: 18px;
   }
 
   .split_groups {
-    font-size: 14px;
+    font-size: 15px;
     gap: 100px;
     padding-inline: 50px;
 
@@ -252,9 +258,6 @@ strong {
 
     .split_row {
       display: grid;
-      grid-template-columns: auto auto;
-      align-items: center;
-      justify-self: center;
     }
 
     .split_row .split_image {

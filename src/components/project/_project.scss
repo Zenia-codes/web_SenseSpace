@@ -1,15 +1,15 @@
 @use "../../styles/variables/mixins" as m;
 
 .dev_details {
-  @include m.spaceBorder(16px, 0, 16px, 0);
+  -webkit-backdrop-filter: blur(8px); // Safari / iOS Safari
+  backdrop-filter: blur(8px);
+  background: #ffffff08;
+  border: 1px solid #ffffff1f;
+  border-radius: 10px;
+  overflow: hidden;
   cursor: pointer;
-  margin-bottom: 20px;
 
   summary {
-    padding-inline: 20px;
-  }
-
-  > :not(summary) {
-    padding: 10px 30px 24px;
+    padding: 13px;
   }
 }

@@ -126,7 +126,6 @@
               <div class="split_text">
                 <h2 class="project_name" data-i18n="about.frontend.title"></h2>
                 <p data-i18n="about.frontend.content_development" data-html></p>
-                <p data-i18n="about.frontend.content_webdesign"></p>
               </div>
             </div>
 
@@ -141,9 +140,7 @@
                 <h2 class="project_name" data-i18n="about.workflow.AI">
                   Creative Workflow
                 </h2>
-                <p data-i18n="about.workflow.content_AI-agent" data-html></p>
-                <p data-i18n="about.workflow.content_AI-creative"></p>
-                <p data-i18n="about.workflow.content_human"></p>
+                <p data-i18n="about.workflow.content_AI" data-html></p>
               </div>
             </div>
 
@@ -157,7 +154,6 @@
               <div class="split_text">
                 <h2 class="project_name" data-i18n="about.UX.title"></h2>
                 <p data-i18n="about.UX.content_design" data-html></p>
-                <p data-i18n="about.UX.content_exp"></p>
               </div>
             </div>
 
@@ -170,10 +166,7 @@
               </div>
               <div class="split_text">
                 <h2 class="project_name" data-i18n="about.graphic.title"></h2>
-                <p data-i18n="about.graphic.content_graphic" data-html></p>
-                <p data-i18n="about.graphic.content_print" data-html></p>
-                <p data-i18n="about.graphic.content_workflow"></p>
-                <p data-i18n="about.graphic.content_control"></p>
+                <p data-i18n="about.graphic.content_graphicPrint" data-html></p>
               </div>
             </div>
 
@@ -210,33 +203,36 @@
                   data-i18n="project.inspiration.title"
                   data-html
                 ></h2>
-                <p data-i18n="project.inspiration.content"></p>
+                <p data-i18n="project.inspiration.content" data-html></p>
+
+                <details class="dev_details">
+                  <summary data-i18n="project.learn.details"></summary>
+                  <div class="split_row reveal reverse">
+                    <!-- <div class="split_image">
+                      <img
+                        src="./assets/images/project_section/future house.png"
+                        alt="The future house"
+                      />
+                    </div> -->
+                    <div class="split_text padding">
+                      <h2
+                        class="project_name"
+                        data-i18n="project.learn.title"
+                      ></h2>
+                      <p data-i18n="project.learn.content_learn"></p>
+                      <p data-i18n="project.learn.content_living" data-html></p>
+                    </div>
+                  </div>
+                </details>
               </div>
             </div>
-
-            <details class="dev_details">
-              <summary data-i18n="project.learn.details"></summary>
-              <div class="split_row reveal reverse">
-                <div class="split_image">
-                  <img
-                    src="./assets/images/project_section/future house.png"
-                    alt="The future house"
-                  />
-                </div>
-                <div class="split_text">
-                  <h2 class="project_name" data-i18n="project.learn.title"></h2>
-                  <p data-i18n="project.learn.content_learn"></p>
-                  <p data-i18n="project.learn.content_living" data-html></p>
-                </div>
-              </div>
-            </details>
           </div>
         </div>
       </section>
 
       <!-- section front-end -->
       <section class="portfolio section" id="portfolio">
-        <div class="portfolio_header">
+        <div class="portfolio_header container">
           <div class="portfolio_label">
             <span class="portfolio_number frontend">[01]</span>
             Frontend Space
@@ -291,7 +287,6 @@
                 <li class="tech-tag">Frontend</li>
                 <li class="tech-tag">JavaScript</li>
                 <li class="tech-tag">SCSS</li>
-                <li class="tech-tag">Responsive Design</li>
               </ul>
             </button>
 
@@ -375,7 +370,7 @@
     </div>
     <!-- section graphic -->
     <section class="portfolio section" id="graphic">
-      <div class="portfolio_header">
+      <div class="portfolio_header container">
         <div class="portfolio_label">
           <span class="portfolio_number graphic">[02] </span>Graphic Space
         </div>
@@ -699,7 +694,7 @@
       </div>
 
       <div class="wrapper_contact">
-        <h3 data-i18n="form.title"></h3>
+        <h2 data-i18n="form.title"></h2>
         <div class="contact_form">
           <label
             class="form-field"

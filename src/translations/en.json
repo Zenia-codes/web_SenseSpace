@@ -12,30 +12,23 @@
 
   "about": {
     "frontend": {
-      "title": "What can I create for you?",
-      "content_development": "My interest in the intersection of technology and design led me to <strong>front-end development</strong>. I discovered a world where creativity naturally blends with logic. I was excited by the opportunity to bring my own designs to life and transform them into interactive websites.",
-      "content_webdesign": "Today, I create and transform designs into responsive, functional solutions with a focus on user experience."
+      "title": "My Journey into IT",
+      "content_development": "My interest in technology combined with design led me to <strong>front-end development</strong>. I discovered a world where creativity naturally meets logic. I enjoy transforming design concepts into <strong>modern, responsive, and interactive websites</strong>. But front-end development is not my final destination. I want to keep learning, experimenting with new technologies, and gradually expand my skills into <strong>application development, working with AI</strong>, and other areas that combine technology with creative work."
     },
 
     "workflow": {
-      "AI": "A more efficient path to results",
-      "content_AI-agent": "I also use <strong>artificial intelligence</strong> tools in my work. I view it as a useful aid, particularly for quickly editing and debugging code or automating routine tasks.",
-      "content_AI-creative": "Collaborating with AI opens up new technological possibilities for me and provides inspiration for further development.",
-      "content_human": "However, I always personally handle the designs, key decisions, and communication with the client."
+      "AI": "More Efficient Results with AI",
+      "content_AI": "I also use <strong>artificial intelligence tools</strong> in my work. I see AI as a useful assistant, particularly for making quick code adjustments and refinements or automating routine tasks. Working with AI opens up new technological possibilities and provides inspiration for further growth. AI helps me work more efficiently, while I remain in control of the creative direction, important decisions, and communication with the client."
     },
 
     "UX": {
       "title": "Design that makes sense",
-      "content_design": "If I had to characterize my creative style, I would choose the combination <strong>minimalist design</strong>.",
-      "content_exp": "I believe that every element—whether in digital or any other form—should have a clear purpose. My goal is to create visually clean and uncluttered websites where visitors feel at ease and can easily navigate the content."
+      "content_design": "If I had to characterize my creative style, I would choose the combination <strong>minimalist design</strong>. I believe that every element—whether in digital or any other form—should have a clear purpose. My goal is to create visually clean and uncluttered websites where visitors feel at ease and can easily navigate the content."
     },
 
     "graphic": {
-      "title": "Graphic & Print",
-      "content_graphic": "I have been involved in <strong>Graphic design</strong> for many years. I design flyers, posters, invitations, business cards, logos and other products, especially of an advertising nature.",
-      "content_print": "Thanks to my experience in <strong>print production</strong>, I understand not only the design itself but also the entire manufacturing process. I can prepare files for printing, plotter or laser cutting, textile printing, and engraving.",
-      "content_workflow": "I place great emphasis on detail, the right choice of colors, materials and production technologies so that the final product it was professional and suited its purpose.",
-      "content_control": "I carefully oversee every project from the design stage to final implementation."
+      "title": "From Design to Physical Product",
+      "content_graphicPrint": "I have been working in <strong>Graphic Design</strong> for many years, and I also studied it professionally. I most often design flyers, posters, invitations, business cards, logos, and other products, particularly for promotional purposes. I also enjoy creating keepsakes and decorative items from plywood and paper. Thanks to my experience in <strong>Print Production</strong>, I understand not only the design itself, but also the entire production process. I prepare artwork for both small-format and large-format printing, plotter and laser cutting, textile printing, and engraving. I pay close attention to the thoughtful selection of colors, materials, and production techniques – from the initial concept to the final realization."
     },
 
     "offer": {
@@ -47,8 +40,8 @@
 
   "project": {
     "inspiration": {
-      "title": "Why the name <span>SenseSpace</span>?",
-      "content": "For me, the universe is a source of inspiration. I perceive it as a realm of infinite possibilities, profound meaning, and a freedom that naturally intertwines with immutable laws. In this space of mine in the universe, I want to create, experiment, and share projects that have meaning—for me and for others."
+      "title": "About the <span>SenseSpace</span> Project",
+      "content": "SenseSpace is my personal space where I bring together <strong>front-end development, UX/UI design, and graphic design</strong>. It is a place for personal projects, experimenting with technology, and exploring ways to combine functionality, aesthetics, and meaningful design. The name SenseSpace reflects a space where creativity, technology, and curiosity come together. To me, the universe symbolizes infinite possibilities, the freedom to explore, but also order and underlying principles – much like the world in which I create."
     },
 
     "learn": {

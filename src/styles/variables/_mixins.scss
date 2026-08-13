@@ -4,22 +4,22 @@
 @mixin heroText($fontSize, $fontColor) {
   font-family: f.$basicFont;
   font-size: $fontSize;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
   color: $fontColor;
   text-decoration: none;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 @mixin titleText($fontSize, $fontColor) {
   font-family: f.$titleFont;
   font-size: $fontSize;
   font-style: normal;
+  font-weight: 500;
   color: $fontColor;
   text-decoration: none;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
-  letter-spacing: 0.03em;
 }
 
 @mixin spaceBorder(
