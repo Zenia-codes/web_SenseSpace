@@ -88,21 +88,22 @@
   }
 
   .project_card_tags {
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 15px;
   }
 }
 
 .project_content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 
   img {
-    width: min(180px, 100%); // Použij menší z těchto dvou hodnot.
+    width: min(220px, 100%); // Použij menší z těchto dvou hodnot.
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;

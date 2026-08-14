@@ -183,7 +183,7 @@ strong {
 .tech-tag {
   display: inline-flex;
 
-  @include m.spaceBorder(4px, 10px, 4px, 10px);
+  @include m.spaceBorder(2px, 7px, 2px, 7px);
   letter-spacing: 0.4px;
   transition: all 0.3s ease;
 
