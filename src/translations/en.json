@@ -82,8 +82,8 @@
       "technology": "My first project using HTML, SCSS, and JavaScript.",
       "content_design": "I designed BestShop with a focus on clean aesthetics, a clear structure, and an intuitive user experience. The visual style employs bold accents and modern elements that convey a sense of dynamic growth, service quality, and a rapid return on investment.",
       "content_code": "During development, I prioritized clean, well-organized code, responsive display across all devices, and intuitive controls. I also used JavaScript to create an interactive calculator that helps visitors easily navigate the pricing options.",
-      "visitWeb": "[ Visit Website ]",
-      "visitCode": "[ View Code ]"
+      "visitWeb": "Visit Website",
+      "visitCode": "View Code"
     }
   },
 

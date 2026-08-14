@@ -38,6 +38,7 @@
       font-weight: 600;
       text-align: center;
       padding-bottom: 10px;
+      text-transform: uppercase;
     }
   }
 
@@ -51,7 +52,6 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 15px;
-    // align-items: baseline;
 
     input,
     .message {
@@ -82,14 +82,6 @@
     }
   }
 
-  .button {
-    width: 200px;
-    height: 65px;
-    justify-self: center;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-
   .form-container {
     display: flex;
     flex-direction: column;
@@ -107,6 +99,12 @@
     .checkboxText {
       line-height: normal;
     }
+  }
+
+  .button {
+    justify-self: center;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }
 

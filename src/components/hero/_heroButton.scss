@@ -1,0 +1,94 @@
+@use "../../styles/variables/colors" as c;
+@use "../../styles/variables/mixins" as m;
+@use "../../styles/variables/breakpoints" as b;
+
+.button {
+  position: relative;
+  isolation: isolate;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  height: 47px;
+  padding-inline: 50px;
+
+  border: 1px solid transparent;
+  background: none;
+  line-height: 1.2;
+  cursor: pointer;
+
+  @include m.heroText(16px, c.$SmallTextColor);
+  letter-spacing: 0.05em;
+
+  &.small {
+    flex-shrink: 0;
+    white-space: nowrap;
+
+    height: 35px;
+    padding-inline: 40px;
+    text-transform: uppercase;
+
+    @include m.heroText(14px, c.$SmallTextColor);
+    font-weight: 400;
+  }
+
+  // malá animace stisknutí buttonu na mobilu
+  &:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease;
+  }
+
+  .rocket,
+  .text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .rocket {
+    width: 25px;
+    filter: drop-shadow(0 0 1px c.$textLight);
+    opacity: 0.9;
+    transition: transform 0.7s ease;
+  }
+
+  .text {
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/src/assets/icons/main_button.png") center / 100% 100%
+      no-repeat;
+    z-index: -1;
+    filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
+  }
+
+  // stín za buttonem
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -1;
+  }
+}
+
+// hover tlačítka "Explore" je aplikovaný pouze na zařízení, která ho podporují
+@media (hover: hover) and (pointer: fine) {
+  .button:hover .rocket {
+    transform: translate(2px, -2px);
+  }
+
+  .button:hover .text {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  }
+}
