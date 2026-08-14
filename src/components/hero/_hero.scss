@@ -5,10 +5,11 @@
 @use "../../styles/variables/mixins" as m;
 
 .hero {
-  min-height: 85vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 60px;
 }
 
 .hero_Text {
