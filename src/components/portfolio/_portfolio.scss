@@ -32,6 +32,9 @@
 .portfolio_label {
   @include m.titleText(21px, c.$SmallTextColor);
   font-weight: 500;
+
+  animation: softlyGlow 3s ease-in-out infinite;
+  will-change: transform;
 }
 
 .portfolio_text {
@@ -39,7 +42,6 @@
   line-height: e.$line-height;
   font-weight: 300;
   hyphens: auto; // dělení slov
-  // text-align: center;
 }
 
 .portfolio_slider {
@@ -132,7 +134,7 @@
 
     &.active {
       background-color: black;
-      border: 1px solid white;
+      border: 1px solid rgba(255, 255, 255, 0.86);
       transform: scale(1.2);
     }
   }
@@ -142,7 +144,6 @@
   width: 100%;
   position: absolute;
   inset: 0;
-  // pointer-events: none;
 
   opacity: 0;
   transform: scale(1.08);
@@ -213,7 +214,7 @@
     padding-inline: 30px;
 
     .portfolio_label {
-      font-size: 21px;
+      font-size: 23px;
       align-self: end;
     }
 

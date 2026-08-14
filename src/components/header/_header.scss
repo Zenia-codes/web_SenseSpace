@@ -60,6 +60,9 @@
   display: inline-block;
   position: relative;
   @include m.titleText(22px, c.$SmallTextColor);
+
+  animation: softlyGlow 4s ease-in-out infinite;
+  will-change: transform;
 }
 
 .menu_button {
@@ -213,10 +216,6 @@
   .logo img {
     height: 36px;
   }
-
-  // .logo-link {
-  //   padding-left: 25px;
-  // }
 
   .dotted-link,
   .logo-link {

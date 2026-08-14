@@ -110,6 +110,7 @@ strong {
   display: grid;
   justify-content: center;
   gap: 10px;
+
   .padding {
     padding: 13px 13px 25px;
   }
@@ -124,8 +125,6 @@ strong {
 .project_name {
   text-align: center;
   align-self: self-end;
-  animation: softlyGlow 4s ease-in-out infinite;
-  will-change: transform;
 }
 // efekt scroll reveal
 .reveal {
