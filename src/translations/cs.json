@@ -13,22 +13,22 @@
   "about": {
     "frontend": {
       "title": "Moje cesta do IT",
-      "content_development": "Zájem o technologie ve spojení s designem mě přivedl k <strong>front-end vývoji</strong>. Objevila jsem svět, ve kterém se kreativita přirozeně propojuje s logikou. Baví mě proměňovat grafické návrhy v <strong>moderní, responzivní a interaktivní webové stránky</strong>. Front-end pro mě ale není cílová stanice. Chci se dál učit, experimentovat s novými technologiemi a postupně rozšiřovat své schopnosti <strong>o tvorbu aplikací, práci s AI</strong> a dalšími oblastmi, které propojují technologie s kreativní tvorbou."
+      "content_development": "Zájem o technologie ve spojení s designem mě přivedl k <strong>front-end vývoji</strong>, díky kterému mohu přirozeně propojit kreativitu s logickým myšlením. Baví mě proměňovat grafické návrhy v <strong>moderní, responzivní a interaktivní webové stránky</strong>. Moje cesta tím ale nekončí. Chci se dál učit, experimentovat s novými technologiemi a postupně rozšiřovat své schopnosti o <strong>tvorbu aplikací, práci s AI</strong> a další oblasti, které propojují technologie s kreativní tvorbou."
     },
 
     "workflow": {
       "AI": "Efektivnější výsledky díky AI",
-      "content_AI": "Ve své práci využívám také <strong>nástroje umělé inteligence</strong>. Vnímám ji jako užitečného pomocníka zejména pro ryché úpravy a ladění kódu nebo automatizaci rutinních úkolů. Spolupráce s AI mi otevírá nové technologické možnosti a přináší inspiraci pro další rozvoj. AI mi pomáhá práci zefektivnit, ale kreativní směr, důležitá rozhodnutí i komunikaci se zákazníkem mám vždy ve svých rukou."
+      "content_AI": "Ve své práci již teď využívám <strong>nástroje umělé inteligence</strong>. Vnímám ji jako užitečného pomocníka zejména pro rychlé úpravy a ladění kódu nebo automatizaci rutinních úkolů. Spolupráce s AI mi otevírá nové technologické možnosti a přináší inspiraci pro další rozvoj. Pomáhá mi práci zefektivnit, ale kreativní směr, klíčová rozhodnutí i komunikaci se zákazníkem mám vždy ve svých rukou."
     },
 
     "UX": {
       "title": "Design, který dává smysl",
-      "content_design": "Kdybych měla charakterizovat svůj styl tvorby, zvolila bych spojení <strong>minimalistický design</strong>. Věřím, že každý prvek, ať už v digitální, nebo jiné podobě, by měl mít svůj jasný účel. Mým cílem je vytvářet vizuálně čisté a přehledné weby, ve kterých se návštěvníci cítí příjemně a snadno se orientují v obsahu."
+      "content_design": "Kdybych měla charakterizovat svůj styl tvorby, zvolila bych spojení <strong>minimalistický design</strong>. Věřím, že každý prvek, ať už v digitální, nebo jiné podobě, by měl mít svůj jasný účel a zároveň dostatek prostoru, aby mohl vyniknout. Ve svých projektech se proto snažím hledat rovnováhu mezi estetikou, jednoduchostí a smysluplností – a právě tento přístup chci ve své tvorbě dál rozvíjet."
     },
 
     "graphic": {
       "title": "Od návrhu k fyzickému produktu",
-      "content_graphicPrint": "Již řadu let se věnuji <strong>Grafickému designu</strong>, který jsem rovněž vystudovala. Navrhuji nejčastěji letáky, plakáty, pozvánky, vizitky, loga a další produkty, zejména reklamního charakteru. Mou zálibou je i tvorba upomínkových předmětů z překližky a papíru. Díky zkušenostem z <strong>Tiskové produkce</strong> rozumím nejen samotnému návrhu, ale i celému procesu výroby. Připravuji podklady pro maloformátový i velkoformátový tisk, plotrový a laserový výsek, potisk textilu či gravírování. Dbám na promyšlenou volbu barev, materiálů a výrobních technologií – od prvního návrhu až po finální realizaci."
+      "content_graphicPrint": "Již řadu let se věnuji <strong>grafickému designu</strong>, který jsem rovněž vystudovala. Navrhuji nejčastěji letáky, plakáty, pozvánky, vizitky, loga a další produkty. Díky zkušenostem z <strong>tiskové produkce</strong> rozumím nejen samotnému návrhu, ale i celému procesu výroby. Připravuji podklady pro malo/velkoformátový tisk, plotrový a laserový výsek, potisk textilu či gravírování. Dbám na promyšlenou volbu barev, materiálů a výrobních technologií – od prvního návrhu až po finální realizaci."
     },
 
     "offer": {
@@ -41,7 +41,7 @@
   "project": {
     "inspiration": {
       "title": "O Projektu <span>SenseSpace</span>",
-      "content": "SenseSpace je můj osobní prostor, kde propojuji <strong>front-end vývoj, UX/UI design a grafickou tvorbu</strong>. Je místem pro vlastní projekty, experimentování s technologiemi a hledání cest, jak spojit funkčnost, estetiku a smysluplný design. Název SenseSpace odkazuje na prostor, ve kterém má své místo kreativita, technologie i zvědavost. Vesmír pro mě symbolizuje nekonečné možnosti, svobodu objevovat, ale také řád a zákonitosti – podobně jako svět, ve kterém tvořím."
+      "content": "SenseSpace je můj osobní prostor, kde propojuji <strong>front-end vývoj, UX/UI design a grafickou tvorbu</strong>. Je místem pro prezentaci vlastních projektů, experimentování s technologiemi a hledání cest, jak spojit funkčnost, estetiku a smysluplný design. Název SenseSpace odkazuje na prostor, ve kterém má své místo kreativita, technologie i zvědavost. Vesmír pro mě symbolizuje nekonečné možnosti, svobodu objevovat, ale také řád a zákonitosti – podobně jako svět, ve kterém tvořím."
     },
 
     "learn": {

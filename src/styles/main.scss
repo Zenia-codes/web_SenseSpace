@@ -8,6 +8,7 @@
 @use "../components/portfolio/modal";
 @use "../components/contacts/contacts";
 @use "../components/footer/footer";
+@use "../components/galaxyPortal";
 @use "./variables/colors" as c;
 @use "./variables/fonts" as f;
 @use "./variables/breakpoints" as b;
@@ -104,6 +105,7 @@ strong {
 .split_row {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 50px;
 }
 
@@ -144,33 +146,18 @@ strong {
   max-width: 50ch; // škálování podle typografie, ch = šířka znaku „0“ v daném fontu
 }
 
+// společné nastavení obrázků
 .split_image {
   position: relative;
-  text-align: center;
+  display: inline-block;
+  isolation: isolate;
 
   img {
     position: relative;
-    z-index: 1;
     width: clamp(180px, calc(161.45px + 3.9vw), 220px);
     border-radius: 50%;
-    box-shadow: 0 0 12px 0px #9f9f9fa0;
-    object-fit: cover;
-    filter: brightness(0.9) contrast(0.9) saturate(1);
+    z-index: 2;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   overflow: visible;
-  //   inset: -35% 0%;
-  //   z-index: 2;
-  //   pointer-events: none;
-  //   background: url("/src/assets/images/mlha.png") center / contain no-repeat;
-  //   transform-origin: center;
-  //   opacity: 0.6;
-  //   animation: lightSway 7s ease-in-out infinite;
-  //   will-change: transform;
-  // }
 }
 
 .dot {
@@ -252,11 +239,11 @@ strong {
       gap: 10px;
     }
 
-    .split_image {
-      &::before {
-        inset: -30% -20%;
-      }
-    }
+    // .split_image {
+    //   &::before {
+    //     inset: -30% -20%;
+    //   }
+    // }
 
     .split_row {
       display: grid;
