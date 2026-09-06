@@ -4,8 +4,8 @@
 @use "../../styles/variables/mixins" as m;
 @use "../../styles/variables/text" as e;
 
-body.modal_open {
-  overflow: hidden; // zakážu scroll celé stránky na pozadí
+body.modal__open {
+  overflow: hidden; // zakáže scroll celé stránky na pozadí
 }
 
 .modal.hidden {
@@ -16,86 +16,102 @@ body.modal_open {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.7);
+
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
 
-  .modal_content {
-    position: relative;
+  padding-inline: 1rem;
 
-    .close_modal {
-      position: absolute;
-      top: 15px;
-      right: 10px;
-      border: none;
-      background: none;
-      font-size: 25px;
-      color: rgb(39, 39, 39);
-    }
-    .modal_body {
-      width: 100%;
-      max-width: 100%;
-      max-height: 90vh; // ne 100, kvuli adresnimu radku na mobilu
-      overflow-y: auto;
-      padding: 2rem;
-      border-radius: 1rem;
-      background: #fff;
-      line-height: e.$line-height;
-
-      .title_img {
-        width: 100%;
-        box-shadow: 0 1px 3px 0 #0000004d;
-        margin-block: 10px;
-      }
-
-      .project_img {
-        position: absolute;
-        width: 135px;
-        top: -50px;
-        left: 0;
-      }
-    }
-
-    .modal_links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      padding-block: 10px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
   }
-}
 
-.modal_title {
-  color: rgba(25, 46, 60);
-  font-weight: 500;
-  text-align: center;
-}
+  &__content {
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding-bottom: 15px;
 
-.yellow {
-  background-color: rgb(255, 255, 57);
-  border-radius: 10px;
-  text-align: center;
-  margin-block: 50px 20px;
-  font-size: medium;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.modal_text {
-  @include m.heroText(15px, rgba(25, 46, 60));
-  padding-bottom: 7px;
-  font-weight: 300;
+    border: 1px solid #ffffff1f;
+    border-radius: 10px;
+
+    background: #8a8a8a24;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    line-height: e.$line-height;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__image--astronaut {
+    width: 40%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: rgb(39, 39, 39);
+  }
+
+  &__links {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    display: inline-flex;
+  }
+
+  &__title--accent {
+    color: c.$akcentColor;
+    font-size: 12px;
+    padding-block: 10px;
+  }
+
+  &__text-wrapper {
+    padding-inline: 15px;
+  }
+
+  &__text {
+    @include m.heroText(15px, c.$SmallTextColor);
+    padding-bottom: 7px;
+  }
 }
 
 @media (min-width: b.$tabletBreakPoint) {
   .modal {
-    grid-template-columns: minmax(0, 1fr);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: minmax(0, 0.8fr);
     justify-content: center;
-    .modal_content {
-      width: 55%;
+
+    &__text-wrapper {
+      padding: 41px;
+    }
+  }
+}
+
+@media (min-width: b.$desktopBreakPoint) {
+  .modal {
+    grid-template-columns: minmax(0, 0.6fr);
+
+    &__text-wrapper {
+      padding-inline: 80px;
     }
   }
 }

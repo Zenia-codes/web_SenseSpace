@@ -210,12 +210,6 @@
                 <details class="dev_details">
                   <summary data-i18n="project.learn.details"></summary>
                   <div class="split_row reveal reverse">
-                    <!-- <div class="split_image">
-                      <img
-                        src="./assets/images/project_section/future house.png"
-                        alt="The future house"
-                      />
-                    </div> -->
                     <div class="split_text padding">
                       <h2
                         class="project_name"
@@ -488,19 +482,18 @@
       </section> -->
 
     <!-- MODAL WINDOWS -->
+
     <!-- section frontend -->
     <div id="BestShop" class="modal hidden">
-      <div class="modal_content">
-        <button class="close_modal">×</button>
-        <div class="modal_body">
-          <img
-            class="title_img"
-            src="./assets/images/portfolio_section/Frontend/title_img_bestshop.png"
-            alt="invitation"
-          />
-          <h1 class="modal_title">[ BestShop ]</h1>
-          <h2 class="modal_title" data-i18n="modal.bestshop.title"></h2>
-          <div class="modal_links">
+      <div class="modal__content">
+        <button class="modal__close">×</button>
+        <img
+          class="modal__image"
+          src="./assets/images/portfolio_section/Frontend/title_img_bestshop.png"
+          alt="invitation"
+        />
+        <div class="modal__text-wrapper">
+          <div class="modal__links">
             <a
               href="https://zenia-codes.github.io/BestShop_project/"
               target="_blank"
@@ -519,24 +512,27 @@
               View Code
             </a>
           </div>
-          <p class="modal_text" data-i18n="modal.bestshop.technology"></p>
-          <p class="modal_text" data-i18n="modal.bestshop.content_design"></p>
-          <p class="modal_text" data-i18n="modal.bestshop.content_code"></p>
+          <h1 class="modal__title">[ BestShop ]</h1>
+
+          <h2 class="modal__title" data-i18n="modal.bestshop.title"></h2>
+          <p class="modal__text" data-i18n="modal.bestshop.technology"></p>
+          <p class="modal__text" data-i18n="modal.bestshop.content_design"></p>
+          <p class="modal__text" data-i18n="modal.bestshop.content_code"></p>
         </div>
       </div>
     </div>
 
     <div id="SofieInvitation" class="modal hidden">
-      <div class="modal_content">
-        <button class="close_modal">×</button>
-        <div class="modal_body">
-          <img
-            class="title_img"
-            src="./assets/images/portfolio_section/Frontend/title_img_invitation.png"
-            alt="invitation"
-          />
-          <h1 class="modal_title">[ Electronic invitation ]</h1>
-          <div class="modal_links">
+      <div class="modal__content">
+        <button class="modal__close">×</button>
+
+        <img
+          class="modal__image"
+          src="./assets/images/portfolio_section/Frontend/title_img_invitation.png"
+          alt="invitation"
+        />
+        <div class="modal__text-wrapper">
+          <div class="modal__links">
             <a
               href="https://zenia-codes.github.io/RSVP_invitation_for_kids/"
               target="_blank"
@@ -555,7 +551,8 @@
               View Code
             </a>
           </div>
-          <p class="modal_text">
+          <h1 class="modal__title">[ Electronic invitation ]</h1>
+          <p class="modal__text">
             An interactive, animated invitation for a children's party that
             includes an RSVP feature. It is fully responsive, ensuring a
             seamless viewing experience on mobile phones, tablets, and desktop
@@ -598,23 +595,25 @@
 
     <!-- section graphic -->
     <div id="pizzaPronto" class="modal hidden">
-      <div class="modal_content">
-        <button class="close_modal">×</button>
-        <div class="modal_body">
-          <img
-            class="project_img"
-            src="./assets/images/portfolio_section/astronaut.png"
-            alt="astronaut flying on a rocket"
-          />
-          <h2 class="modal_title yellow">
+      <div class="modal__content">
+        <button class="modal__close">×</button>
+
+        <img
+          class="modal__image--astronaut"
+          src="./assets/images/portfolio_section/astronaut.png"
+          alt="astronaut flying on a rocket"
+        />
+
+        <div class="modal__text-wrapper">
+          <h2 class="modal__title--accent">
             This is not an abandoned planet. I'm currently building new projects
             for this portfolio. They will be available soon.
           </h2>
-          <h2 class="modal_title">Pizzeria Pizza Pronto</h2>
-          <p class="modal_text">
+          <h2 class="modal__title">Pizzeria Pizza Pronto</h2>
+          <p class="modal__text">
             Product: Shop window stickers, restaurant interior stickers, flyers.
           </p>
-          <p class="modal_text">
+          <p class="modal__text">
             From the initial design to the final implementation. At the
             beginning, there was just a lot of text, a minimum of background
             photos, and no clear idea from the owner about how the new
@@ -625,20 +624,22 @@
     </div>
 
     <div id="LogoDanceClub" class="modal hidden">
-      <div class="modal_content">
-        <button class="close_modal">×</button>
-        <div class="modal_body">
-          <img
-            class="project_img"
-            src="./assets/images/portfolio_section/astronaut.png"
-            alt="astronaut flying on a rocket"
-          />
-          <h2 class="modal_title yellow">
+      <div class="modal__content">
+        <button class="modal__close">×</button>
+
+        <img
+          class="modal__image--astronaut"
+          src="./assets/images/portfolio_section/astronaut.png"
+          alt="astronaut flying on a rocket"
+        />
+
+        <div class="modal__text-wrapper">
+          <h2 class="modal__title--accent">
             This is not an abandoned planet. I'm currently building new projects
             for this portfolio. They will be available soon.
           </h2>
-          <h2 class="modal_title">Logo for dance club TS Rebels</h2>
-          <p class="modal_text">
+          <h2 class="modal__title">Logo for dance club TS Rebels</h2>
+          <p class="modal__text">
             Product: Iron-on transfer film for sweatshirts.
           </p>
         </div>
@@ -646,23 +647,24 @@
     </div>
 
     <div id="musicalInv" class="modal hidden">
-      <div class="modal_content">
-        <button class="close_modal">×</button>
-        <div class="modal_body">
-          <img
-            class="project_img"
-            src="./assets/images/portfolio_section/astronaut.png"
-            alt="astronaut flying on a rocket"
-          />
-          <h2 class="modal_title yellow">
+      <div class="modal__content">
+        <button class="modal__close">×</button>
+        <img
+          class="modal__image--astronaut"
+          src="./assets/images/portfolio_section/astronaut.png"
+          alt="astronaut flying on a rocket"
+        />
+
+        <div class="modal__text-wrapper">
+          <h2 class="modal__title--accent">
             This is not an abandoned planet. I'm currently building new projects
             for this portfolio. They will be available soon.
           </h2>
-          <h2 class="modal_title">Musical birthday invitation</h2>
-          <p class="modal_text">
+          <h2 class="modal__title">Musical birthday invitation</h2>
+          <p class="modal__text">
             Product: Fold-out invitation with music CD inside.
           </p>
-          <p class="modal_text">
+          <p class="modal__text">
             The family wanted to create a CD with the birthday girl's favorite
             hits. Since her big birthday was approaching, I thought of combining
             the two ideas and hiding the CD right in the birthday invitation.
@@ -750,7 +752,7 @@
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/zde%C5%88ka-be%C5%A5%C3%A1kov%C3%A1-a7505b372/"
+            href="https://www.linkedin.com/in/zdenka-betakova"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
