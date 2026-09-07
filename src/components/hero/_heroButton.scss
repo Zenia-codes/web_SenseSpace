@@ -4,7 +4,6 @@
 
 .button {
   position: relative;
-  isolation: isolate;
 
   display: inline-flex;
   align-items: center;
@@ -12,27 +11,24 @@
   gap: 5px;
 
   height: 47px;
-  padding-inline: 50px;
+  padding-inline: 42px;
 
-  border: 1px solid transparent;
-  background: none;
-  line-height: 1.2;
+  background: radial-gradient(
+    circle at 45% -29%,
+    #ef8787 6%,
+    #f52f9dd1 51% 45%,
+    #bd008f 71%,
+    #4e2958bd 129%
+  );
+
+  // border: 1px solid #ffffff75;
+  border-radius: 18px;
   cursor: pointer;
 
-  @include m.heroText(16px, c.$SmallTextColor);
-  letter-spacing: 0.05em;
+  text-shadow: -1px -1px 12px #89016c1f;
 
-  &.small {
-    flex-shrink: 0;
-    white-space: nowrap;
-
-    height: 35px;
-    padding-inline: 40px;
-    text-transform: uppercase;
-
-    @include m.heroText(14px, c.$SmallTextColor);
-    font-weight: 400;
-  }
+  box-shadow: inset -3px -4px 5px 2px #23003270, inset 2px 2px 4px #ffb4dc73,
+    0 0 6px #ff00b48c;
 
   // malá animace stisknutí buttonu na mobilu
   &:active {
@@ -40,45 +36,39 @@
     transition: transform 0.1s ease;
   }
 
-  .rocket,
-  .text {
-    position: relative;
-    z-index: 1;
-  }
-
-  .rocket {
+  &__rocket {
     width: 25px;
-    filter: drop-shadow(0 0 1px c.$textLight);
     opacity: 0.9;
     transition: transform 0.7s ease;
   }
 
-  .text {
+  .button__text {
     transition: transform 0.2s ease, text-shadow 0.2s ease;
   }
 
+  // bílá záře a obrys nad buttonem
   &::before {
     content: "";
+    filter: blur(0.8px);
+    z-index: 1;
+    background: #ffffff17;
+    border: 1px solid #ffd6e8ea;
+    border-radius: 14px;
+    width: 93%;
+    height: 34px;
     position: absolute;
-    inset: 0;
-    background: url("/src/assets/icons/main_button.png") center / 100% 100%
-      no-repeat;
-    z-index: -1;
-    filter: drop-shadow(-3px 3px 1px c.$DarkShadow);
   }
 
   // stín za buttonem
   &::after {
     content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    filter: blur(23px);
+    z-index: -1;
+    background: #ffc9ad4f;
+    border-radius: 50%;
     width: 80%;
     height: 60px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    filter: blur(15px);
-    z-index: -1;
+    position: absolute;
   }
 }
 
@@ -90,5 +80,11 @@
 
   .button:hover .text {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media (min-width: b.$tabletBreakPoint) {
+  .button {
+    padding-inline: 70px;
   }
 }

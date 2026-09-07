@@ -81,7 +81,7 @@ span {
 }
 
 a {
-  @include m.titleText(13px, rgba(25, 46, 60));
+  @include m.titleText(15px, c.$SmallTextColor);
   text-decoration: none;
 }
 
@@ -269,10 +269,6 @@ strong {
 }
 
 @media (min-width: b.$desktopBreakPoint) {
-  a {
-    @include m.titleText(15px, rgba(25, 46, 60));
-  }
-
   .split_groups {
     font-size: 15px;
     padding-inline: 0;

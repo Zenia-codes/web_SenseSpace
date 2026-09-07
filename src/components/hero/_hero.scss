@@ -13,27 +13,24 @@
 }
 
 .hero_Text {
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 
-    .myName {
-      @include m.heroText(27px, c.$SmallTextColor);
-      font-weight: 500;
-      letter-spacing: 0.13em;
-      animation: softlyGlow 4s ease-in-out infinite;
-      will-change: transform;
-    }
+  .myName {
+    @include m.heroText(27px, c.$SmallTextColor);
+    font-weight: 500;
+    letter-spacing: 0.13em;
+    animation: softlyGlow 4s ease-in-out infinite;
+    will-change: transform;
+  }
 
-    .design_frontend {
-      @include m.heroText(16px, c.$SmallTextColor);
-      letter-spacing: 0.1em;
-      animation: softlyGlow 4s ease-in-out infinite;
-      will-change: transform;
-    }
+  .design_frontend {
+    @include m.heroText(16px, c.$SmallTextColor);
+    letter-spacing: 0.1em;
+    animation: softlyGlow 4s ease-in-out infinite;
+    will-change: transform;
   }
 
   .slogan_button {
@@ -44,16 +41,32 @@
 }
 
 .design_a_kod {
+  display: flex;
+  justify-content: center;
+
   @include m.titleText(19px, c.$akcentColor);
-  padding-block: 16px;
+  padding-block: 9px 19px;
   animation: softlyGlow 4s ease-in-out infinite;
   will-change: transform;
-  background: radial-gradient(circle at 10% 30%, #ffb87a, #ff917a, #ff4ecb);
+  background: radial-gradient(circle at 25% 35%, #ffc9ad 0%, #f52f9d 85%) text;
+  background-size: 200% 200%;
+
+  animation: gradientMove 3s ease-in-out infinite alternate;
 
   -webkit-background-clip: text; // Chrome, Edge, Safari
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientMove {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
 }
 
 .hero_motiv {
@@ -137,18 +150,14 @@
 
   .hero_Text {
     min-width: 0; // ochrana proti přetečení textu mimo grid
-    .text {
-      align-items: start;
-      gap: 4px;
+    align-items: start;
 
-      .myName {
-        font-size: s.$HeroScaleName;
-        // transform: translateX(-10px);
-      }
+    .myName {
+      font-size: s.$HeroScaleName;
+    }
 
-      .design_frontend {
-        font-size: s.$HeroScaleDesign;
-      }
+    .design_frontend {
+      font-size: s.$HeroScaleDesign;
     }
 
     .design_a_kod {
