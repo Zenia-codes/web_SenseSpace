@@ -72,7 +72,7 @@ body.modal__open {
     display: flex;
     justify-content: end;
     gap: 10px;
-    padding-bottom: 20px;
+    transform: translateY(-20px);
   }
 
   &__title {
@@ -91,6 +91,7 @@ body.modal__open {
 
   &__text {
     @include m.heroText(15px, c.$SmallTextColor);
+    line-height: 1.5em;
     padding-bottom: 7px;
   }
 }
@@ -101,7 +102,7 @@ body.modal__open {
     justify-content: center;
 
     &__text-wrapper {
-      padding: 41px;
+      padding-inline: 41px;
     }
   }
 }
@@ -109,9 +110,5 @@ body.modal__open {
 @media (min-width: b.$desktopBreakPoint) {
   .modal {
     grid-template-columns: minmax(0, 0.6fr);
-
-    &__text-wrapper {
-      padding-inline: 80px;
-    }
   }
 }

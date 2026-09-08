@@ -72,6 +72,25 @@
   }
 }
 
+.button--rounded {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 10px;
+
+  &::before {
+    content: "";
+    border-radius: 50%;
+    width: 85%;
+    height: 85%;
+  }
+}
+
+.button__icon {
+  width: 32px;
+  height: 32px;
+}
+
 // hover tlačítka "Explore" je aplikovaný pouze na zařízení, která ho podporují
 @media (hover: hover) and (pointer: fine) {
   .button:hover .rocket {
@@ -80,11 +99,5 @@
 
   .button:hover .text {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
-  }
-}
-
-@media (min-width: b.$tabletBreakPoint) {
-  .button {
-    padding-inline: 70px;
   }
 }

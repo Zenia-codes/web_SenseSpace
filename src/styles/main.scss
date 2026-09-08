@@ -80,9 +80,11 @@ span {
   font-weight: 600;
 }
 
-a {
+a,
+button {
   @include m.titleText(15px, c.$SmallTextColor);
   text-decoration: none;
+  border: none;
 }
 
 strong {
