@@ -34,7 +34,6 @@ body.modal__open {
     position: relative;
     max-height: 90vh;
     overflow-y: auto;
-    padding-bottom: 15px;
 
     display: flex;
     flex-direction: column;
@@ -79,6 +78,10 @@ body.modal__open {
     display: inline-flex;
   }
 
+  &__subtitle {
+    padding-block: 10px;
+  }
+
   &__title--accent {
     color: c.$akcentColor;
     font-size: 12px;
@@ -86,13 +89,27 @@ body.modal__open {
   }
 
   &__text-wrapper {
-    padding-inline: 15px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 41px 35px;
+  }
+
+  &__content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 22px;
   }
 
   &__text {
     @include m.heroText(15px, c.$SmallTextColor);
     line-height: 1.5em;
-    padding-bottom: 7px;
+  }
+
+  &__list {
+    list-style-type: circle;
+    line-height: 1.4;
   }
 }
 

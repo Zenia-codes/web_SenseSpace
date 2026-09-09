@@ -78,10 +78,28 @@
 
   "modal": {
     "bestshop": {
-      "title": "Responsive Website with Calculator",
-      "technology": "My first project using HTML, SCSS, and JavaScript.",
-      "content_design": "I designed BestShop with a focus on clean aesthetics, a clear structure, and an intuitive user experience. The visual style employs bold accents and modern elements that convey a sense of dynamic growth, service quality, and a rapid return on investment.",
-      "content_code": "During development, I prioritized clean, well-organized code, responsive display across all devices, and intuitive controls. I also used JavaScript to create an interactive calculator that helps visitors easily navigate the pricing options."
+      "title": "A Modern Platform for Online Business",
+      "presentation": "BestShop is a modern e-commerce platform concept for businesses and sellers who want to run and grow their own online store. It presents the platform's features, benefits, and pricing plans, while also including an interactive calculator that provides an estimated price based on the scope of use.",
+      "content_design": "I designed the website with a focus on a clean visual style, clear structure, and an intuitive user experience. The bold yellow, used throughout the design and in the logo itself, serves as a modern and energetic accent that reinforces the sense of speed and efficiency. The complementary blue evokes trust and service quality, while green represents optimism, growth, and dynamic development."
+    },
+
+    "dev": {
+      "bestshop": {
+        "summary": "⚙️ Developer",
+        "title": "Landing page with calculator",
+        "html": {
+          "title": "HTML",
+          "task1": "structured code"
+        },
+        "scss": {
+          "title": "SCSS",
+          "task1": "responsive layout"
+        },
+        "javascript": {
+          "title": "JavaScript",
+          "task1": "interactive price calculator"
+        }
+      }
     }
   },
 

@@ -1,4 +1,10 @@
 @use "../../styles/variables/mixins" as m;
+@use "../../styles/variables/colors" as c;
+
+details {
+  @include m.heroText(15px, c.$SmallTextColor);
+  padding: 12px 13px 12px 32px;
+}
 
 .dev_details {
   -webkit-backdrop-filter: blur(8px); // Safari / iOS Safari
@@ -8,8 +14,4 @@
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-
-  summary {
-    padding: 13px;
-  }
 }

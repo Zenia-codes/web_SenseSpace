@@ -78,10 +78,28 @@
 
   "modal": {
     "bestshop": {
-      "title": "Responzivní webová stránka s kalkulačkou",
-      "technology": "Můj první projekt vytvořený pomocí HTML, SCSS and JavaScriptu.",
-      "content_design": "BestShop jsem navrhovala s důrazem na čistý design, přehlednou strukturu a intuitivní uživatelské prostředí. Grafický styl využívá výrazné akcenty a moderní prvky, které podporují dojem dynamického růstu, kvality služeb a rychlé návratnosti investice.",
-      "content_code": "Při vývoji jsem dbala na čistý a přehledný kód, responzivní zobrazení na všech zařízeních a intuitivní ovládání. Pomocí JavaScriptu jsem vytvořila také interaktivní kalkulačku, která návštěvníkům usnadňuje orientaci v cenové nabídce."
+      "title": "Moderní platforma pro online podnikání",
+      "presentation": "BestShop je návrh moderní e-commerce platformy pro firmy a prodejce, kteří chtějí provozovat a rozvíjet vlastní online obchod. Prezentuje jednotlivé možnosti platformy, její výhody a cenové plány a zároveň obsahuje interaktivní kalkulátor, který umožňuje orientačně spočítat cenu podle rozsahu využití.",
+      "content_design": "Web jsem navrhovala s důrazem na čistý vizuální styl, přehlednou strukturu a intuitivní uživatelské prostředí. Výrazná žlutá, použitá jak v designu stránek, tak v samotném logu, funguje jako moderní a energický akcent, který podporuje dojem rychlosti a efektivity. Doplňková modrá evokuje důvěryhodnost a kvalitu služeb, zatímco zelená symbolizuje optimismus, rozvoj a dynamický růst."
+    },
+
+    "dev": {
+      "bestshop": {
+        "summary": "⚙️ Developer",
+        "title": "Landing page s kalkulačkou",
+        "html": {
+          "title": "HTML",
+          "task1": "strukturovaný kód"
+        },
+        "scss": {
+          "title": "SCSS",
+          "task1": "responzivní layout"
+        },
+        "javascript": {
+          "title": "JavaScript",
+          "task1": "interaktivní kalkulačka ceny"
+        }
+      }
     }
   },
 
