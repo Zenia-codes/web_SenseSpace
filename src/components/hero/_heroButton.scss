@@ -73,22 +73,22 @@
 }
 
 .button--rounded {
-  width: 45px;
-  height: 45px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   padding: 10px;
 
   &::before {
     content: "";
     border-radius: 50%;
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 80%;
   }
 }
 
 .button__icon {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
 }
 
 // hover tlačítka "Explore" je aplikovaný pouze na zařízení, která ho podporují
@@ -99,5 +99,26 @@
 
   .button:hover .text {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media (min-width: b.$tabletBreakPoint) {
+  .button--rounded {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 10px;
+
+    &::before {
+      content: "";
+      border-radius: 50%;
+      width: 85%;
+      height: 85%;
+    }
+  }
+
+  .button__icon {
+    width: 32px;
+    height: 32px;
   }
 }

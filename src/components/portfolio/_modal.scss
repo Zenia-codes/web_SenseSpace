@@ -32,7 +32,7 @@ body.modal__open {
 
   &__content {
     position: relative;
-    max-height: 90vh;
+    max-height: 85vh;
     overflow-y: auto;
 
     display: flex;
@@ -69,17 +69,19 @@ body.modal__open {
 
   &__links {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     gap: 10px;
-    transform: translateY(-20px);
+    padding-block: 9px;
+
+    .links__wrapper {
+      display: flex;
+      gap: 10px;
+    }
   }
 
   &__title {
     display: inline-flex;
-  }
-
-  &__subtitle {
-    padding-block: 10px;
+    align-items: end;
   }
 
   &__title--accent {
@@ -92,7 +94,7 @@ body.modal__open {
     display: flex;
     flex-direction: column;
 
-    padding: 0 41px 35px;
+    padding: 0 30px 35px;
   }
 
   &__content-text {

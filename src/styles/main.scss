@@ -73,7 +73,12 @@ h1 {
 }
 
 h2 {
+  @include m.titleText(18px, c.$textLight);
+}
+
+h3 {
   @include m.titleText(16px, c.$textLight);
+  padding-block: 7px;
 }
 
 span {

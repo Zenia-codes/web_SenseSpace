@@ -485,52 +485,70 @@
     <div id="BestShop" class="modal hidden">
       <div class="modal__content">
         <button class="modal__close">×</button>
-        <img
-          class="modal__image"
-          src="./assets/images/portfolio_section/Frontend/title_img_bestshop.png"
-          alt="invitation"
-        />
+
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./assets/images/portfolio_section/Frontend/bestshop_mobile.png
+            "
+          />
+
+          <img
+            class="modal__image"
+            src="./assets/images/portfolio_section/Frontend/bestshop_desktop1.png"
+            alt="BestShop website"
+          />
+        </picture>
+
         <div class="modal__text-wrapper">
           <div class="modal__links">
-            <a
-              href="https://zenia-codes.github.io/BestShop_project/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="button button--rounded"
-            >
-              <img
-                src="./assets/svg/MODAL/iconROCKET__modal.svg"
-                alt="icon rocket"
-                class="button__icon"
-            /></a>
-            <a
-              href="https://github.com/Zenia-codes/BestShop_project"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="button button--rounded"
-            >
-              <img
-                src="./assets/svg/MODAL/iconDEV__modal.svg"
-                alt="icon developer"
-                class="button__icon"
-              />
-            </a>
+            <h2 class="modal__title">[ BestShop ]</h2>
+            <div class="links__wrapper">
+              <a
+                href="https://zenia-codes.github.io/BestShop_project/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button--rounded"
+              >
+                <img
+                  src="./assets/svg/MODAL/iconROCKET__modal.svg"
+                  alt="icon rocket"
+                  class="button__icon"
+              /></a>
+              <a
+                href="https://github.com/Zenia-codes/BestShop_project"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button--rounded"
+              >
+                <img
+                  src="./assets/svg/MODAL/iconDEV__modal.svg"
+                  alt="icon developer"
+                  class="button__icon"
+                />
+              </a>
+            </div>
           </div>
           <div class="modal__content-text">
-            <h1 class="modal__title">[ BestShop ]</h1>
-            <h2 class="modal__title" data-i18n="modal.bestshop.title"></h2>
-            <p class="modal__text" data-i18n="modal.bestshop.presentation"></p>
+            <h3 class="modal__subtitle" data-i18n="modal.bestshop.title"></h3>
+            <p
+              class="modal__text"
+              data-i18n="modal.bestshop.presentation"
+              data-html
+            ></p>
             <p
               class="modal__text"
               data-i18n="modal.bestshop.content_design"
+              data-html
             ></p>
           </div>
           <details class="dev_details">
             <summary data-i18n="modal.dev.bestshop.summary"></summary>
-            <h2
+            <h3
               class="modal__subtitle"
               data-i18n="modal.dev.bestshop.title"
-            ></h2>
+            ></h3>
             <ul class="modal__list">
               <li>
                 <span data-i18n="modal.dev.bestshop.html.title"></span>
@@ -593,7 +611,7 @@
               />
             </a>
           </div>
-          <h1 class="modal__title">[ Electronic invitation ]</h1>
+          <h2 class="modal__title">[ Electronic invitation ]</h2>
           <p class="modal__text">
             An interactive, animated invitation for a children's party that
             includes an RSVP feature. It is fully responsive, ensuring a

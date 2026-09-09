@@ -79,8 +79,8 @@
   "modal": {
     "bestshop": {
       "title": "Moderní platforma pro online podnikání",
-      "presentation": "BestShop je návrh moderní e-commerce platformy pro firmy a prodejce, kteří chtějí provozovat a rozvíjet vlastní online obchod. Prezentuje jednotlivé možnosti platformy, její výhody a cenové plány a zároveň obsahuje interaktivní kalkulátor, který umožňuje orientačně spočítat cenu podle rozsahu využití.",
-      "content_design": "Web jsem navrhovala s důrazem na čistý vizuální styl, přehlednou strukturu a intuitivní uživatelské prostředí. Výrazná žlutá, použitá jak v designu stránek, tak v samotném logu, funguje jako moderní a energický akcent, který podporuje dojem rychlosti a efektivity. Doplňková modrá evokuje důvěryhodnost a kvalitu služeb, zatímco zelená symbolizuje optimismus, rozvoj a dynamický růst."
+      "presentation": "BestShop je návrh moderní <strong>e-commerce platformy</strong> pro firmy a prodejce, kteří chtějí provozovat a rozvíjet vlastní online obchod. Prezentuje jednotlivé možnosti platformy, její výhody a cenové plány a zároveň obsahuje <strong>interaktivní kalkulátor</strong>, který umožňuje orientačně spočítat cenu podle rozsahu využití.",
+      "content_design": "Web jsem navrhovala s důrazem na <strong>čistý vizuální styl</strong>, přehlednou strukturu a intuitivní uživatelské prostředí. Výrazná <strong>žlutá</strong>, použitá jak v designu stránek, tak v samotném logu, funguje jako moderní a energický akcent, který podporuje dojem rychlosti a efektivity. Doplňková <strong>modrá</strong> evokuje důvěryhodnost a kvalitu služeb, zatímco <strong>zelená</strong> symbolizuje optimismus, rozvoj a dynamický růst."
     },
 
     "dev": {
