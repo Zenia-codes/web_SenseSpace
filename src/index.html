@@ -242,7 +242,7 @@
             >
               <div class="project_hover_bg">
                 <img
-                  src="./assets/images/portfolio_section/Frontend/BestShop_preview_mobile.png"
+                  src="./assets/images/portfolio_section/Frontend/Bestshop/BestShop_preview_mobile.png"
                   alt="project preview"
                   class="hover-bg-image"
                 />
@@ -258,7 +258,7 @@
               <div class="project_content">
                 <div class="project_image">
                   <img
-                    src="./assets/images/portfolio_section/Frontend/BestShop_preview_mobile.png"
+                    src="./assets/images/portfolio_section/Frontend/Bestshop/BestShop_preview_mobile.png"
                     alt="invitation"
                   />
                 </div>
@@ -280,7 +280,7 @@
             >
               <div class="project_hover_bg">
                 <img
-                  src="./assets/images/portfolio_section/Frontend/invitation_preview.jpg"
+                  src="./assets/images/portfolio_section/Frontend/Invitation/invitation_preview.jpg"
                   alt="invitation preview"
                   class="hover-bg-image"
                 />
@@ -296,7 +296,7 @@
               <div class="project_content">
                 <div class="project_image">
                   <img
-                    src="./assets/images/portfolio_section/Frontend/invitation_preview.jpg"
+                    src="./assets/images/portfolio_section/Frontend/Invitation/invitation_preview.jpg"
                     alt="invitation"
                   />
                 </div>
@@ -486,24 +486,26 @@
       <div class="modal__content">
         <button class="modal__close">×</button>
 
-        <picture>
-          <source
-            media="(max-width: 768px)"
-            srcset="
-              ./assets/images/portfolio_section/Frontend/bestshop_mobile.png
-            "
-          />
+        <div class="modal__image-wrapper">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                ./assets/images/portfolio_section/Frontend/Bestshop/bestshop_mobile.png
+              "
+            />
+            <img
+              class="modal__image"
+              src="./assets/images/portfolio_section/Frontend/Bestshop/bestshop_desktop1.png"
+              alt="BestShop website"
+            />
+          </picture>
+        </div>
 
-          <img
-            class="modal__image"
-            src="./assets/images/portfolio_section/Frontend/bestshop_desktop1.png"
-            alt="BestShop website"
-          />
-        </picture>
-
-        <div class="modal__text-wrapper">
+        <div class="modal__content-text">
           <div class="modal__links">
             <h2 class="modal__title">[ BestShop ]</h2>
+
             <div class="links__wrapper">
               <a
                 href="https://zenia-codes.github.io/BestShop_project/"
@@ -530,8 +532,9 @@
               </a>
             </div>
           </div>
-          <div class="modal__content-text">
-            <h3 class="modal__subtitle" data-i18n="modal.bestshop.title"></h3>
+
+          <h3 class="modal__subtitle" data-i18n="modal.bestshop.subtitle"></h3>
+          <div class="modal__text-wrapper">
             <p
               class="modal__text"
               data-i18n="modal.bestshop.presentation"
@@ -543,12 +546,25 @@
               data-html
             ></p>
           </div>
+          <div class="modal__text-wrapper">
+            <img
+              class="modal__image--logo"
+              src="./assets/images/portfolio_section/Frontend/Bestshop/bestshop_brand.png"
+              alt="BestShop website"
+            />
+            <p
+              class="modal__text"
+              data-i18n="modal.bestshop.content_logo"
+              data-html
+            ></p>
+          </div>
+
           <details class="dev_details">
             <summary data-i18n="modal.dev.bestshop.summary"></summary>
-            <h3
+            <h4
               class="modal__subtitle"
               data-i18n="modal.dev.bestshop.title"
-            ></h3>
+            ></h4>
             <ul class="modal__list">
               <li>
                 <span data-i18n="modal.dev.bestshop.html.title"></span>
@@ -580,50 +596,114 @@
       <div class="modal__content">
         <button class="modal__close">×</button>
 
-        <img
-          class="modal__image"
-          src="./assets/images/portfolio_section/Frontend/title_img_invitation.png"
-          alt="invitation"
-        />
-        <div class="modal__text-wrapper">
+        <div class="modal__image-wrapper">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                ./assets/images/portfolio_section/Frontend/Invitation/invitation_imgTitle_mobile.png
+              "
+            />
+            <img
+              class="modal__image"
+              src="./assets/images/portfolio_section/Frontend/Invitation/invitation_imgTitle_desktop2.png"
+              alt="BestShop website"
+            />
+          </picture>
+        </div>
+
+        <div class="modal__content-text">
           <div class="modal__links">
-            <a
-              href="https://zenia-codes.github.io/RSVP_invitation_for_kids/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="button button--rounded"
-              ><img
-                src="./assets/svg/MODAL/iconROCKET__modal.svg"
-                alt="icon rocket"
-                class="button__icon"
-              />
-            </a>
-            <a
-              href="https://github.com/Zenia-codes/RSVP_invitation_for_kids"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="button button--rounded"
-            >
-              <img
-                src="./assets/svg/MODAL/iconDEV__modal.svg"
-                alt="icon developer"
-                class="button__icon"
-              />
-            </a>
+            <h2 class="modal__title" data-i18n="modal.invitation.title"></h2>
+
+            <div class="links__wrapper">
+              <a
+                href="https://zenia-codes.github.io/RSVP_invitation_for_kids/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button--rounded"
+                ><img
+                  src="./assets/svg/MODAL/iconROCKET__modal.svg"
+                  alt="icon rocket"
+                  class="button__icon"
+                />
+              </a>
+              <a
+                href="https://github.com/Zenia-codes/RSVP_invitation_for_kids"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button--rounded"
+              >
+                <img
+                  src="./assets/svg/MODAL/iconDEV__modal.svg"
+                  alt="icon developer"
+                  class="button__icon"
+                />
+              </a>
+            </div>
           </div>
-          <h2 class="modal__title">[ Electronic invitation ]</h2>
-          <p class="modal__text">
-            An interactive, animated invitation for a children's party that
-            includes an RSVP feature. It is fully responsive, ensuring a
-            seamless viewing experience on mobile phones, tablets, and desktop
-            computers. Cheerful rainbow colors paired with the "Rum Raisin" font
-            give the invitation a playful, fairytale feel, while the clean,
-            highly readable "Quicksand" font ensures the text is easy to read.
-            The invitation also includes a section with gift ideas for the
-            birthday girl. It is available in two language versions—Czech and
-            English—with language switching handled via custom localization
-            using JSON files rather than automatic translation.
-          </p>
+
+          <h3
+            class="modal__subtitle"
+            data-i18n="modal.invitation.subtitle"
+          ></h3>
+          <div class="modal__text-wrapper">
+            <p
+              class="modal__text"
+              data-i18n="modal.invitation.presentation1"
+              data-html
+            ></p>
+            <p
+              class="modal__text"
+              data-i18n="modal.invitation.presentation2"
+              data-html
+            ></p>
+          </div>
+          <div class="modal__text-wrapper">
+            <p
+              class="modal__text"
+              data-i18n="modal.invitation.content_design"
+              data-html
+            ></p>
+            <p
+              class="modal__text"
+              data-i18n="modal.invitation.content_design2"
+              data-html
+            ></p>
+          </div>
+
+          <details class="dev_details">
+            <summary data-i18n="modal.dev2.invitation.summary"></summary>
+            <h4
+              class="modal__subtitle"
+              data-i18n="modal.dev2.invitation.title"
+            ></h4>
+            <ul class="modal__list">
+              <li>
+                <span data-i18n="modal.dev2.invitation.html.title"></span>
+                <ul>
+                  <li data-i18n="modal.dev2.invitation.html.task1"></li>
+                  <li data-i18n="modal.dev2.invitation.html.task2"></li>
+                </ul>
+              </li>
+
+              <li>
+                <span data-i18n="modal.dev2.invitation.scss.title"></span>
+                <ul>
+                  <li data-i18n="modal.dev2.invitation.scss.task1"></li>
+                  <li data-i18n="modal.dev2.invitation.scss.task2"></li>
+                </ul>
+              </li>
+
+              <li>
+                <span data-i18n="modal.dev2.invitation.javascript.title"></span>
+                <ul>
+                  <li data-i18n="modal.dev2.invitation.javascript.task1"></li>
+                  <li data-i18n="modal.dev2.invitation.javascript.task2"></li>
+                </ul>
+              </li>
+            </ul>
+          </details>
         </div>
       </div>
     </div>
@@ -658,27 +738,32 @@
       <div class="modal__content">
         <button class="modal__close">×</button>
 
-        <img
-          class="modal__image--astronaut"
-          src="./assets/images/portfolio_section/astronaut.png"
-          alt="astronaut flying on a rocket"
-        />
+        <div class="modal__content-text">
+          <div class="modal__image-wrapper">
+            <img
+              class="modal__image--astronaut"
+              src="./assets/images/portfolio_section/astronaut.png"
+              alt="astronaut flying on a rocket"
+            />
+            <h2 class="modal__title--accent">
+              This is not an abandoned planet. I'm currently building new
+              projects for this portfolio. They will be available soon.
+            </h2>
+          </div>
 
-        <div class="modal__text-wrapper">
-          <h2 class="modal__title--accent">
-            This is not an abandoned planet. I'm currently building new projects
-            for this portfolio. They will be available soon.
-          </h2>
-          <h2 class="modal__title">Pizzeria Pizza Pronto</h2>
-          <p class="modal__text">
-            Product: Shop window stickers, restaurant interior stickers, flyers.
-          </p>
-          <p class="modal__text">
-            From the initial design to the final implementation. At the
-            beginning, there was just a lot of text, a minimum of background
-            photos, and no clear idea from the owner about how the new
-            restaurant should look visually.
-          </p>
+          <div class="modal__text-wrapper">
+            <h2 class="modal__title">Pizzeria Pizza Pronto</h2>
+            <p class="modal__text">
+              Product: Shop window stickers, restaurant interior stickers,
+              flyers.
+            </p>
+            <p class="modal__text">
+              From the initial design to the final implementation. At the
+              beginning, there was just a lot of text, a minimum of background
+              photos, and no clear idea from the owner about how the new
+              restaurant should look visually.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -687,21 +772,25 @@
       <div class="modal__content">
         <button class="modal__close">×</button>
 
-        <img
-          class="modal__image--astronaut"
-          src="./assets/images/portfolio_section/astronaut.png"
-          alt="astronaut flying on a rocket"
-        />
+        <div class="modal__content-text">
+          <div class="modal__image-wrapper">
+            <img
+              class="modal__image--astronaut"
+              src="./assets/images/portfolio_section/astronaut.png"
+              alt="astronaut flying on a rocket"
+            />
+            <h2 class="modal__title--accent">
+              This is not an abandoned planet. I'm currently building new
+              projects for this portfolio. They will be available soon.
+            </h2>
+          </div>
 
-        <div class="modal__text-wrapper">
-          <h2 class="modal__title--accent">
-            This is not an abandoned planet. I'm currently building new projects
-            for this portfolio. They will be available soon.
-          </h2>
-          <h2 class="modal__title">Logo for dance club TS Rebels</h2>
-          <p class="modal__text">
-            Product: Iron-on transfer film for sweatshirts.
-          </p>
+          <div class="modal__text-wrapper">
+            <h2 class="modal__title">Logo for dance club TS Rebels</h2>
+            <p class="modal__text">
+              Product: Iron-on transfer film for sweatshirts.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -709,26 +798,32 @@
     <div id="musicalInv" class="modal hidden">
       <div class="modal__content">
         <button class="modal__close">×</button>
-        <img
-          class="modal__image--astronaut"
-          src="./assets/images/portfolio_section/astronaut.png"
-          alt="astronaut flying on a rocket"
-        />
 
-        <div class="modal__text-wrapper">
-          <h2 class="modal__title--accent">
-            This is not an abandoned planet. I'm currently building new projects
-            for this portfolio. They will be available soon.
-          </h2>
-          <h2 class="modal__title">Musical birthday invitation</h2>
-          <p class="modal__text">
-            Product: Fold-out invitation with music CD inside.
-          </p>
-          <p class="modal__text">
-            The family wanted to create a CD with the birthday girl's favorite
-            hits. Since her big birthday was approaching, I thought of combining
-            the two ideas and hiding the CD right in the birthday invitation.
-          </p>
+        <div class="modal__content-text">
+          <div class="modal__image-wrapper">
+            <img
+              class="modal__image--astronaut"
+              src="./assets/images/portfolio_section/astronaut.png"
+              alt="astronaut flying on a rocket"
+            />
+            <h2 class="modal__title--accent">
+              This is not an abandoned planet. I'm currently building new
+              projects for this portfolio. They will be available soon.
+            </h2>
+          </div>
+
+          <div class="modal__text-wrapper">
+            <h2 class="modal__title">Musical birthday invitation</h2>
+            <p class="modal__text">
+              Product: Fold-out invitation with music CD inside.
+            </p>
+            <p class="modal__text">
+              The family wanted to create a CD with the birthday girl's favorite
+              hits. Since her big birthday was approaching, I thought of
+              combining the two ideas and hiding the CD right in the birthday
+              invitation.
+            </p>
+          </div>
         </div>
       </div>
     </div>

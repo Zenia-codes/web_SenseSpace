@@ -49,33 +49,50 @@ body.modal__open {
     line-height: e.$line-height;
   }
 
-  &__image {
+  &__image-wrapper {
     width: 100%;
+
+    picture {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__image--logo {
+    width: 70%;
   }
 
   &__image--astronaut {
-    width: 40%;
+    width: 56%;
   }
 
   &__close {
     position: absolute;
+
     top: 15px;
-    right: 10px;
+    right: 14px;
+
     border: none;
     background: none;
     font-size: 25px;
-    color: rgb(39, 39, 39);
+    color: #656262;
   }
 
   &__links {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    padding-block: 9px;
+    padding-top: 15px;
 
     .links__wrapper {
       display: flex;
-      gap: 10px;
+      gap: 12px;
     }
   }
 
@@ -90,23 +107,20 @@ body.modal__open {
     padding-block: 10px;
   }
 
-  &__text-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    padding: 0 30px 35px;
-  }
-
   &__content-text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-bottom: 22px;
-  }
+    padding: 0 30px 35px;
 
-  &__text {
     @include m.heroText(15px, c.$SmallTextColor);
     line-height: 1.5em;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   &__list {
@@ -120,8 +134,23 @@ body.modal__open {
     grid-template-columns: minmax(0, 0.8fr);
     justify-content: center;
 
-    &__text-wrapper {
-      padding-inline: 41px;
+    &__content-text {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 30px;
+      padding-top: 20px;
+    }
+
+    &__links {
+      grid-column: 1/-1;
+    }
+
+    &__subtitle {
+      grid-column: 1/-1;
+    }
+
+    &__title {
+      font-size: 22px;
     }
   }
 }

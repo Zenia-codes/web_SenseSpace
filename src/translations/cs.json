@@ -78,9 +78,10 @@
 
   "modal": {
     "bestshop": {
-      "title": "Moderní platforma pro online podnikání",
+      "subtitle": "Moderní platforma pro online podnikání",
       "presentation": "BestShop je návrh moderní <strong>e-commerce platformy</strong> pro firmy a prodejce, kteří chtějí provozovat a rozvíjet vlastní online obchod. Prezentuje jednotlivé možnosti platformy, její výhody a cenové plány a zároveň obsahuje <strong>interaktivní kalkulátor</strong>, který umožňuje orientačně spočítat cenu podle rozsahu využití.",
-      "content_design": "Web jsem navrhovala s důrazem na <strong>čistý vizuální styl</strong>, přehlednou strukturu a intuitivní uživatelské prostředí. Výrazná <strong>žlutá</strong>, použitá jak v designu stránek, tak v samotném logu, funguje jako moderní a energický akcent, který podporuje dojem rychlosti a efektivity. Doplňková <strong>modrá</strong> evokuje důvěryhodnost a kvalitu služeb, zatímco <strong>zelená</strong> symbolizuje optimismus, rozvoj a dynamický růst."
+      "content_design": "Web jsem navrhovala s důrazem na <strong>čistý vizuální styl</strong>, přehlednou strukturu a intuitivní uživatelské prostředí. Výrazná <strong>žlutá</strong>, použitá jak v designu stránek, tak v samotném logu, funguje jako moderní a energický akcent, který podporuje dojem rychlosti a efektivity. Doplňková <strong>modrá</strong> evokuje důvěryhodnost a kvalitu služeb, zatímco <strong>zelená</strong> symbolizuje optimismus, rozvoj a dynamický růst.",
+      "content_logo": "Typografické logo založené na jednoduchém a čitelném písmu <strong>Raleway</strong> a kombinaci různých tlouštěk písma v <strong>tmavě olivové a zlaté barvě</strong>. Výsledný vzhled působí <strong>dynamicky a moderně</strong>. Drobný detail stylizovaných mincí nahrazujících písmeno „O“ vytváří asociaci s <strong>obchodem, financemi a úspěchem</strong>."
     },
 
     "dev": {
@@ -98,6 +99,38 @@
         "javascript": {
           "title": "JavaScript",
           "task1": "interaktivní kalkulačka ceny"
+        }
+      }
+    },
+
+    "invitation": {
+      "title": "[ Elektronická pozvánka ]",
+      "subtitle": "Moderní způsob, jak pozvat přátele na oslavu",
+      "presentation1": "Známe to. Organizace oslavy často znamená spoustu zpráv, čekání na odpovědi a sestavování seznamu hostů. Co kdyby to ale šlo jednodušeji?",
+      "presentation2": "Sestavila jsem proto Interaktivní <strong>pozvánku</strong>, která obsahuje <strong>registrační formulář</strong> a prostor pro výběr dárku. Odpovědi se automaticky odešlou na e-mail a Vy máte přehled o tom, <strong>kdo dorazí</strong>, v jakém počtu a co oslavenci přinese. Pozvánku lze poslat elektronicky nebo vytisknout s <strong>QR kódem</strong>, který hosty přesměruje přímo na online formulář.",
+      "bonus": "Pozvánku lze rozšířit o další kategorie podle typu oslavy – například <strong>výběr jídla</strong>, doplňkový program nebo jednoduchou hru s překvapením.",
+      "content_design": "Zadání oslavenkyně bylo jasné: <strong>duha, zámek, princezna a třpytky</strong>. Celý vizuál jsem proto postavila na pohádkové atmosféře a hravém designu evokujícím papírové vystřihovánky z akvarelového papíru.",
+      "content_design2": "Veselé <strong>duhové barvy</strong> v kombinaci s písmem <strong>Rum Raisin</strong> vytvářejí hravou, pohádkovou atmosféru, zatímco čisté a velmi dobře čitelné písmo <strong>Quicksand</strong> zajišťuje snadnou čitelnost obsahu."
+    },
+
+    "dev2": {
+      "invitation": {
+        "summary": "⚙️ Developer",
+        "title": "Animovaná pozvánka na dětskou oslavu s RSVP",
+        "html": {
+          "title": "HTML",
+          "task1": "strukturovaný a sémantický kód",
+          "task2": "vícejazyčná lokalizace pomocí JSON"
+        },
+        "scss": {
+          "title": "SCSS",
+          "task1": "responzivní layout",
+          "task2": "animace obrázků a tlačítek"
+        },
+        "javascript": {
+          "title": "JavaScript",
+          "task1": "interaktivní registrační formulář",
+          "task2": "odesílání odpovědí přes API"
         }
       }
     }

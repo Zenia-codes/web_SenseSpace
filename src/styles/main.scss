@@ -78,7 +78,11 @@ h2 {
 
 h3 {
   @include m.titleText(16px, c.$textLight);
-  padding-block: 7px;
+}
+
+h4 {
+  @include m.titleText(14px, c.$textLight);
+  padding-block: 10px;
 }
 
 span {
@@ -245,12 +249,6 @@ strong {
     .split_text {
       gap: 10px;
     }
-
-    // .split_image {
-    //   &::before {
-    //     inset: -30% -20%;
-    //   }
-    // }
 
     .split_row {
       display: grid;
