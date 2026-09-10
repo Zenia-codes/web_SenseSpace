@@ -32,7 +32,7 @@ body.modal__open {
 
   &__content {
     position: relative;
-    max-height: 85vh;
+    max-height: 80vh;
     overflow-y: auto;
 
     display: flex;
@@ -66,10 +66,11 @@ body.modal__open {
 
   &__image--logo {
     width: 70%;
+    filter: drop-shadow(1px 2px 2px rgba(23, 23, 23, 0.253));
   }
 
   &__image--astronaut {
-    width: 56%;
+    width: 40%;
   }
 
   &__close {
@@ -88,7 +89,6 @@ body.modal__open {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    padding-top: 15px;
 
     .links__wrapper {
       display: flex;
@@ -110,7 +110,7 @@ body.modal__open {
   &__content-text {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding: 0 30px 35px;
 
     @include m.heroText(15px, c.$SmallTextColor);
@@ -120,7 +120,7 @@ body.modal__open {
   &__text-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
   &__list {
@@ -137,7 +137,8 @@ body.modal__open {
     &__content-text {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 15px 30px;
+      gap: 18px 30px;
+
       padding-top: 20px;
     }
 
@@ -150,7 +151,7 @@ body.modal__open {
     }
 
     &__title {
-      font-size: 22px;
+      font-size: 24px;
     }
   }
 }

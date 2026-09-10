@@ -77,11 +77,13 @@
   },
 
   "modal": {
+    "accentTitle": "This is not an abandoned planet. I'm currently building new projects for this portfolio. They will be available soon.",
+
     "bestshop": {
       "subtitle": "A modern platform for online business",
       "presentation": "BestShop is a concept for a modern <strong>e-commerce platform</strong> designed for businesses and sellers who want to run and grow their own online store. It presents the platform’s features, benefits, and pricing plans, while also including an <strong>interactive calculator</strong> that allows users to estimate the price based on the scale of use.",
       "content_design": "I designed the website with an emphasis on a <strong>clean visual style</strong>, clear structure, and an intuitive user experience. The bold <strong>yellow</strong>, used both throughout the website and in the logo, acts as a modern and energetic accent that reinforces a sense of speed and efficiency. The complementary <strong>blue</strong> evokes trust and service quality, while <strong>green</strong> represents optimism, growth, and dynamic development.",
-      "content_logo": "A typographic logo based on the simple and highly legible <strong>Raleway</strong> typeface, combining different font weights in <strong>dark olive and gold</strong>. The resulting design feels <strong>dynamic and modern</strong>. A subtle detail of stylized coins replacing the letter “O” creates an association with <strong>commerce, finance, and success</strong>."
+      "content_logo": "When designing the logo, I opted for the simple and highly legible <strong>Raleway</strong> typeface in different weights, combined with <strong>dark olive and gold</strong>. A subtle detail of stylized coins replacing the letter “O” creates a direct association with <strong>commerce and profit</strong>. A soft gradient complements the overall design and reinforces the <strong>modern and minimalist character of the brand</strong>."
     },
 
     "dev": {
@@ -133,6 +135,23 @@
           "task2": "submitting responses via API"
         }
       }
+    },
+
+    "pizzaPronto": {
+      "title": "Pizzeria Pizza Pronto",
+      "product": "Product: Shop window stickers, restaurant interior stickers, flyers.",
+      "workflow": "From the initial design to the final implementation. At the beginning, there was just a lot of text, a minimum of background photos, and no clear idea from the owner about how the new restaurant should look visually."
+    },
+
+    "danceClubRebels": {
+      "title": "Logo for dance club TS Rebels",
+      "product": "Product: Iron-on transfer film for sweatshirts."
+    },
+
+    "musicInv": {
+      "title": "Musical birthday invitation",
+      "product": "Product: Fold-out invitation with music CD inside.",
+      "workflow": "The family wanted to create a CD with the birthday girl's favorite hits. Since her big birthday was approaching, I thought of combining the two ideas and hiding the CD right in the birthday invitation."
     }
   },
 
