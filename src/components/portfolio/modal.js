@@ -40,9 +40,8 @@ document.querySelectorAll(".modal").forEach((modal) => {
 
   // shut down of modal by keydown on Escape
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape")
-      if (!modal.classList.contains("hidden")) {
-        closeModal(modal);
-      }
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      closeModal(modal);
+    }
   });
 });

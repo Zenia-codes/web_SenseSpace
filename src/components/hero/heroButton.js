@@ -1,13 +1,9 @@
-const button = document.querySelector(".button");
-
-button.addEventListener("touchstart", () => {
-  console.log("touchstart fired");
-  navigator.vibrate?.(50);
+document.querySelectorAll(".button").forEach((button) => {
+  button.addEventListener("touchstart", () => {
+    console.log("touchstart fired");
+    navigator.vibrate?.(50); // call vibrate (50ms) if it exists
+  });
+  console.log(button);
 });
 
-console.log(button);
 console.log("navigator.vibrate:", navigator.vibrate);
-
-// poznámka pro mne:
-// ?. = optional chaining (volitelné řetězení)
-// navigator.vibrate?.(50) tedy znamená: „Zavolej vibraci(50ms) jen pokud existuje“
