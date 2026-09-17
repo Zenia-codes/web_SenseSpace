@@ -73,7 +73,7 @@ body.modal__open {
   }
 
   &__image--astronaut {
-    width: 40%;
+    width: 100%;
   }
 
   &__close {
@@ -92,7 +92,7 @@ body.modal__open {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap: 50px;
+    gap: 18px;
 
     .links__wrapper {
       display: flex;
@@ -126,7 +126,7 @@ body.modal__open {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 30px 30px 35px;
+    padding: 30px 14px 35px;
 
     @include m.heroText(15px, c.$SmallTextColor);
     line-height: 1.5em;
@@ -152,12 +152,13 @@ body.modal__open {
     &__content-text {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      align-items: center;
       gap: 20px 30px;
     }
 
     &__links {
       grid-column: 1/-1;
-      align-items: center;
+      gap: 50px;
     }
 
     &__subtitle {
