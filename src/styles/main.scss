@@ -103,7 +103,6 @@ strong {
   font-weight: 500;
 }
 
-// společné texty - odstavce
 .split_groups {
   @include m.heroText(15px, c.$SmallTextColor);
   line-height: e.$line-height;
@@ -198,7 +197,6 @@ strong {
 
 @media (min-width: b.$tabletBreakPoint) {
   body {
-    position: relative;
     background-image: url("../assets/images/background.png");
 
     &::before {
@@ -223,59 +221,48 @@ strong {
     max-width: 75ch;
   }
 
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
   .split_groups {
-    font-size: 15px;
     gap: 100px;
     padding-inline: 60px;
 
     .split_text {
-      .about_title {
-        text-align: left;
-      }
+      gap: 10px;
+
+      .about_title,
       .project_title,
       .project_name {
         text-align: left;
       }
     }
 
-    .split_text {
-      gap: 10px;
-    }
-
     .split_row {
       display: grid;
-    }
+      align-items: start;
 
-    .split_row .split_image {
-      grid-column: 1;
-      grid-row: 1;
-    }
+      .split_image {
+        grid-column: 1;
+        grid-row: 1;
+      }
 
-    .split_row .split_text {
-      grid-column: 2;
-    }
+      .split_text {
+        grid-column: 2;
+      }
 
-    .split_row.reverse .split_image {
-      grid-column: 2;
-    }
+      &.reverse {
+        .split_image {
+          grid-column: 2;
+        }
 
-    .split_row.reverse .split_text {
-      grid-column: 1;
+        .split_text {
+          grid-column: 1;
+        }
+      }
     }
   }
 }
 
 @media (min-width: b.$desktopBreakPoint) {
   .split_groups {
-    font-size: 15px;
     padding-inline: 0;
   }
 }
