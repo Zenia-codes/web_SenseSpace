@@ -45,18 +45,10 @@
   justify-content: center;
 
   @include m.titleText(19px, c.$akcentColor);
+
+  @include m.gradientTitle;
+
   padding-block: 9px 19px;
-  animation: softlyGlow 4s ease-in-out infinite;
-  will-change: transform;
-  background: radial-gradient(circle at 25% 35%, #ffc9ad 0%, #f52f9d 85%) text;
-  background-size: 200% 200%;
-
-  animation: gradientMove 3s ease-in-out infinite alternate;
-
-  -webkit-background-clip: text; // Chrome, Edge, Safari
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 
 @keyframes gradientMove {

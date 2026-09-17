@@ -40,3 +40,18 @@
   border-radius: 10px;
   overflow: hidden;
 }
+
+@mixin gradientTitle {
+  background: radial-gradient(circle at 25% 35%, #ffc9ad 0%, #f52f9d 85%) text;
+
+  background-size: 200% 200%;
+
+  animation: gradientMove 3s ease-in-out infinite alternate,
+    softlyGlow 4s ease-in-out infinite;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}

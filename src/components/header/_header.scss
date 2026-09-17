@@ -62,8 +62,9 @@
   position: relative;
   @include m.titleText(22px, c.$SmallTextColor);
 
+  @include m.gradientTitle;
+
   animation: softlyGlow 4s ease-in-out infinite;
-  will-change: transform;
 }
 
 .menu_button {

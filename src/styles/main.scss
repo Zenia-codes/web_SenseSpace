@@ -138,6 +138,7 @@ strong {
 .project_name {
   text-align: center;
   align-self: self-end;
+  @include m.gradientTitle;
 }
 // efekt scroll reveal
 .reveal {
