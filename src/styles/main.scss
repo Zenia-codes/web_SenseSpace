@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-  @include m.titleText(18px, c.$textLight);
+  @include m.titleText(19px, c.$textLight);
 }
 
 h3 {

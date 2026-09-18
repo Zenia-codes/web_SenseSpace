@@ -80,7 +80,6 @@
     "accentTitle": "I'm currently building this project for my portfolio. It will be available soon.",
 
     "bestshop": {
-      "subtitle": "A modern platform for online business",
       "presentation": "BestShop is a concept for a modern <strong>e-commerce platform</strong> designed for businesses and sellers who want to run and grow their own online store. It presents the platform’s features, benefits, and pricing plans, while also including an <strong>interactive calculator</strong> that allows users to estimate the price based on the scale of use.",
       "content_design": "I designed the website with an emphasis on a <strong>clean visual style</strong>, clear structure, and an intuitive user experience. The bold <strong>yellow</strong>, used both throughout the website and in the logo, acts as a modern and energetic accent that reinforces a sense of speed and efficiency. The complementary <strong>blue</strong> evokes trust and service quality, while <strong>green</strong> represents optimism, growth, and dynamic development.",
       "content_logo": "When designing the logo, I opted for the simple and highly legible <strong>Raleway</strong> typeface in different weights, combined with <strong>dark olive and gold</strong>. A subtle detail of stylized coins replacing the letter “O” creates a direct association with <strong>commerce and profit</strong>. A soft gradient complements the overall design and reinforces the <strong>modern and minimalist character of the brand</strong>."
@@ -106,13 +105,12 @@
     },
 
     "invitation": {
-      "title": "[ Electronic Invitation ]",
-      "subtitle": "A modern way to invite friends to a celebration",
-      "presentation1": "We all know it. Organizing a celebration often means lots of messages, waiting for replies, and putting together a guest list. But what if it could be easier?",
+      "title": "Digital Invitation",
+      "presentation1": "We all know it. Organizing a celebration often means endless messages, waiting for replies, and putting together a guest list. So why not make it easier and more fun? There are many modern ways to invite friends to a celebration. This is an example of one of them – my own.",
       "presentation2": "That’s why I created an interactive <strong>invitation</strong> featuring an <strong>RSVP form</strong> and a gift selection option. Responses are automatically sent to your email, giving you an overview of <strong>who is coming</strong>, how many guests will attend, and what gift they will bring. The invitation can be sent electronically or printed with a <strong>QR code</strong> that takes guests directly to the online form.",
       "bonus": "The invitation can be expanded with additional categories depending on the type of celebration – for example, <strong>food selection</strong>, additional activities, or a simple surprise game.",
-      "content_design": "The birthday girl’s brief was clear: <strong>rainbow, castle, princess, and glitter</strong>. I therefore built the entire visual concept around a fairytale atmosphere and a playful design inspired by paper cut-outs made from watercolor paper.",
-      "content_design2": "Cheerful <strong>rainbow colors</strong> combined with the <strong>Rum Raisin</strong> typeface create a playful, fairytale atmosphere, while the clean and highly legible <strong>Quicksand</strong> font ensures that the content is easy to read."
+      "content_design": "The birthday girl's brief was clear: <strong>a rainbow, a castle, a princess, and glitter</strong>. Since she enjoys creating things herself, I built the entire visual around fairytale-inspired motifs and a playful style inspired by paper cut-outs.",
+      "content_design2": "Cheerful <strong>rainbow colors</strong> combined with the <strong>Rum Raisin</strong> typeface emphasize the playful character of the invitation, while the clean and highly readable <strong>Quicksand</strong> typeface ensures the content is easy to read."
     },
 
     "dev2": {
@@ -138,13 +136,18 @@
     },
 
     "pizzaPronto": {
-      "title": "Pizzeria Pizza Pronto",
-      "product": "Product: Shop window stickers, restaurant interior stickers, flyers.",
-      "workflow": "From the initial design to the final implementation. At the beginning, there was just a lot of text, a minimum of background photos, and no clear idea from the owner about how the new restaurant should look visually."
+      "title": "Pizza Pronto Pizzeria",
+      "product1": "[1] Flyers and Logo",
+      "workflow": "I was given a large amount of handwritten text, which was continuously supplemented and edited throughout the process. I had complete creative freedom when designing the restaurant's modern visual style.",
+      "leaflet": "As the first step, I designed a flyer featuring the pizza menu, which I later complemented with the restaurant's new logo.",
+      "product2": "[2] Business cards",
+      "product3": "[3] Interior and exterior stickers",
+      "INstickers": "An information board with the menu",
+      "EXstickers": "Window stickers"
     },
 
     "danceClubRebels": {
-      "title": "Logo for dance club TS Rebels",
+      "title": "Logo for dance club",
       "product": "Product: Iron-on transfer film for sweatshirts."
     },
 
