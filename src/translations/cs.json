@@ -137,9 +137,9 @@
 
     "pizzaPronto": {
       "title": "Pizzerie Pizza Pronto",
+      "about": "Vizuál restaurace z let 2020-2021",
       "product1": "[1] Letáky a Logo",
-      "workflow": "K dispozici jsem dostala velké množství ručně psaného textu, který se v průběhu tvorby průběžně doplňoval i upravoval. Při návrhu moderního vizuálního stylu restaurace jsem měla zcela volnou ruku.",
-      "leaflet": "Jako první jsem navrhla leták s nabídkou pizzy, který jsem později doplnila o nové logo restaurace.",
+      "workflow": "První věc, o kterou mě majitel tohoto podniku požádal, byly letáky pro rozvoz pizzy a dalších jídel z nabídky. Dostala jsem velké množství ručně psaného textu, který se v průběhu tvorby průběžně doplňoval i upravoval. Při návrhu vizuálu restaurace jsem měla zcela volnou ruku. Navrhla jsem tedy leták s nabídkou pizzy, který jsem později doplnila o nové logo restaurace.",
       "product2": "[2] Vizitky",
       "product3": "[3] Polepy interiéru a exteriéru",
       "INstickers": "Informační tabule s nabídkou menu",
@@ -147,14 +147,19 @@
     },
 
     "danceClubRebels": {
-      "title": "Logo pro taneční skupinu",
-      "product": "Produkt: Nažehlovací fólie na mikiny."
+      "title": "Tvorba Loga a potisk mikin",
+      "about": "TS Rebels Studénka působí jako taneční skupina ve Studénce a věnuje se především stylům disco dance a street dance. Pravidelně se účastní tanečních soutěží a v roce 2025 se stala vicemistryněmi ČR v disco dance.",
+      "visit": "Navštívit profil skupiny",
+      "product1": "[1] Tvorba logotypu - varianty",
+      "product2": "[2] Potisk mikin nažehlovací fólií"
     },
 
     "musicInv": {
       "title": "Hudební narozeninová pozvánka",
-      "product": "Produkt: Rozkládací pozvánka s hudebním CD uvnitř.",
-      "workflow": "Rodina chtěla vytvořit CD s oblíbenými hity oslavenkyně. Protože se blížily její významné narozeniny, napadlo mě spojit oba nápady a ukrýt CD přímo do narozeninové pozvánky."
+      "about": "Rodina chtěla nejprve vytvořit CD s oblíbenými hity oslavenkyně. Protože se blížily její kulaté narozeniny, napadlo mě propojit její vášeň pro zpěv s nápadem obdarovat hosty vlastním CD a zároveň je pozvat na oslavu.",
+      "workflow": "Koupila jsem několik CD se speciálním povrchem připomínajícím vinyl a vytvořila na ně samolepku s potiskem. Poté jsem nahrála vybrané písně a CD ukryla přímo do narozeninové pozvánky.",
+      "music": "ukázka z CD",
+      "product": "Rozkládací pozvánka s vloženým CD, výřez kruhu a kapsy do 300g kartonu pomocí laseru."
     }
   },
 

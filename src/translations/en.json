@@ -3,47 +3,39 @@
     "slogan": "Where Design Meets Code",
     "button": "EXPLORE"
   },
-
   "nav": {
     "about": "ABOUT ME",
     "project": "PROJECT",
     "contact": "CONTACT"
   },
-
   "about": {
     "frontend": {
       "title": "My Journey into IT",
       "content_development": "My interest in technology combined with design led me to <strong>front-end development</strong>, allowing me to naturally connect creativity with logical thinking. I enjoy transforming graphic designs into <strong>modern, responsive and interactive websites</strong>. But my journey doesn't end there. I want to keep learning, experimenting with new technologies and gradually expand my skills into <strong>application development, working with AI</strong> and other areas where technology meets creative work."
     },
-
     "workflow": {
       "AI": "More Efficient Results with AI",
       "content_AI": "I also use <strong>artificial intelligence tools</strong> in my work. I see AI as a useful assistant, particularly for making quick code adjustments and refinements or automating routine tasks. Working with AI opens up new technological possibilities and provides inspiration for further growth. AI helps me work more efficiently, while I remain in control of the creative direction, important decisions, and communication with the client."
     },
-
     "UX": {
       "title": "Design that makes sense",
       "content_design": "If I were to characterize my creative style, I would choose the term <strong>minimalist design</strong>. I believe that every element—whether digital or otherwise—should have a clear purpose while also having enough space to stand out. In my projects, I therefore strive to strike a balance between aesthetics, simplicity, and meaningfulness—and this is precisely the approach I want to continue developing in my work."
     },
-
     "graphic": {
       "title": "From Design to Physical Product",
-      "content_graphicPrint": "I have been working in <strong>Graphic Design</strong> for many years, and I also studied it professionally. I most often design flyers, posters, invitations, business cards, logos, and other products, particularly for promotional purposes. I also enjoy creating keepsakes and decorative items from plywood and paper. Thanks to my experience in <strong>Print Production</strong>, I understand not only the design itself, but also the entire production process. I prepare artwork for both small-format and large-format printing, plotter and laser cutting, textile printing, and engraving. I pay close attention to the thoughtful selection of colors, materials, and production techniques – from the initial concept to the final realization."
+      "content_graphicPrint": "I have been working in <strong>Graphic Design</strong> for many years, and I also studied it professionally. I most often design flyers, posters, invitations, business cards, logos, and other products. Thanks to my experience in <strong>Print Production</strong>, I understand not only the design itself, but also the entire production process. I prepare artwork for both small-format and large-format printing, plotter and laser cutting, textile printing, and engraving. I pay close attention to the thoughtful selection of colors, materials, and production techniques – from the initial concept to the final realization."
     },
-
     "offer": {
       "title": "Let's create together",
       "content_build": "Did my approach catch your attention and would you like to discuss the possibilities? Let's turn your ideas into products that are <strong>clear, visually appealing, and functional</strong>. I can help you reach your target audience and support your business.",
       "content_form": "<strong><a href=\"#form\" class=\"offer_form_link\">SEND ME A MESSAGE</a></strong> using the no-obligation form. It takes about a minute to fill out and helps me better understand how I can help you."
     }
   },
-
   "project": {
     "inspiration": {
       "title": "About the <span>SenseSpace</span> Project",
       "content": "SenseSpace is my personal space where I bring together <strong>front-end development, UX/UI design, and graphic design</strong>. It is a place for personal projects, experimenting with technology, and exploring ways to combine functionality, aesthetics, and meaningful design. The name SenseSpace reflects a space where creativity, technology, and curiosity come together. To me, the universe symbolizes infinite possibilities, the freedom to explore, but also order and underlying principles – much like the world in which I create."
     },
-
     "learn": {
       "details": "Technical details for developers",
       "title": "What did I learn from this project?",
@@ -51,22 +43,19 @@
       "content_living": "This is a <strong>living project</strong>. I am gradually developing it based on what I learn. Do you have an idea for improvement or have you found a bug? I appreciate any <strong>constructive feedback</strong>."
     }
   },
-
   "form": {
-    "title": "Let´s Talk",
+    "title": "Let's Talk",
     "name": "NAME",
     "help": "What can I help you with?",
     "quote": "I would like a no-obligation quote.",
     "personalData": "I consent to the processing of my personal data for the purpose of handling my inquiry and communicating regarding my request.",
     "button": "send message"
   },
-
   "portfolio": {
     "frontend": {
       "bestshop": "BestShop Website",
       "invitation": "Electronic RSVP invitation"
     },
-
     "graphic": {
       "subtitle": "From concept to reality.",
       "text": "A small universe of my creativity.",
@@ -75,16 +64,13 @@
       "musicalInv": "Musical birthday invitation"
     }
   },
-
   "modal": {
     "accentTitle": "I'm currently building this project for my portfolio. It will be available soon.",
-
     "bestshop": {
       "presentation": "BestShop is a concept for a modern <strong>e-commerce platform</strong> designed for businesses and sellers who want to run and grow their own online store. It presents the platform’s features, benefits, and pricing plans, while also including an <strong>interactive calculator</strong> that allows users to estimate the price based on the scale of use.",
       "content_design": "I designed the website with an emphasis on a <strong>clean visual style</strong>, clear structure, and an intuitive user experience. The bold <strong>yellow</strong>, used both throughout the website and in the logo, acts as a modern and energetic accent that reinforces a sense of speed and efficiency. The complementary <strong>blue</strong> evokes trust and service quality, while <strong>green</strong> represents optimism, growth, and dynamic development.",
       "content_logo": "When designing the logo, I opted for the simple and highly legible <strong>Raleway</strong> typeface in different weights, combined with <strong>dark olive and gold</strong>. A subtle detail of stylized coins replacing the letter “O” creates a direct association with <strong>commerce and profit</strong>. A soft gradient complements the overall design and reinforces the <strong>modern and minimalist character of the brand</strong>."
     },
-
     "dev": {
       "bestshop": {
         "summary": "⚙️ Developer",
@@ -103,7 +89,6 @@
         }
       }
     },
-
     "invitation": {
       "title": "Digital Invitation",
       "presentation1": "We all know it. Organizing a celebration often means endless messages, waiting for replies, and putting together a guest list. So why not make it easier and more fun? There are many modern ways to invite friends to a celebration. This is an example of one of them – my own.",
@@ -112,7 +97,6 @@
       "content_design": "The birthday girl's brief was clear: <strong>a rainbow, a castle, a princess, and glitter</strong>. Since she enjoys creating things herself, I built the entire visual around fairytale-inspired motifs and a playful style inspired by paper cut-outs.",
       "content_design2": "Cheerful <strong>rainbow colors</strong> combined with the <strong>Rum Raisin</strong> typeface emphasize the playful character of the invitation, while the clean and highly readable <strong>Quicksand</strong> typeface ensures the content is easy to read."
     },
-
     "dev2": {
       "invitation": {
         "summary": "⚙️ Developer",
@@ -134,36 +118,36 @@
         }
       }
     },
-
     "pizzaPronto": {
       "title": "Pizza Pronto Pizzeria",
       "product1": "[1] Flyers and Logo",
-      "workflow": "I was given a large amount of handwritten text, which was continuously supplemented and edited throughout the process. I had complete creative freedom when designing the restaurant's modern visual style.",
-      "leaflet": "As the first step, I designed a flyer featuring the pizza menu, which I later complemented with the restaurant's new logo.",
+      "workflow": "The first thing the owner of the business asked me for was flyers for pizza delivery and other dishes from the menu. I was given a large amount of handwritten text, which was continuously supplemented and edited throughout the process. I had complete creative freedom when designing the restaurant's visual style. I therefore designed a flyer featuring the pizza menu, which I later supplemented with the restaurant's new logo.",
       "product2": "[2] Business cards",
       "product3": "[3] Interior and exterior stickers",
       "INstickers": "An information board with the menu",
-      "EXstickers": "Window stickers"
+      "EXstickers": "Window stickers",
+      "about": "Restaurant visual design from 2020–2021"
     },
-
     "danceClubRebels": {
-      "title": "Logo for dance club",
-      "product": "Product: Iron-on transfer film for sweatshirts."
+      "title": "Logo for dance club TS Rebels from Studénka",
+      "about": "TS Rebels Studénka is a dance group based in Studénka, primarily focusing on disco dance and street dance. The group regularly participates in dance competitions and in 2025 became the Czech Republic's vice-champions in disco dance.",
+      "product1": "[1] Logotype design - variations",
+      "product2": "[2] Iron-on transfer film for sweatshirts",
+      "visit": "Visit the group's profile"
     },
-
     "musicInv": {
       "title": "Musical birthday invitation",
-      "product": "Product: Fold-out invitation with music CD inside.",
-      "workflow": "The family wanted to create a CD with the birthday girl's favorite hits. Since her big birthday was approaching, I thought of combining the two ideas and hiding the CD right in the birthday invitation."
+      "product": "Fold-out invitation with an inserted CD, with the circle and pocket cut into 300g cardstock using a laser.",
+      "workflow": "I bought several CDs with a special surface resembling vinyl and created a printed sticker for them. I then uploaded the selected songs and hid the CD directly inside the birthday invitation.",
+      "about": "The family initially wanted to create a CD with the birthday girl's favorite hits. Since her big birthday was approaching, I thought of combining her passion for singing with the idea of giving guests their own CD while also inviting them to the celebration.",
+      "music": "sample from the CD"
     }
   },
-
   "messages": {
     "submit": {
       "success": "Done ✨ The form has been successfully submitted. I will get back to you shortly. I look forward to working with you.",
       "error": "Something went wrong 🚨 Please try again later."
     },
-
     "validation": {
       "nameTooShort": "Please enter your full name.",
       "nameTooLong": "The name is too long.",
@@ -172,7 +156,6 @@
       "messageRequired": "Please enter your message.",
       "consent": "You must agree to the processing of personal data."
     },
-
     "sending": "sending..."
   }
 }
