@@ -77,13 +77,13 @@
 
   width: 38px;
   height: 38px;
-  padding: 19px;
+  padding: 20px;
 
   &::before {
     content: "";
     border-radius: 50%;
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
   }
 }
 

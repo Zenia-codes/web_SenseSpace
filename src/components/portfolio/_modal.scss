@@ -52,9 +52,9 @@ body.modal__open {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 7px;
 
-    padding: 15px 14px 35px;
+    padding: 0 14px 35px;
 
     @include m.heroText(15px, c.$SmallTextColor);
     line-height: 1.5em;
@@ -64,51 +64,48 @@ body.modal__open {
     justify-self: center;
     width: 100%;
     display: flex;
-    height: auto;
+    border-radius: 10px;
   }
 
   &__image--title {
-    width: 40%;
+    width: 45%;
     align-self: center;
+    padding-block: 10px;
   }
 
-  &__image--bestShop {
+  &__image--logo {
     width: 60%;
+  }
+
+  &__image--logoBestShop {
+    width: 60%;
+    padding: 15px 20px;
     filter: drop-shadow(1px 2px 2px rgba(23, 23, 23, 0.253));
     background: white;
     border-radius: 5px;
   }
 
   &__close {
-    position: absolute;
-
-    top: 15px;
-    right: 14px;
-
-    border: none;
     background: none;
-    font-size: 25px;
-    color: #656262;
+    font-size: 33px;
+    color: #aba8a8;
+  }
+
+  &__close--end {
+    align-self: end;
+    padding: 10px 20px 0;
   }
 
   &__links {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 18px;
-
-    padding: 20px 14px;
+    gap: 10px;
+    padding: 15px;
 
     .links__wrapper {
       display: flex;
-      gap: 12px;
+      gap: 8px;
     }
-  }
-
-  .title__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
   }
 
   &__music-wrapper {
@@ -118,8 +115,8 @@ body.modal__open {
 
   &__title {
     display: inline-flex;
-    justify-content: center;
     @include m.gradientTitle;
+    padding-top: 20px;
   }
 
   &__subtitle {
@@ -139,11 +136,7 @@ body.modal__open {
     justify-content: center;
 
     &__content-text {
-      padding: 30px 60px 35px;
-    }
-
-    &__links {
-      padding: 30px 60px;
+      padding: 20px 60px 35px;
     }
 
     &__title {
