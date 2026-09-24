@@ -48,6 +48,18 @@ body.modal__open {
     line-height: e.$line-height;
   }
 
+  &__content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px 14px 35px;
+
+    @include m.heroText(15px, c.$SmallTextColor);
+    line-height: 1.5em;
+  }
+
   &__image {
     justify-self: center;
     width: 100%;
@@ -115,30 +127,6 @@ body.modal__open {
     padding-block: 10px;
   }
 
-  // &__title--accent {
-  //   color: c.$akcentColor;
-  //   font-size: 12px;
-  //   padding-block: 10px;
-  // }
-
-  &__content-text {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-    padding: 15px 14px 35px;
-
-    @include m.heroText(15px, c.$SmallTextColor);
-    line-height: 1.5em;
-  }
-
-  &__text-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
   &__list {
     list-style-type: circle;
     line-height: 1.4;
@@ -152,7 +140,6 @@ body.modal__open {
 
     &__content-text {
       padding: 30px 60px 35px;
-      gap: 40px;
     }
 
     &__links {
