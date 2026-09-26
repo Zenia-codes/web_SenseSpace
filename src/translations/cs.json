@@ -45,9 +45,7 @@
     },
 
     "learn": {
-      "details": "Technické detaily pro vývojáře",
-      "title": "Co jsem se na tomto projektu naučila?",
-      "content_learn": "Tento projekt mi pomáhá získat praktické zkušenosti s HTML, CSS a JavaScriptem, zejména manipulace v DOM, tvorba posluchačů událostí, interaktivních komponent, modálních oken, sliderů a responzivního rozvržení pomocí HTML/CSS Gridu. Zlepšuji svou schopnost ladit kód a řešit běžné problémy s vývojem front-endu.",
+      "title": "Co jsem v tomto projektu použila?",
       "content_living": "Toto je <strong>živý projekt</strong>. Postupně ho rozvíjím na základě toho, co se učím. Máte nápad na vylepšení nebo jste našli chybu? Oceňuji jakoukoli <strong>konstruktivní zpětnou vazbu</strong>."
     }
   },
@@ -85,25 +83,6 @@
       "content_logo": "Při navrhování logotypu jsem vsadila na jednoduché a dobře čitelné písmo <strong>Raleway</strong> v různých řezech a kombinaci <strong>tmavě olivové a zlaté</strong>. Drobný detail stylizovaných mincí nahrazujících písmeno „O“ vytváří přímou asociaci s <strong>obchodem a ziskem</strong>. Jemný gradient pak celý návrh doplňuje a podporuje <strong>moderní a minimalistický charakter značky</strong>."
     },
 
-    "dev": {
-      "bestshop": {
-        "summary": "⚙️ Developer",
-        "title": "Landing page s kalkulačkou",
-        "html": {
-          "title": "HTML",
-          "task1": "strukturovaný kód"
-        },
-        "scss": {
-          "title": "SCSS",
-          "task1": "responzivní layout"
-        },
-        "javascript": {
-          "title": "JavaScript",
-          "task1": "interaktivní kalkulačka ceny"
-        }
-      }
-    },
-
     "invitation": {
       "title": "Digitální pozvánka",
       "presentation1": "Známe to. Organizace oslavy často znamená spoustu zpráv, čekání na odpovědi a sestavování seznamu hostů. Proč si to tedy neudělat jednodušší a zároveň zábavnější? Existuje mnoho moderních způsobů, jak pozvat přátele na oslavu. Tohle je ukázka jednoho z nich – mého vlastního.",
@@ -111,28 +90,6 @@
       "bonus": "Pozvánku lze rozšířit o další kategorie podle typu oslavy – například <strong>výběr jídla</strong>, doplňkový program nebo jednoduchou hru s překvapením.",
       "content_design": "Zadání oslavenkyně bylo jasné: <strong>duha, zámek, princezna a třpytky</strong>. Protože sama ráda tvoří, postavila jsem celý vizuál na pohádkových motivech a hravém stylu inspirovaném papírovými vystřihovánkami.",
       "content_design2": "Veselé <strong>duhové barvy</strong> v kombinaci s písmem <strong>Rum Raisin</strong> podtrhují hravý charakter pozvánky, zatímco čisté a dobře čitelné písmo <strong>Quicksand</strong> zajišťuje snadnou orientaci v obsahu."
-    },
-
-    "dev2": {
-      "invitation": {
-        "summary": "⚙️ Developer",
-        "title": "Animovaná pozvánka na dětskou oslavu s RSVP",
-        "html": {
-          "title": "HTML",
-          "task1": "strukturovaný a sémantický kód",
-          "task2": "vícejazyčná lokalizace pomocí JSON"
-        },
-        "scss": {
-          "title": "SCSS",
-          "task1": "responzivní layout",
-          "task2": "animace obrázků a tlačítek"
-        },
-        "javascript": {
-          "title": "JavaScript",
-          "task1": "interaktivní registrační formulář",
-          "task2": "odesílání odpovědí přes API"
-        }
-      }
     },
 
     "pizzaPronto": {

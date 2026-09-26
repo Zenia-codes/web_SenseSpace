@@ -1,9 +1,10 @@
 @use "../../styles/variables/mixins" as m;
 @use "../../styles/variables/colors" as c;
+@use "../../styles/variables/breakpoints" as b;
 
 details {
   @include m.heroText(15px, c.$SmallTextColor);
-  padding: 9px 13px 9px 32px;
+  padding-inline: 30px;
 }
 
 .dev_details {
@@ -14,4 +15,29 @@ details {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  text-align: start;
+
+  ul {
+    padding-block: 10px;
+    font-size: 12px;
+  }
+
+  summary {
+    font-family: Oxanium, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding-block: 16px;
+  }
+}
+
+@media (min-width: b.$tabletBreakPoint) {
+  .dev_details {
+    ul {
+      font-size: 15px;
+    }
+
+    summary {
+      font-size: 16px;
+    }
+  }
 }
