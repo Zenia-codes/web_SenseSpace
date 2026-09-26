@@ -37,9 +37,7 @@
       "content": "SenseSpace is my personal space where I bring together <strong>front-end development, UX/UI design, and graphic design</strong>. It is a place for personal projects, experimenting with technology, and exploring ways to combine functionality, aesthetics, and meaningful design. The name SenseSpace reflects a space where creativity, technology, and curiosity come together. To me, the universe symbolizes infinite possibilities, the freedom to explore, but also order and underlying principles – much like the world in which I create."
     },
     "learn": {
-      "details": "Technical details for developers",
-      "title": "What did I learn from this project?",
-      "content_learn": "This project helps me gain practical experience with HTML, CSS, and JavaScript—specifically DOM manipulation and the creation of event listeners, interactive components, modal windows, sliders, and responsive layouts using HTML/CSS Grid. I am improving my ability to debug code and solve common front-end development issues.",
+      "title": "What did I use in this project?",
       "content_living": "This is a <strong>living project</strong>. I am gradually developing it based on what I learn. Do you have an idea for improvement or have you found a bug? I appreciate any <strong>constructive feedback</strong>."
     }
   },
@@ -65,29 +63,11 @@
     }
   },
   "modal": {
-    "accentTitle": "I'm currently building this project for my portfolio. It will be available soon.",
+    "accentTitle": "I’m currently preparing this project. It will be available soon.",
     "bestshop": {
       "presentation": "BestShop is a concept for a modern <strong>e-commerce platform</strong> designed for businesses and sellers who want to run and grow their own online store. It presents the platform’s features, benefits, and pricing plans, while also including an <strong>interactive calculator</strong> that allows users to estimate the price based on the scale of use.",
       "content_design": "I designed the website with an emphasis on a <strong>clean visual style</strong>, clear structure, and an intuitive user experience. The bold <strong>yellow</strong>, used both throughout the website and in the logo, acts as a modern and energetic accent that reinforces a sense of speed and efficiency. The complementary <strong>blue</strong> evokes trust and service quality, while <strong>green</strong> represents optimism, growth, and dynamic development.",
       "content_logo": "When designing the logo, I opted for the simple and highly legible <strong>Raleway</strong> typeface in different weights, combined with <strong>dark olive and gold</strong>. A subtle detail of stylized coins replacing the letter “O” creates a direct association with <strong>commerce and profit</strong>. A soft gradient complements the overall design and reinforces the <strong>modern and minimalist character of the brand</strong>."
-    },
-    "dev": {
-      "bestshop": {
-        "summary": "⚙️ Developer",
-        "title": "Landing page with calculator",
-        "html": {
-          "title": "HTML",
-          "task1": "structured code"
-        },
-        "scss": {
-          "title": "SCSS",
-          "task1": "responsive layout"
-        },
-        "javascript": {
-          "title": "JavaScript",
-          "task1": "interactive price calculator"
-        }
-      }
     },
     "invitation": {
       "title": "Digital Invitation",
@@ -97,50 +77,29 @@
       "content_design": "The birthday girl's brief was clear: <strong>a rainbow, a castle, a princess, and glitter</strong>. Since she enjoys creating things herself, I built the entire visual around fairytale-inspired motifs and a playful style inspired by paper cut-outs.",
       "content_design2": "Cheerful <strong>rainbow colors</strong> combined with the <strong>Rum Raisin</strong> typeface emphasize the playful character of the invitation, while the clean and highly readable <strong>Quicksand</strong> typeface ensures the content is easy to read."
     },
-    "dev2": {
-      "invitation": {
-        "summary": "⚙️ Developer",
-        "title": "Animated Children's Party Invitation with RSVP",
-        "html": {
-          "title": "HTML",
-          "task1": "structured and semantic code",
-          "task2": "multilingual localization using JSON"
-        },
-        "scss": {
-          "title": "SCSS",
-          "task1": "responsive layout",
-          "task2": "image and button animations"
-        },
-        "javascript": {
-          "title": "JavaScript",
-          "task1": "interactive RSVP form",
-          "task2": "submitting responses via API"
-        }
-      }
-    },
     "pizzaPronto": {
       "title": "Pizza Pronto Pizzeria",
+      "about": "Restaurant visual design from 2020–2021",
       "product1": "[1] Flyers and Logo",
       "workflow": "The first thing the owner of the business asked me for was flyers for pizza delivery and other dishes from the menu. I was given a large amount of handwritten text, which was continuously supplemented and edited throughout the process. I had complete creative freedom when designing the restaurant's visual style. I therefore designed a flyer featuring the pizza menu, which I later supplemented with the restaurant's new logo.",
       "product2": "[2] Business cards",
       "product3": "[3] Interior and exterior stickers",
       "INstickers": "An information board with the menu",
-      "EXstickers": "Window stickers",
-      "about": "Restaurant visual design from 2020–2021"
+      "EXstickers": "Window stickers"
     },
     "danceClubRebels": {
       "title": "Logo for dance club TS Rebels from Studénka",
       "about": "TS Rebels Studénka is a dance group based in Studénka, primarily focusing on disco dance and street dance. The group regularly participates in dance competitions and in 2025 became the Czech Republic's vice-champions in disco dance.",
+      "visit": "Visit the group's profile",
       "product1": "[1] Logotype design - variations",
-      "product2": "[2] Iron-on transfer film for sweatshirts",
-      "visit": "Visit the group's profile"
+      "product2": "[2] Iron-on transfer film for sweatshirts"
     },
     "musicInv": {
       "title": "Musical birthday invitation",
-      "product": "Fold-out invitation with an inserted CD, with the circle and pocket cut into cardstock using a laser.",
-      "workflow": "I bought several CDs with a special surface resembling vinyl and created a printed sticker for them. I then uploaded the selected songs and hid the CD directly inside the birthday invitation.",
       "about": "The family initially wanted to create a CD with the birthday girl's favorite hits. Since her big birthday was approaching, I thought of combining her passion for singing with the idea of giving guests their own CD while also inviting them to the celebration.",
-      "music": "sample from the CD"
+      "workflow": "I bought several CDs with a special surface resembling vinyl and created a printed sticker for them. I then uploaded the selected songs and hid the CD directly inside the birthday invitation.",
+      "music": "sample from the CD",
+      "product": "Fold-out invitation with an inserted CD, with the circle and pocket cut into cardstock using a laser."
     }
   },
   "messages": {
