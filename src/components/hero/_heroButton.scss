@@ -1,6 +1,7 @@
 @use "../../styles/variables/colors" as c;
 @use "../../styles/variables/mixins" as m;
 @use "../../styles/variables/breakpoints" as b;
+@use "../../styles/variables/animations" as i;
 
 .button {
   position: relative;
@@ -10,8 +11,7 @@
   justify-content: center;
   gap: 5px;
 
-  height: 47px;
-  padding-inline: 42px;
+  padding: 10px 60px;
 
   background: radial-gradient(
     circle at 45% -29%,
@@ -27,8 +27,11 @@
 
   text-shadow: -1px -1px 12px #89016c1f;
 
-  box-shadow: inset -3px -4px 5px 2px #23003270, inset 2px 2px 4px #ffb4dc73,
-    0 0 6px #ff00b48c;
+  box-shadow: inset 0px -2px 3px 2px #23003270, inset 2px 2px 4px #ffb4dc73,
+    0 0 0px #ff00b48c;
+
+  background-size: 130% 100%;
+  animation: 6s ease-in-out infinite alternate gradientMove;
 
   // malá animace stisknutí buttonu na mobilu
   &:active {
@@ -43,83 +46,61 @@
   }
 
   .button__text {
-    transition: transform 0.2s ease, text-shadow 0.2s ease;
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
   }
 
   // bílá záře a obrys nad buttonem
-  &::before {
-    content: "";
-    filter: blur(0.8px);
-    z-index: 1;
-    background: #ffffff17;
-    border: 1px solid #ffd6e8ea;
-    border-radius: 14px;
-    width: 93%;
-    height: 34px;
-    position: absolute;
-  }
+  // &::before {
+  //   content: "";
+  //   filter: blur(0.8px);
+  //   z-index: 1;
+  //   background: #ffffff17;
+  //   border: 1px solid #ffd6e8ea;
+  //   border-radius: 14px;
+  //   width: 93%;
+  //   height: 34px;
+  //   position: absolute;
+  // }
 
-  // stín za buttonem
+  // // stín za buttonem
   &::after {
     content: "";
     filter: blur(23px);
     z-index: -1;
-    background: #ffc9ad4f;
+    background: #7372727d;
     border-radius: 50%;
-    width: 80%;
-    height: 60px;
+    width: 60%;
+    height: 50px;
     position: absolute;
   }
 }
 
 .button--rounded {
   border-radius: 50%;
-
-  width: 38px;
-  height: 38px;
-  padding: 20px;
-
-  &::before {
-    content: "";
-    border-radius: 50%;
-    width: 85%;
-    height: 85%;
-  }
+  padding: 5px;
 }
 
 .button__icon {
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
+  opacity: 0.9;
 }
 
 // hover tlačítka "Explore" je aplikovaný pouze na zařízení, která ho podporují
 @media (hover: hover) and (pointer: fine) {
-  .button:hover .rocket {
+  .button:hover .button__rocket {
     transform: translate(2px, -2px);
   }
 
-  .button:hover .text {
+  .button:hover .button__text {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
   }
 }
 
 @media (min-width: b.$tabletBreakPoint) {
-  .button--rounded {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    padding: 10px;
-
-    &::before {
-      content: "";
-      border-radius: 50%;
-      width: 85%;
-      height: 85%;
-    }
-  }
-
   .button__icon {
     width: 32px;
     height: 32px;
+    opacity: 0.9;
   }
 }

@@ -3,6 +3,7 @@
 @use "../../styles/variables/breakpoints" as b;
 @use "../../styles/variables/hero_scale" as s;
 @use "../../styles/variables/mixins" as m;
+@use "../../styles/variables/animations" as i;
 
 .hero {
   min-height: 80vh;
@@ -48,17 +49,9 @@
 
   @include m.gradientTitle;
 
+  animation: 3s ease-in-out infinite alternate gradientMove;
+
   padding-block: 9px 19px;
-}
-
-@keyframes gradientMove {
-  from {
-    background-position: 0% 50%;
-  }
-
-  to {
-    background-position: 100% 50%;
-  }
 }
 
 .hero_motiv {

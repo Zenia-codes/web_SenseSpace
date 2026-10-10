@@ -64,6 +64,8 @@
   },
   "modal": {
     "accentTitle": "I’m currently preparing this project. It will be available soon.",
+    "openWebsite": "Open Website",
+
     "bestshop": {
       "presentation": "BestShop is a concept for a modern <strong>e-commerce platform</strong> designed for businesses and sellers who want to run and grow their own online store. It presents the platform’s features, benefits, and pricing plans, while also including an <strong>interactive calculator</strong> that allows users to estimate the price based on the scale of use.",
       "content_design": "I designed the website with an emphasis on a <strong>clean visual style</strong>, clear structure, and an intuitive user experience. The bold <strong>yellow</strong>, used both throughout the website and in the logo, acts as a modern and energetic accent that reinforces a sense of speed and efficiency. The complementary <strong>blue</strong> evokes trust and service quality, while <strong>green</strong> represents optimism, growth, and dynamic development.",

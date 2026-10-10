@@ -53,17 +53,15 @@ body.modal__open {
     flex-direction: column;
     gap: 10px;
 
-    padding: 0 14px 35px;
+    padding: 17px 14px 35px;
 
     @include m.heroText(15px, c.$SmallTextColor);
     line-height: 1.5em;
   }
 
   &__image {
-    justify-self: center;
     width: 100%;
     display: flex;
-    border-radius: 10px;
   }
 
   &__image--title {
@@ -86,7 +84,7 @@ body.modal__open {
 
   &__close {
     background: none;
-    font-size: 33px;
+    font-size: 28px;
     color: #aba8a8;
   }
 
@@ -95,16 +93,16 @@ body.modal__open {
     padding: 10px 20px 0;
   }
 
-  &__links {
+  &__header {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    padding: 15px;
+    padding: 15px 20px;
+  }
 
-    .links__wrapper {
-      display: flex;
-      gap: 8px;
-    }
+  .links__wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
   }
 
   &__music-wrapper {
@@ -115,7 +113,6 @@ body.modal__open {
   &__title {
     display: inline-flex;
     @include m.gradientTitle;
-    padding-top: 20px;
   }
 
   &__subtitle {
@@ -138,8 +135,8 @@ body.modal__open {
       padding: 20px 60px 35px;
     }
 
-    &__title {
-      font-size: 24px;
+    &__header {
+      padding: 15px 40px;
     }
   }
 }
