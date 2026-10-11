@@ -99,12 +99,6 @@ body.modal__open {
     padding: 15px 20px;
   }
 
-  .links__wrapper {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-
   &__music-wrapper {
     display: flex;
     gap: 15px;
@@ -124,6 +118,12 @@ body.modal__open {
     list-style-type: circle;
     line-height: 1.4;
   }
+}
+
+.links__wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 @media (min-width: b.$tabletBreakPoint) {
